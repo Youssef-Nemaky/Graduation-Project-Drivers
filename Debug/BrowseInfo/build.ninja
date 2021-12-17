@@ -1,0 +1,110 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe" $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe" $flags
+
+rule MAKEBROWSE
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe" $flags
+
+rule PDBLINK
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++"C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe" $flags
+
+
+
+#Build steps
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Embedded_non-stop\Graduation$ Project\Det.c" -xcl_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.xcl" -macro_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Embedded_non-stop\Graduation$ Project\Det.c" -o "D$:\Embedded_non-stop\Graduation$ Project\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.tmp"
+  rspfile_name = D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.xcl.rsp
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Embedded_non-stop\Graduation$ Project\Dio.c" -xcl_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio.xcl" -macro_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Embedded_non-stop\Graduation$ Project\Dio.c" -o "D$:\Embedded_non-stop\Graduation$ Project\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio.tmp"
+  rspfile_name = D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio.xcl.rsp
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio_PBcfg.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Embedded_non-stop\Graduation$ Project\Dio_PBcfg.c" -xcl_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio_PBcfg.xcl" -macro_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio_PBcfg.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Embedded_non-stop\Graduation$ Project\Dio_PBcfg.c" -o "D$:\Embedded_non-stop\Graduation$ Project\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio_PBcfg.tmp"
+  rspfile_name = D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio_PBcfg.xcl.rsp
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\lcd.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Embedded_non-stop\Graduation$ Project\lcd.c" -xcl_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\lcd.xcl" -macro_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\lcd.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Embedded_non-stop\Graduation$ Project\lcd.c" -o "D$:\Embedded_non-stop\Graduation$ Project\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\lcd.tmp"
+  rspfile_name = D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\lcd.xcl.rsp
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Embedded_non-stop\Graduation$ Project\main.c" -xcl_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\main.xcl" -macro_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\main.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Embedded_non-stop\Graduation$ Project\main.c" -o "D$:\Embedded_non-stop\Graduation$ Project\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\main.tmp"
+  rspfile_name = D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\main.xcl.rsp
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Embedded_non-stop\Graduation$ Project\Port.c" -xcl_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port.xcl" -macro_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Embedded_non-stop\Graduation$ Project\Port.c" -o "D$:\Embedded_non-stop\Graduation$ Project\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port.tmp"
+  rspfile_name = D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port.xcl.rsp
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port_PBcfg.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Embedded_non-stop\Graduation$ Project\Port_PBcfg.c" -xcl_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port_PBcfg.xcl" -macro_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port_PBcfg.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Embedded_non-stop\Graduation$ Project\Port_PBcfg.c" -o "D$:\Embedded_non-stop\Graduation$ Project\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port_PBcfg.tmp"
+  rspfile_name = D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port_PBcfg.xcl.rsp
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.pbi : INDEXER D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.xcl |  $
+D$:\Embedded_non-stop\Graduation$ Project\Det.c
+  flags = "-out=D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.pbi" -f "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.xcl"
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio.pbi : INDEXER D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio.xcl |  $
+D$:\Embedded_non-stop\Graduation$ Project\Dio.c
+  flags = "-out=D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio.pbi" -f "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio.xcl"
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio_PBcfg.pbi : INDEXER D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio_PBcfg.xcl |  $
+D$:\Embedded_non-stop\Graduation$ Project\Dio_PBcfg.c
+  flags = "-out=D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio_PBcfg.pbi" -f "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio_PBcfg.xcl"
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\lcd.pbi : INDEXER D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\lcd.xcl |  $
+D$:\Embedded_non-stop\Graduation$ Project\lcd.c
+  flags = "-out=D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\lcd.pbi" -f "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\lcd.xcl"
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\main.pbi : INDEXER D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\main.xcl |  $
+D$:\Embedded_non-stop\Graduation$ Project\main.c
+  flags = "-out=D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\main.pbi" -f "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\main.xcl"
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port.pbi : INDEXER D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port.xcl |  $
+D$:\Embedded_non-stop\Graduation$ Project\Port.c
+  flags = "-out=D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port.pbi" -f "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port.xcl"
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port_PBcfg.pbi : INDEXER D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port_PBcfg.xcl |  $
+D$:\Embedded_non-stop\Graduation$ Project\Port_PBcfg.c
+  flags = "-out=D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port_PBcfg.pbi" -f "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port_PBcfg.xcl"
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp.pbw : MAKEBROWSE D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp.pbd
+  flags = "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp.pbd" -output "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp.pbw"
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part0.pbi : PDBLINK D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.pbi |  $
+D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio.pbi $
+D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio_PBcfg.pbi
+  flags = -M "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part0.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Dio_PBcfg.pbi"
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part1.pbi : PDBLINK D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\lcd.pbi |  $
+D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\main.pbi $
+D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port.pbi
+  flags = -M "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part1.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\lcd.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\main.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port.pbi"
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part2.pbi : PDBLINK D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port_PBcfg.pbi
+  flags = -M "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part2.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port_PBcfg.pbi"
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp.pbd : PDBLINK D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part0.pbi |  $
+D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part1.pbi $
+D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part2.pbi
+  flags = -M "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp.pbd" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part0.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part1.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part2.pbi"
+
