@@ -35,6 +35,8 @@ int main()
         counter = 0;
     }
     Delay_Ms(1000);
+
     }
+
     return 0;
 }

@@ -71,10 +71,10 @@
 /* DIO Configured group channel MASK */
 
 
-#define DioConf_LCD_GRP_MASK                    ((uint8)0x0F) /* 4 Pins at the left */
+#define DioConf_LCD_GRP_MASK                    ((uint8)0xF0) /* 4 Pins at the left */
 
 /* DIO Configured group channel offset */
-#define DioConf_LCD_GRP_OFFSET                  ((uint8)0)
+#define DioConf_LCD_GRP_OFFSET                  ((uint8)4)
 
 /* DIO Configuired group channel offset */
 
