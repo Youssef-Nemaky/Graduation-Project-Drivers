@@ -1164,6 +1164,20 @@
     "scope": null
   },
   {
+    "ID": "c:Dio.c@Dio_GroupChannels",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "Dio_GroupChannels",
+    "location": {
+      "column": "37",
+      "line": "29",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.c"
+    },
+    "name": "Dio_GroupChannels",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:Dio.c@Dio_Status",
     "What": "Variable",
     "defdec": "Def",
@@ -1371,6 +1385,950 @@
     },
     "name": "error",
     "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_ReadChannelGroup",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "Dio_PortLevelType Dio_ReadChannelGroup(const Dio_ChannelGroupType *)",
+    "location": {
+      "column": "19",
+      "line": "430",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.c"
+    },
+    "name": "Dio_ReadChannelGroup",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.c@13524@F@Dio_ReadChannelGroup@Port_Ptr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "Port_Ptr",
+    "location": {
+      "column": "20",
+      "line": "431",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.c"
+    },
+    "name": "Port_Ptr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.c@13554@F@Dio_ReadChannelGroup@error",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "error",
+    "location": {
+      "column": "10",
+      "line": "432",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.c"
+    },
+    "name": "error",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_WriteChannelGroup",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void Dio_WriteChannelGroup(const Dio_ChannelGroupType *, Dio_PortLevelType)",
+    "location": {
+      "column": "6",
+      "line": "508",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.c"
+    },
+    "name": "Dio_WriteChannelGroup",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.c@15946@F@Dio_WriteChannelGroup@Port_Ptr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "Port_Ptr",
+    "location": {
+      "column": "20",
+      "line": "509",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.c"
+    },
+    "name": "Port_Ptr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.c@15976@F@Dio_WriteChannelGroup@error",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "error",
+    "location": {
+      "column": "10",
+      "line": "510",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.c"
+    },
+    "name": "error",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@335@macro@DIO_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_H",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@390@macro@DIO_VENDOR_ID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_VENDOR_ID",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_VENDOR_ID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@444@macro@DIO_MODULE_ID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_MODULE_ID",
+    "location": {
+      "column": "9",
+      "line": "19",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_MODULE_ID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@499@macro@DIO_INSTANCE_ID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_INSTANCE_ID",
+    "location": {
+      "column": "9",
+      "line": "22",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_INSTANCE_ID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@561@macro@DIO_SW_MAJOR_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_SW_MAJOR_VERSION",
+    "location": {
+      "column": "9",
+      "line": "27",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_SW_MAJOR_VERSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@605@macro@DIO_SW_MINOR_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_SW_MINOR_VERSION",
+    "location": {
+      "column": "9",
+      "line": "28",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_SW_MINOR_VERSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@649@macro@DIO_SW_PATCH_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_SW_PATCH_VERSION",
+    "location": {
+      "column": "9",
+      "line": "29",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_SW_PATCH_VERSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@726@macro@DIO_AR_RELEASE_MAJOR_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_AR_RELEASE_MAJOR_VERSION",
+    "location": {
+      "column": "9",
+      "line": "34",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_AR_RELEASE_MAJOR_VERSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@770@macro@DIO_AR_RELEASE_MINOR_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_AR_RELEASE_MINOR_VERSION",
+    "location": {
+      "column": "9",
+      "line": "35",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_AR_RELEASE_MINOR_VERSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@814@macro@DIO_AR_RELEASE_PATCH_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_AR_RELEASE_PATCH_VERSION",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_AR_RELEASE_PATCH_VERSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@891@macro@DIO_INITIALIZED",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_INITIALIZED",
+    "location": {
+      "column": "9",
+      "line": "41",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_INITIALIZED",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@935@macro@DIO_NOT_INITIALIZED",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_NOT_INITIALIZED",
+    "location": {
+      "column": "9",
+      "line": "42",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_NOT_INITIALIZED",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@2488@macro@DIO_READ_CHANNEL_SID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_READ_CHANNEL_SID",
+    "location": {
+      "column": "9",
+      "line": "78",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_READ_CHANNEL_SID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@2581@macro@DIO_WRITE_CHANNEL_SID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_WRITE_CHANNEL_SID",
+    "location": {
+      "column": "9",
+      "line": "81",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_WRITE_CHANNEL_SID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@2670@macro@DIO_READ_PORT_SID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_READ_PORT_SID",
+    "location": {
+      "column": "9",
+      "line": "84",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_READ_PORT_SID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@2760@macro@DIO_WRITE_PORT_SID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_WRITE_PORT_SID",
+    "location": {
+      "column": "9",
+      "line": "87",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_WRITE_PORT_SID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@2858@macro@DIO_READ_CHANNEL_GROUP_SID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_READ_CHANNEL_GROUP_SID",
+    "location": {
+      "column": "9",
+      "line": "90",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_READ_CHANNEL_GROUP_SID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@2957@macro@DIO_WRITE_CHANNEL_GROUP_SID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_WRITE_CHANNEL_GROUP_SID",
+    "location": {
+      "column": "9",
+      "line": "93",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_WRITE_CHANNEL_GROUP_SID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@3051@macro@DIO_GET_VERSION_INFO_SID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_GET_VERSION_INFO_SID",
+    "location": {
+      "column": "9",
+      "line": "96",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_GET_VERSION_INFO_SID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@3143@macro@DIO_INIT_SID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_INIT_SID",
+    "location": {
+      "column": "9",
+      "line": "99",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_INIT_SID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@3235@macro@DIO_FLIP_CHANNEL_SID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_FLIP_CHANNEL_SID",
+    "location": {
+      "column": "9",
+      "line": "102",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_FLIP_CHANNEL_SID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@3574@macro@DIO_E_PARAM_INVALID_CHANNEL_ID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_E_PARAM_INVALID_CHANNEL_ID",
+    "location": {
+      "column": "9",
+      "line": "108",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_E_PARAM_INVALID_CHANNEL_ID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@3690@macro@DIO_E_PARAM_CONFIG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_E_PARAM_CONFIG",
+    "location": {
+      "column": "9",
+      "line": "111",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_E_PARAM_CONFIG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@3782@macro@DIO_E_PARAM_INVALID_PORT_ID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_E_PARAM_INVALID_PORT_ID",
+    "location": {
+      "column": "9",
+      "line": "114",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_E_PARAM_INVALID_PORT_ID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@3883@macro@DIO_E_PARAM_INVALID_GROUP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_E_PARAM_INVALID_GROUP",
+    "location": {
+      "column": "9",
+      "line": "117",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_E_PARAM_INVALID_GROUP",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@4060@macro@DIO_E_PARAM_POINTER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_E_PARAM_POINTER",
+    "location": {
+      "column": "9",
+      "line": "123",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_E_PARAM_POINTER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@4265@macro@DIO_E_UNINIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DIO_E_UNINIT",
+    "location": {
+      "column": "9",
+      "line": "129",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "DIO_E_UNINIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@T@Dio_ChannelType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "uint8",
+    "location": {
+      "column": "15",
+      "line": "135",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_ChannelType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@T@Dio_PortType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "uint8",
+    "location": {
+      "column": "15",
+      "line": "138",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_PortType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@T@Dio_LevelType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "uint8",
+    "location": {
+      "column": "15",
+      "line": "141",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_LevelType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@T@Dio_PortLevelType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "uint8",
+    "location": {
+      "column": "15",
+      "line": "144",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_PortLevelType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@Dio_ChannelGroupType",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "147",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@Dio_ChannelGroupType@FI@mask",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "mask",
+        "location": {
+          "column": "9",
+          "line": "150",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+        },
+        "name": "mask",
+        "origin": "user_include",
+        "scope": "_anonymous_Dio_h_147_9"
+      },
+      {
+        "ID": "c:@SA@Dio_ChannelGroupType@FI@offset",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "offset",
+        "location": {
+          "column": "9",
+          "line": "152",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+        },
+        "name": "offset",
+        "origin": "user_include",
+        "scope": "_anonymous_Dio_h_147_9"
+      },
+      {
+        "ID": "c:@SA@Dio_ChannelGroupType@FI@PortIndex",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "PortIndex",
+        "location": {
+          "column": "16",
+          "line": "154",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+        },
+        "name": "PortIndex",
+        "origin": "user_include",
+        "scope": "_anonymous_Dio_h_147_9"
+      }
+    ],
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@Dio_ChannelGroupType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct Dio_ChannelGroupType",
+    "location": {
+      "column": "3",
+      "line": "155",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_ChannelGroupType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@Dio_ConfigChannel",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "157",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@Dio_ConfigChannel@FI@Port_Num",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Port_Num",
+        "location": {
+          "column": "15",
+          "line": "160",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+        },
+        "name": "Port_Num",
+        "origin": "user_include",
+        "scope": "_anonymous_Dio_h_157_9"
+      },
+      {
+        "ID": "c:@SA@Dio_ConfigChannel@FI@Ch_Num",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Ch_Num",
+        "location": {
+          "column": "18",
+          "line": "162",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+        },
+        "name": "Ch_Num",
+        "origin": "user_include",
+        "scope": "_anonymous_Dio_h_157_9"
+      },
+      {
+        "ID": "c:@T@Dio_ConfigChannel",
+        "What": "TypedefDecl",
+        "defdec": "Def",
+        "display": "struct Dio_ConfigChannel",
+        "location": {
+          "column": "2",
+          "line": "163",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+        },
+        "name": "Dio_ConfigChannel",
+        "origin": "user_include",
+        "scope": "_anonymous_Dio_h_157_9"
+      }
+    ],
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@Dio_ConfigType",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "Dio_ConfigType",
+    "location": {
+      "column": "16",
+      "line": "166",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@Dio_ConfigType@FI@Channels",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Channels",
+        "location": {
+          "column": "20",
+          "line": "168",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+        },
+        "name": "Channels",
+        "origin": "user_include",
+        "scope": "Dio_ConfigType"
+      },
+      {
+        "ID": "c:@S@Dio_ConfigType@FI@GroupChannels",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "GroupChannels",
+        "location": {
+          "column": "23",
+          "line": "170",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+        },
+        "name": "GroupChannels",
+        "origin": "user_include",
+        "scope": "Dio_ConfigType"
+      }
+    ],
+    "name": "Dio_ConfigType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio.h@T@Dio_ConfigType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct Dio_ConfigType",
+    "location": {
+      "column": "3",
+      "line": "172",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_ConfigType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_ReadPort",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "Dio_PortLevelType Dio_ReadPort(Dio_PortType)",
+    "location": {
+      "column": "19",
+      "line": "179",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_ReadPort",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_WritePort",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Dio_WritePort(Dio_PortType, Dio_PortLevelType)",
+    "location": {
+      "column": "6",
+      "line": "182",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_WritePort",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_WritePort",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Dio_WritePort(Dio_PortType, Dio_PortLevelType)",
+    "location": {
+      "column": "6",
+      "line": "182",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_WritePort",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_ReadChannel",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "Dio_LevelType Dio_ReadChannel(Dio_ChannelType)",
+    "location": {
+      "column": "15",
+      "line": "185",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_ReadChannel",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_ReadChannel",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "Dio_LevelType Dio_ReadChannel(Dio_ChannelType)",
+    "location": {
+      "column": "15",
+      "line": "185",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_ReadChannel",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_WriteChannel",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Dio_WriteChannel(Dio_ChannelType, Dio_LevelType)",
+    "location": {
+      "column": "6",
+      "line": "188",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_WriteChannel",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_WriteChannel",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Dio_WriteChannel(Dio_ChannelType, Dio_LevelType)",
+    "location": {
+      "column": "6",
+      "line": "188",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_WriteChannel",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Dio_Init(const Dio_ConfigType *)",
+    "location": {
+      "column": "6",
+      "line": "191",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Dio_Init(const Dio_ConfigType *)",
+    "location": {
+      "column": "6",
+      "line": "191",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_FlipChannel",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "Dio_LevelType Dio_FlipChannel(Dio_ChannelType)",
+    "location": {
+      "column": "15",
+      "line": "195",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_FlipChannel",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_FlipChannel",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "Dio_LevelType Dio_FlipChannel(Dio_ChannelType)",
+    "location": {
+      "column": "15",
+      "line": "195",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_FlipChannel",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_ReadChannelGroup",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "Dio_PortLevelType Dio_ReadChannelGroup(const Dio_ChannelGroupType *)",
+    "location": {
+      "column": "19",
+      "line": "204",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_ReadChannelGroup",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_ReadChannelGroup",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "Dio_PortLevelType Dio_ReadChannelGroup(const Dio_ChannelGroupType *)",
+    "location": {
+      "column": "19",
+      "line": "204",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_ReadChannelGroup",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_WriteChannelGroup",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Dio_WriteChannelGroup(const Dio_ChannelGroupType *, Dio_PortLevelType)",
+    "location": {
+      "column": "6",
+      "line": "207",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_WriteChannelGroup",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@Dio_WriteChannelGroup",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void Dio_WriteChannelGroup(const Dio_ChannelGroupType *, Dio_PortLevelType)",
+    "location": {
+      "column": "6",
+      "line": "207",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_WriteChannelGroup",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@Dio_Configuration",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "Dio_Configuration",
+    "location": {
+      "column": "29",
+      "line": "215",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_Configuration",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@Dio_Configuration",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "Dio_Configuration",
+    "location": {
+      "column": "29",
+      "line": "215",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
+    },
+    "name": "Dio_Configuration",
+    "origin": "user_include",
     "scope": null
   },
   {
@@ -2242,6 +3200,118 @@
     "scope": null
   },
   {
+    "ID": "c:Common_Macros.h@538@macro@COMMON_MACROS_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "COMMON_MACROS_H_",
+    "location": {
+      "column": "9",
+      "line": "23",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
+    },
+    "name": "COMMON_MACROS_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Common_Macros.h@1000@macro@SET_BIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SET_BIT",
+    "location": {
+      "column": "9",
+      "line": "35",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
+    },
+    "name": "SET_BIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Common_Macros.h@1501@macro@CLEAR_BIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CLEAR_BIT",
+    "location": {
+      "column": "9",
+      "line": "50",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
+    },
+    "name": "CLEAR_BIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Common_Macros.h@2034@macro@TOGGLE_BIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TOGGLE_BIT",
+    "location": {
+      "column": "9",
+      "line": "62",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
+    },
+    "name": "TOGGLE_BIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Common_Macros.h@2591@macro@ROR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROR",
+    "location": {
+      "column": "9",
+      "line": "76",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
+    },
+    "name": "ROR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Common_Macros.h@3178@macro@ROL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ROL",
+    "location": {
+      "column": "9",
+      "line": "90",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
+    },
+    "name": "ROL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Common_Macros.h@3832@macro@IS_BIT_SET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "IS_BIT_SET",
+    "location": {
+      "column": "9",
+      "line": "105",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
+    },
+    "name": "IS_BIT_SET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Common_Macros.h@4473@macro@IS_BIT_CLEAR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "IS_BIT_CLEAR",
+    "location": {
+      "column": "9",
+      "line": "120",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
+    },
+    "name": "IS_BIT_CLEAR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:Dio_Cfg.h@381@macro@DIO_CFG_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -2410,13 +3480,83 @@
     "scope": null
   },
   {
-    "ID": "c:Dio_Cfg.h@2901@macro@DioConf_LCD_PORT_NUM",
+    "ID": "c:Dio_Cfg.h@2162@macro@DioConf_LCD_GRP_INDEX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DioConf_LCD_GRP_INDEX",
+    "location": {
+      "column": "9",
+      "line": "62",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
+    },
+    "name": "DioConf_LCD_GRP_INDEX",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio_Cfg.h@2312@macro@DioConf_LCD_GRP_PTR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DioConf_LCD_GRP_PTR",
+    "location": {
+      "column": "9",
+      "line": "65",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
+    },
+    "name": "DioConf_LCD_GRP_PTR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio_Cfg.h@2470@macro@DioConf_LCD_GRP_PORT_NUM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DioConf_LCD_GRP_PORT_NUM",
+    "location": {
+      "column": "9",
+      "line": "69",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
+    },
+    "name": "DioConf_LCD_GRP_PORT_NUM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio_Cfg.h@2609@macro@DioConf_LCD_GRP_MASK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DioConf_LCD_GRP_MASK",
+    "location": {
+      "column": "9",
+      "line": "74",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
+    },
+    "name": "DioConf_LCD_GRP_MASK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio_Cfg.h@2742@macro@DioConf_LCD_GRP_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DioConf_LCD_GRP_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "77",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
+    },
+    "name": "DioConf_LCD_GRP_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Dio_Cfg.h@2895@macro@DioConf_LCD_PORT_NUM",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DioConf_LCD_PORT_NUM",
     "location": {
       "column": "9",
-      "line": "86",
+      "line": "88",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
     },
     "name": "DioConf_LCD_PORT_NUM",
@@ -2424,13 +3564,13 @@
     "scope": null
   },
   {
-    "ID": "c:Dio_Cfg.h@2947@macro@DioConf_LCD_RS_CHANNEL_ID_INDEX",
+    "ID": "c:Dio_Cfg.h@2941@macro@DioConf_LCD_RS_CHANNEL_ID_INDEX",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DioConf_LCD_RS_CHANNEL_ID_INDEX",
     "location": {
       "column": "9",
-      "line": "88",
+      "line": "90",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
     },
     "name": "DioConf_LCD_RS_CHANNEL_ID_INDEX",
@@ -2438,13 +3578,13 @@
     "scope": null
   },
   {
-    "ID": "c:Dio_Cfg.h@2999@macro@DioConf_LCD_RW_CHANNEL_ID_INDEX",
+    "ID": "c:Dio_Cfg.h@2993@macro@DioConf_LCD_RW_CHANNEL_ID_INDEX",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DioConf_LCD_RW_CHANNEL_ID_INDEX",
     "location": {
       "column": "9",
-      "line": "89",
+      "line": "91",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
     },
     "name": "DioConf_LCD_RW_CHANNEL_ID_INDEX",
@@ -2452,13 +3592,13 @@
     "scope": null
   },
   {
-    "ID": "c:Dio_Cfg.h@3051@macro@DioConf_LCD_EN_CHANNEL_ID_INDEX",
+    "ID": "c:Dio_Cfg.h@3045@macro@DioConf_LCD_EN_CHANNEL_ID_INDEX",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DioConf_LCD_EN_CHANNEL_ID_INDEX",
     "location": {
       "column": "9",
-      "line": "90",
+      "line": "92",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
     },
     "name": "DioConf_LCD_EN_CHANNEL_ID_INDEX",
@@ -2466,13 +3606,13 @@
     "scope": null
   },
   {
-    "ID": "c:Dio_Cfg.h@3105@macro@DioConf_LCD_RS_PORT_NUM",
+    "ID": "c:Dio_Cfg.h@3099@macro@DioConf_LCD_RS_PORT_NUM",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DioConf_LCD_RS_PORT_NUM",
     "location": {
       "column": "9",
-      "line": "92",
+      "line": "94",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
     },
     "name": "DioConf_LCD_RS_PORT_NUM",
@@ -2480,13 +3620,13 @@
     "scope": null
   },
   {
-    "ID": "c:Dio_Cfg.h@3154@macro@DioConf_LCD_RW_PORT_NUM",
+    "ID": "c:Dio_Cfg.h@3148@macro@DioConf_LCD_RW_PORT_NUM",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DioConf_LCD_RW_PORT_NUM",
     "location": {
       "column": "9",
-      "line": "93",
+      "line": "95",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
     },
     "name": "DioConf_LCD_RW_PORT_NUM",
@@ -2494,13 +3634,13 @@
     "scope": null
   },
   {
-    "ID": "c:Dio_Cfg.h@3203@macro@DioConf_LCD_EN_PORT_NUM",
+    "ID": "c:Dio_Cfg.h@3197@macro@DioConf_LCD_EN_PORT_NUM",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DioConf_LCD_EN_PORT_NUM",
     "location": {
       "column": "9",
-      "line": "94",
+      "line": "96",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
     },
     "name": "DioConf_LCD_EN_PORT_NUM",
@@ -2508,13 +3648,13 @@
     "scope": null
   },
   {
-    "ID": "c:Dio_Cfg.h@3254@macro@DioConf_LCD_RS_CHANNEL_NUM",
+    "ID": "c:Dio_Cfg.h@3248@macro@DioConf_LCD_RS_CHANNEL_NUM",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DioConf_LCD_RS_CHANNEL_NUM",
     "location": {
       "column": "9",
-      "line": "96",
+      "line": "98",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
     },
     "name": "DioConf_LCD_RS_CHANNEL_NUM",
@@ -2522,13 +3662,13 @@
     "scope": null
   },
   {
-    "ID": "c:Dio_Cfg.h@3301@macro@DioConf_LCD_RW_CHANNEL_NUM",
+    "ID": "c:Dio_Cfg.h@3295@macro@DioConf_LCD_RW_CHANNEL_NUM",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DioConf_LCD_RW_CHANNEL_NUM",
     "location": {
       "column": "9",
-      "line": "97",
+      "line": "99",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
     },
     "name": "DioConf_LCD_RW_CHANNEL_NUM",
@@ -2536,946 +3676,16 @@
     "scope": null
   },
   {
-    "ID": "c:Dio_Cfg.h@3348@macro@DioConf_LCD_EN_CHANNEL_NUM",
+    "ID": "c:Dio_Cfg.h@3342@macro@DioConf_LCD_EN_CHANNEL_NUM",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DioConf_LCD_EN_CHANNEL_NUM",
     "location": {
       "column": "9",
-      "line": "98",
+      "line": "100",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio_Cfg.h"
     },
     "name": "DioConf_LCD_EN_CHANNEL_NUM",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@335@macro@DIO_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_H",
-    "location": {
-      "column": "9",
-      "line": "13",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@390@macro@DIO_VENDOR_ID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_VENDOR_ID",
-    "location": {
-      "column": "9",
-      "line": "16",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_VENDOR_ID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@444@macro@DIO_MODULE_ID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_MODULE_ID",
-    "location": {
-      "column": "9",
-      "line": "19",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_MODULE_ID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@499@macro@DIO_INSTANCE_ID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_INSTANCE_ID",
-    "location": {
-      "column": "9",
-      "line": "22",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_INSTANCE_ID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@561@macro@DIO_SW_MAJOR_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_SW_MAJOR_VERSION",
-    "location": {
-      "column": "9",
-      "line": "27",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_SW_MAJOR_VERSION",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@605@macro@DIO_SW_MINOR_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_SW_MINOR_VERSION",
-    "location": {
-      "column": "9",
-      "line": "28",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_SW_MINOR_VERSION",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@649@macro@DIO_SW_PATCH_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_SW_PATCH_VERSION",
-    "location": {
-      "column": "9",
-      "line": "29",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_SW_PATCH_VERSION",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@726@macro@DIO_AR_RELEASE_MAJOR_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_AR_RELEASE_MAJOR_VERSION",
-    "location": {
-      "column": "9",
-      "line": "34",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_AR_RELEASE_MAJOR_VERSION",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@770@macro@DIO_AR_RELEASE_MINOR_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_AR_RELEASE_MINOR_VERSION",
-    "location": {
-      "column": "9",
-      "line": "35",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_AR_RELEASE_MINOR_VERSION",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@814@macro@DIO_AR_RELEASE_PATCH_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_AR_RELEASE_PATCH_VERSION",
-    "location": {
-      "column": "9",
-      "line": "36",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_AR_RELEASE_PATCH_VERSION",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@891@macro@DIO_INITIALIZED",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_INITIALIZED",
-    "location": {
-      "column": "9",
-      "line": "41",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_INITIALIZED",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@935@macro@DIO_NOT_INITIALIZED",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_NOT_INITIALIZED",
-    "location": {
-      "column": "9",
-      "line": "42",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_NOT_INITIALIZED",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@2488@macro@DIO_READ_CHANNEL_SID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_READ_CHANNEL_SID",
-    "location": {
-      "column": "9",
-      "line": "78",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_READ_CHANNEL_SID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@2581@macro@DIO_WRITE_CHANNEL_SID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_WRITE_CHANNEL_SID",
-    "location": {
-      "column": "9",
-      "line": "81",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_WRITE_CHANNEL_SID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@2670@macro@DIO_READ_PORT_SID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_READ_PORT_SID",
-    "location": {
-      "column": "9",
-      "line": "84",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_READ_PORT_SID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@2760@macro@DIO_WRITE_PORT_SID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_WRITE_PORT_SID",
-    "location": {
-      "column": "9",
-      "line": "87",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_WRITE_PORT_SID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@2858@macro@DIO_READ_CHANNEL_GROUP_SID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_READ_CHANNEL_GROUP_SID",
-    "location": {
-      "column": "9",
-      "line": "90",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_READ_CHANNEL_GROUP_SID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@2957@macro@DIO_WRITE_CHANNEL_GROUP_SID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_WRITE_CHANNEL_GROUP_SID",
-    "location": {
-      "column": "9",
-      "line": "93",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_WRITE_CHANNEL_GROUP_SID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@3051@macro@DIO_GET_VERSION_INFO_SID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_GET_VERSION_INFO_SID",
-    "location": {
-      "column": "9",
-      "line": "96",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_GET_VERSION_INFO_SID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@3143@macro@DIO_INIT_SID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_INIT_SID",
-    "location": {
-      "column": "9",
-      "line": "99",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_INIT_SID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@3235@macro@DIO_FLIP_CHANNEL_SID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_FLIP_CHANNEL_SID",
-    "location": {
-      "column": "9",
-      "line": "102",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_FLIP_CHANNEL_SID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@3574@macro@DIO_E_PARAM_INVALID_CHANNEL_ID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_E_PARAM_INVALID_CHANNEL_ID",
-    "location": {
-      "column": "9",
-      "line": "108",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_E_PARAM_INVALID_CHANNEL_ID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@3690@macro@DIO_E_PARAM_CONFIG",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_E_PARAM_CONFIG",
-    "location": {
-      "column": "9",
-      "line": "111",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_E_PARAM_CONFIG",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@3782@macro@DIO_E_PARAM_INVALID_PORT_ID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_E_PARAM_INVALID_PORT_ID",
-    "location": {
-      "column": "9",
-      "line": "114",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_E_PARAM_INVALID_PORT_ID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@3883@macro@DIO_E_PARAM_INVALID_GROUP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_E_PARAM_INVALID_GROUP",
-    "location": {
-      "column": "9",
-      "line": "117",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_E_PARAM_INVALID_GROUP",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@4060@macro@DIO_E_PARAM_POINTER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_E_PARAM_POINTER",
-    "location": {
-      "column": "9",
-      "line": "123",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_E_PARAM_POINTER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@4265@macro@DIO_E_UNINIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DIO_E_UNINIT",
-    "location": {
-      "column": "9",
-      "line": "129",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "DIO_E_UNINIT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@T@Dio_ChannelType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "uint8",
-    "location": {
-      "column": "15",
-      "line": "135",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_ChannelType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@T@Dio_PortType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "uint8",
-    "location": {
-      "column": "15",
-      "line": "138",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_PortType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@T@Dio_LevelType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "uint8",
-    "location": {
-      "column": "15",
-      "line": "141",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_LevelType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@T@Dio_PortLevelType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "uint8",
-    "location": {
-      "column": "15",
-      "line": "144",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_PortLevelType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SA@Dio_ChannelGroupType",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "147",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@Dio_ChannelGroupType@FI@mask",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "mask",
-        "location": {
-          "column": "9",
-          "line": "150",
-          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-        },
-        "name": "mask",
-        "origin": "user_include",
-        "scope": "_anonymous_Dio_h_147_9"
-      },
-      {
-        "ID": "c:@SA@Dio_ChannelGroupType@FI@offset",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "offset",
-        "location": {
-          "column": "9",
-          "line": "152",
-          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-        },
-        "name": "offset",
-        "origin": "user_include",
-        "scope": "_anonymous_Dio_h_147_9"
-      },
-      {
-        "ID": "c:@SA@Dio_ChannelGroupType@FI@PortIndex",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "PortIndex",
-        "location": {
-          "column": "16",
-          "line": "154",
-          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-        },
-        "name": "PortIndex",
-        "origin": "user_include",
-        "scope": "_anonymous_Dio_h_147_9"
-      }
-    ],
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@Dio_ChannelGroupType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct Dio_ChannelGroupType",
-    "location": {
-      "column": "3",
-      "line": "155",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_ChannelGroupType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SA@Dio_ConfigChannel",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "157",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@Dio_ConfigChannel@FI@Port_Num",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Port_Num",
-        "location": {
-          "column": "15",
-          "line": "160",
-          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-        },
-        "name": "Port_Num",
-        "origin": "user_include",
-        "scope": "_anonymous_Dio_h_157_9"
-      },
-      {
-        "ID": "c:@SA@Dio_ConfigChannel@FI@Ch_Num",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Ch_Num",
-        "location": {
-          "column": "18",
-          "line": "162",
-          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-        },
-        "name": "Ch_Num",
-        "origin": "user_include",
-        "scope": "_anonymous_Dio_h_157_9"
-      },
-      {
-        "ID": "c:@T@Dio_ConfigChannel",
-        "What": "TypedefDecl",
-        "defdec": "Def",
-        "display": "struct Dio_ConfigChannel",
-        "location": {
-          "column": "2",
-          "line": "163",
-          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-        },
-        "name": "Dio_ConfigChannel",
-        "origin": "user_include",
-        "scope": "_anonymous_Dio_h_157_9"
-      }
-    ],
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@Dio_ConfigType",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "Dio_ConfigType",
-    "location": {
-      "column": "16",
-      "line": "166",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "members": [
-      {
-        "ID": "c:@S@Dio_ConfigType@FI@Channels",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Channels",
-        "location": {
-          "column": "20",
-          "line": "168",
-          "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-        },
-        "name": "Channels",
-        "origin": "user_include",
-        "scope": "Dio_ConfigType"
-      }
-    ],
-    "name": "Dio_ConfigType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Dio.h@T@Dio_ConfigType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct Dio_ConfigType",
-    "location": {
-      "column": "3",
-      "line": "172",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_ConfigType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Dio_ReadPort",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "Dio_PortLevelType Dio_ReadPort(Dio_PortType)",
-    "location": {
-      "column": "19",
-      "line": "179",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_ReadPort",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Dio_WritePort",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Dio_WritePort(Dio_PortType, Dio_PortLevelType)",
-    "location": {
-      "column": "6",
-      "line": "182",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_WritePort",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Dio_WritePort",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Dio_WritePort(Dio_PortType, Dio_PortLevelType)",
-    "location": {
-      "column": "6",
-      "line": "182",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_WritePort",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Dio_ReadChannel",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "Dio_LevelType Dio_ReadChannel(Dio_ChannelType)",
-    "location": {
-      "column": "15",
-      "line": "185",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_ReadChannel",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Dio_ReadChannel",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "Dio_LevelType Dio_ReadChannel(Dio_ChannelType)",
-    "location": {
-      "column": "15",
-      "line": "185",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_ReadChannel",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Dio_WriteChannel",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Dio_WriteChannel(Dio_ChannelType, Dio_LevelType)",
-    "location": {
-      "column": "6",
-      "line": "188",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_WriteChannel",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Dio_WriteChannel",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Dio_WriteChannel(Dio_ChannelType, Dio_LevelType)",
-    "location": {
-      "column": "6",
-      "line": "188",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_WriteChannel",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Dio_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Dio_Init(const Dio_ConfigType *)",
-    "location": {
-      "column": "6",
-      "line": "191",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Dio_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Dio_Init(const Dio_ConfigType *)",
-    "location": {
-      "column": "6",
-      "line": "191",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Dio_FlipChannel",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "Dio_LevelType Dio_FlipChannel(Dio_ChannelType)",
-    "location": {
-      "column": "15",
-      "line": "195",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_FlipChannel",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Dio_FlipChannel",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "Dio_LevelType Dio_FlipChannel(Dio_ChannelType)",
-    "location": {
-      "column": "15",
-      "line": "195",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_FlipChannel",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Dio_ReadChannelGroup",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "Dio_PortLevelType Dio_ReadChannelGroup(const Dio_ChannelGroupType *)",
-    "location": {
-      "column": "19",
-      "line": "204",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_ReadChannelGroup",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Dio_WriteChannelGroup",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Dio_WriteChannelGroup(const Dio_ChannelGroupType *, Dio_PortLevelType)",
-    "location": {
-      "column": "6",
-      "line": "207",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_WriteChannelGroup",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@Dio_Configuration",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "Dio_Configuration",
-    "location": {
-      "column": "29",
-      "line": "215",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_Configuration",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@Dio_Configuration",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "Dio_Configuration",
-    "location": {
-      "column": "29",
-      "line": "215",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Dio.h"
-    },
-    "name": "Dio_Configuration",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Common_Macros.h@538@macro@COMMON_MACROS_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "COMMON_MACROS_H_",
-    "location": {
-      "column": "9",
-      "line": "23",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
-    },
-    "name": "COMMON_MACROS_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Common_Macros.h@1000@macro@SET_BIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SET_BIT",
-    "location": {
-      "column": "9",
-      "line": "35",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
-    },
-    "name": "SET_BIT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Common_Macros.h@1501@macro@CLEAR_BIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CLEAR_BIT",
-    "location": {
-      "column": "9",
-      "line": "50",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
-    },
-    "name": "CLEAR_BIT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Common_Macros.h@2034@macro@TOGGLE_BIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TOGGLE_BIT",
-    "location": {
-      "column": "9",
-      "line": "62",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
-    },
-    "name": "TOGGLE_BIT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Common_Macros.h@2591@macro@ROR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROR",
-    "location": {
-      "column": "9",
-      "line": "76",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
-    },
-    "name": "ROR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Common_Macros.h@3178@macro@ROL",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ROL",
-    "location": {
-      "column": "9",
-      "line": "90",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
-    },
-    "name": "ROL",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Common_Macros.h@3832@macro@IS_BIT_SET",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "IS_BIT_SET",
-    "location": {
-      "column": "9",
-      "line": "105",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
-    },
-    "name": "IS_BIT_SET",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Common_Macros.h@4473@macro@IS_BIT_CLEAR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "IS_BIT_CLEAR",
-    "location": {
-      "column": "9",
-      "line": "120",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Common_Macros.h"
-    },
-    "name": "IS_BIT_CLEAR",
     "origin": "user_include",
     "scope": null
   },
@@ -4820,7 +5030,7 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.c@6521@F@LCD_displayString@i",
+    "ID": "c:lcd.c@6527@F@LCD_displayString@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
@@ -4848,7 +5058,7 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.c@7116@F@LCD_moveCursor@lcd_memory_address",
+    "ID": "c:lcd.c@7122@F@LCD_moveCursor@lcd_memory_address",
     "What": "Variable",
     "defdec": "Def",
     "display": "lcd_memory_address",
@@ -4890,7 +5100,7 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.c@8601@F@LCD_displayStringRowColumn@i",
+    "ID": "c:lcd.c@8607@F@LCD_displayStringRowColumn@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
@@ -4918,7 +5128,7 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.c@9259@F@LCD_displayInteger@buff",
+    "ID": "c:lcd.c@9265@F@LCD_displayInteger@buff",
     "What": "Variable",
     "defdec": "Def",
     "display": "buff",
@@ -5212,62 +5422,6 @@
     "scope": null
   },
   {
-    "ID": "c:lcd_cfg.h@348@macro@LCD_CFG_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_CFG_H_",
-    "location": {
-      "column": "9",
-      "line": "13",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd_cfg.h"
-    },
-    "name": "LCD_CFG_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd_cfg.h@370@macro@LCD_FOUR_BIT_MODE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_FOUR_BIT_MODE",
-    "location": {
-      "column": "9",
-      "line": "15",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd_cfg.h"
-    },
-    "name": "LCD_FOUR_BIT_MODE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd_cfg.h@402@macro@LCD_EIGHT_BIT_MODE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_EIGHT_BIT_MODE",
-    "location": {
-      "column": "9",
-      "line": "16",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd_cfg.h"
-    },
-    "name": "LCD_EIGHT_BIT_MODE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd_cfg.h@502@macro@LCD_DATA_BITS_MODE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD_DATA_BITS_MODE",
-    "location": {
-      "column": "9",
-      "line": "20",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd_cfg.h"
-    },
-    "name": "LCD_DATA_BITS_MODE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:lcd.h@314@macro@LCD_H_",
     "What": "MacroDef",
     "defdec": "Def",
@@ -5338,13 +5492,27 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1039@macro@CLEAR_DISPLAY_SCREEN",
+    "ID": "c:lcd.h@872@macro@LCD_PTR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_PTR",
+    "location": {
+      "column": "9",
+      "line": "30",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
+    },
+    "name": "LCD_PTR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.h@1133@macro@CLEAR_DISPLAY_SCREEN",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "CLEAR_DISPLAY_SCREEN",
     "location": {
       "column": "9",
-      "line": "34",
+      "line": "38",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "CLEAR_DISPLAY_SCREEN",
@@ -5352,13 +5520,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1103@macro@RETURN_HOME",
+    "ID": "c:lcd.h@1197@macro@RETURN_HOME",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "RETURN_HOME",
     "location": {
       "column": "9",
-      "line": "35",
+      "line": "39",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "RETURN_HOME",
@@ -5366,13 +5534,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1167@macro@SHIFT_CURSOR_TO_LEFT",
+    "ID": "c:lcd.h@1261@macro@SHIFT_CURSOR_TO_LEFT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SHIFT_CURSOR_TO_LEFT",
     "location": {
       "column": "9",
-      "line": "36",
+      "line": "40",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "SHIFT_CURSOR_TO_LEFT",
@@ -5380,13 +5548,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1231@macro@SHIFT_DISPLAY_RIGHT",
+    "ID": "c:lcd.h@1325@macro@SHIFT_DISPLAY_RIGHT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SHIFT_DISPLAY_RIGHT",
     "location": {
       "column": "9",
-      "line": "37",
+      "line": "41",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "SHIFT_DISPLAY_RIGHT",
@@ -5394,13 +5562,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1295@macro@SHIFT_CURSOR_TO_RIGHT",
+    "ID": "c:lcd.h@1389@macro@SHIFT_CURSOR_TO_RIGHT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SHIFT_CURSOR_TO_RIGHT",
     "location": {
       "column": "9",
-      "line": "38",
+      "line": "42",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "SHIFT_CURSOR_TO_RIGHT",
@@ -5408,13 +5576,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1359@macro@SHIFT_DISPLAY_LEFT",
+    "ID": "c:lcd.h@1453@macro@SHIFT_DISPLAY_LEFT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SHIFT_DISPLAY_LEFT",
     "location": {
       "column": "9",
-      "line": "39",
+      "line": "43",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "SHIFT_DISPLAY_LEFT",
@@ -5422,13 +5590,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1423@macro@DISPLAY_OFF_CURSOR_OFF",
+    "ID": "c:lcd.h@1517@macro@DISPLAY_OFF_CURSOR_OFF",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DISPLAY_OFF_CURSOR_OFF",
     "location": {
       "column": "9",
-      "line": "40",
+      "line": "44",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "DISPLAY_OFF_CURSOR_OFF",
@@ -5436,13 +5604,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1487@macro@DISPLAY_OFF_CURSOR_ON",
+    "ID": "c:lcd.h@1581@macro@DISPLAY_OFF_CURSOR_ON",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DISPLAY_OFF_CURSOR_ON",
     "location": {
       "column": "9",
-      "line": "41",
+      "line": "45",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "DISPLAY_OFF_CURSOR_ON",
@@ -5450,13 +5618,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1551@macro@DISPLAY_ON_CURSOR_OFF",
+    "ID": "c:lcd.h@1645@macro@DISPLAY_ON_CURSOR_OFF",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DISPLAY_ON_CURSOR_OFF",
     "location": {
       "column": "9",
-      "line": "42",
+      "line": "46",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "DISPLAY_ON_CURSOR_OFF",
@@ -5464,13 +5632,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1615@macro@DISPLAY_ON_CURSOR_ON",
+    "ID": "c:lcd.h@1709@macro@DISPLAY_ON_CURSOR_ON",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DISPLAY_ON_CURSOR_ON",
     "location": {
       "column": "9",
-      "line": "43",
+      "line": "47",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "DISPLAY_ON_CURSOR_ON",
@@ -5478,13 +5646,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1679@macro@DISPLAY_ON_CURSOR_BLINKING",
+    "ID": "c:lcd.h@1773@macro@DISPLAY_ON_CURSOR_BLINKING",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "DISPLAY_ON_CURSOR_BLINKING",
     "location": {
       "column": "9",
-      "line": "44",
+      "line": "48",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "DISPLAY_ON_CURSOR_BLINKING",
@@ -5492,13 +5660,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1743@macro@SHIFT_CURSOR_POSITION_TO_LEFT",
+    "ID": "c:lcd.h@1837@macro@SHIFT_CURSOR_POSITION_TO_LEFT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SHIFT_CURSOR_POSITION_TO_LEFT",
     "location": {
       "column": "9",
-      "line": "45",
+      "line": "49",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "SHIFT_CURSOR_POSITION_TO_LEFT",
@@ -5506,13 +5674,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1807@macro@SHIFT_CURSOR_POSITION_TO_RIGHT",
+    "ID": "c:lcd.h@1901@macro@SHIFT_CURSOR_POSITION_TO_RIGHT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SHIFT_CURSOR_POSITION_TO_RIGHT",
     "location": {
       "column": "9",
-      "line": "46",
+      "line": "50",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "SHIFT_CURSOR_POSITION_TO_RIGHT",
@@ -5520,13 +5688,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1871@macro@SHIFT_ENTIRE_DISPLAY_TO_LEFT",
+    "ID": "c:lcd.h@1965@macro@SHIFT_ENTIRE_DISPLAY_TO_LEFT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SHIFT_ENTIRE_DISPLAY_TO_LEFT",
     "location": {
       "column": "9",
-      "line": "47",
+      "line": "51",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "SHIFT_ENTIRE_DISPLAY_TO_LEFT",
@@ -5534,13 +5702,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1935@macro@SHIFT_ENTIRE_DISPLAY_TO_RIGHT",
+    "ID": "c:lcd.h@2029@macro@SHIFT_ENTIRE_DISPLAY_TO_RIGHT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SHIFT_ENTIRE_DISPLAY_TO_RIGHT",
     "location": {
       "column": "9",
-      "line": "48",
+      "line": "52",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "SHIFT_ENTIRE_DISPLAY_TO_RIGHT",
@@ -5548,13 +5716,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@1999@macro@LCD_SET_CURSOR_LOCATION",
+    "ID": "c:lcd.h@2093@macro@LCD_SET_CURSOR_LOCATION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LCD_SET_CURSOR_LOCATION",
     "location": {
       "column": "9",
-      "line": "49",
+      "line": "53",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_SET_CURSOR_LOCATION",
@@ -5562,13 +5730,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@2063@macro@FORCE_CURSOR_TO_BEGINNING_OF_SECOND_LINE",
+    "ID": "c:lcd.h@2157@macro@FORCE_CURSOR_TO_BEGINNING_OF_SECOND_LINE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "FORCE_CURSOR_TO_BEGINNING_OF_SECOND_LINE",
     "location": {
       "column": "9",
-      "line": "50",
+      "line": "54",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "FORCE_CURSOR_TO_BEGINNING_OF_SECOND_LINE",
@@ -5576,13 +5744,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@2127@macro@LCD_TWO_LINES_EIGHT_BITS_MODE",
+    "ID": "c:lcd.h@2221@macro@LCD_TWO_LINES_EIGHT_BITS_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LCD_TWO_LINES_EIGHT_BITS_MODE",
     "location": {
       "column": "9",
-      "line": "51",
+      "line": "55",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_TWO_LINES_EIGHT_BITS_MODE",
@@ -5590,13 +5758,13 @@
     "scope": null
   },
   {
-    "ID": "c:lcd.h@2191@macro@LCD_TWO_LINES_FOUR_BITS_MODE",
+    "ID": "c:lcd.h@2285@macro@LCD_TWO_LINES_FOUR_BITS_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "LCD_TWO_LINES_FOUR_BITS_MODE",
     "location": {
       "column": "9",
-      "line": "52",
+      "line": "56",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_TWO_LINES_FOUR_BITS_MODE",
@@ -5610,7 +5778,7 @@
     "display": "void LCD_init(void)",
     "location": {
       "column": "6",
-      "line": "67",
+      "line": "71",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_init",
@@ -5624,7 +5792,7 @@
     "display": "void LCD_init(void)",
     "location": {
       "column": "6",
-      "line": "67",
+      "line": "71",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_init",
@@ -5638,7 +5806,7 @@
     "display": "void LCD_sendCommand(uint8)",
     "location": {
       "column": "6",
-      "line": "75",
+      "line": "79",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_sendCommand",
@@ -5652,7 +5820,7 @@
     "display": "void LCD_sendCommand(uint8)",
     "location": {
       "column": "6",
-      "line": "75",
+      "line": "79",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_sendCommand",
@@ -5666,7 +5834,7 @@
     "display": "void LCD_displayCharacter(uint8)",
     "location": {
       "column": "6",
-      "line": "83",
+      "line": "87",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_displayCharacter",
@@ -5680,7 +5848,7 @@
     "display": "void LCD_displayCharacter(uint8)",
     "location": {
       "column": "6",
-      "line": "83",
+      "line": "87",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_displayCharacter",
@@ -5694,7 +5862,7 @@
     "display": "void LCD_displayString(uint8 *)",
     "location": {
       "column": "6",
-      "line": "92",
+      "line": "96",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_displayString",
@@ -5708,7 +5876,7 @@
     "display": "void LCD_displayString(uint8 *)",
     "location": {
       "column": "6",
-      "line": "92",
+      "line": "96",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_displayString",
@@ -5722,7 +5890,7 @@
     "display": "void LCD_moveCursor(uint8, uint8)",
     "location": {
       "column": "6",
-      "line": "100",
+      "line": "104",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_moveCursor",
@@ -5736,7 +5904,7 @@
     "display": "void LCD_moveCursor(uint8, uint8)",
     "location": {
       "column": "6",
-      "line": "100",
+      "line": "104",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_moveCursor",
@@ -5750,7 +5918,7 @@
     "display": "void LCD_displayStringRowColumn(uint8, uint8, uint8 *)",
     "location": {
       "column": "6",
-      "line": "110",
+      "line": "114",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_displayStringRowColumn",
@@ -5764,7 +5932,7 @@
     "display": "void LCD_displayStringRowColumn(uint8, uint8, uint8 *)",
     "location": {
       "column": "6",
-      "line": "110",
+      "line": "114",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_displayStringRowColumn",
@@ -5778,7 +5946,7 @@
     "display": "void LCD_clearScreen(void)",
     "location": {
       "column": "6",
-      "line": "118",
+      "line": "122",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_clearScreen",
@@ -5792,7 +5960,7 @@
     "display": "void LCD_clearScreen(void)",
     "location": {
       "column": "6",
-      "line": "118",
+      "line": "122",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_clearScreen",
@@ -5806,7 +5974,7 @@
     "display": "void LCD_displayInteger(uint8)",
     "location": {
       "column": "6",
-      "line": "126",
+      "line": "130",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_displayInteger",
@@ -5820,7 +5988,7 @@
     "display": "void LCD_displayInteger(uint8)",
     "location": {
       "column": "6",
-      "line": "126",
+      "line": "130",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.h"
     },
     "name": "LCD_displayInteger",
@@ -7715,6 +7883,62 @@
     },
     "name": "counter",
     "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd_cfg.h@348@macro@LCD_CFG_H_",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_CFG_H_",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd_cfg.h"
+    },
+    "name": "LCD_CFG_H_",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd_cfg.h@370@macro@LCD_FOUR_BIT_MODE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_FOUR_BIT_MODE",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd_cfg.h"
+    },
+    "name": "LCD_FOUR_BIT_MODE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd_cfg.h@402@macro@LCD_EIGHT_BIT_MODE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_EIGHT_BIT_MODE",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd_cfg.h"
+    },
+    "name": "LCD_EIGHT_BIT_MODE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd_cfg.h@502@macro@LCD_DATA_BITS_MODE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD_DATA_BITS_MODE",
+    "location": {
+      "column": "9",
+      "line": "20",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd_cfg.h"
+    },
+    "name": "LCD_DATA_BITS_MODE",
+    "origin": "user_include",
     "scope": null
   },
   {

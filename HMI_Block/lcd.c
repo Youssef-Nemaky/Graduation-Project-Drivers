@@ -72,7 +72,7 @@ void LCD_sendCommand(uint8 command)
     Dio_WriteChannel(LCD_EN,STD_HIGH); 	/* Set EN */
 	Delay_Ms(1); /* A short delay of 1 ms */
 	Dio_WriteChannel(LCD_EN,STD_LOW);  /* Clear EN */
-	Delay_Ms(1) /* A short delay of 1 ms */
+	Delay_Ms(1); /* A short delay of 1 ms */
 
     /* Send the Lower Nibble */
 	Dio_WriteChannelGroup(LCD_PTR,command);
@@ -85,7 +85,7 @@ void LCD_sendCommand(uint8 command)
 	Dio_WriteChannel(LCD_EN,STD_HIGH); /* Set EN */
 	Delay_Ms(1); /* A short delay of 1 ms */
 	Dio_WriteChannel(LCD_EN,STD_LOW); /* Clear EN */
-	Delay_Ms(1) /* A short delay of 1 ms */
+	Delay_Ms(1); /* A short delay of 1 ms */
 
 #elif(LCD_DATA_BITS_MODE == LCD_EIGHT_BIT_MODE)
 	/* send the command to the LCD data pins */
@@ -129,7 +129,7 @@ void LCD_displayCharacter(uint8 data)
 	Dio_WriteChannelGroup(LCD_PTR,data);
 
     /* Writing Sequence */
-	Dio_WriteChannel(LCD_RS,HIGH); /* Set RS to select data register */
+	Dio_WriteChannel(LCD_RS,STD_HIGH); /* Set RS to select data register */
 	Dio_WriteChannel(LCD_RW,STD_LOW); /* Clear RW to write to the LCD */
 
     /* Send a pulse of HIGH to LOW on EN pin with a delay of 1 ms */

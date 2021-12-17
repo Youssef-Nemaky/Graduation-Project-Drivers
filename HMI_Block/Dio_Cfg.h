@@ -58,21 +58,23 @@
 /****************** Dio Group Channels Settings ******************/
 
 /* Number of the configured group channels */
-#define DIO_CONFIGURED_GROUP_CHANNELS        (0U) 
+#define DIO_CONFIGURED_GROUP_CHANNELS        (1U) 
+#define DioConf_LCD_GRP_INDEX               ((uint8)0)
 
 /* Channel Index in the array of structures of configured group channels in Dio_PBcfg.c */
-//#define DioConf_LCD_GRP_PTR                 (((&Dio_Configuration)->GroupChannels)+DioConf_LCD_GRP_INDEX)
+#define DioConf_LCD_GRP_PTR                 (((&Dio_Configuration)->GroupChannels)+DioConf_LCD_GRP_INDEX)
 
-//#define DioConf_LCD_GRP_INDEX               ((uint8)0)
 /* DIO Configured group channel Port ID's  */
 
-//#define DioConf_LCD_GRP_PORT_NUM                 ((Dio_PortType)GPIO_PORTF_ID) /* PORTF */
+#define DioConf_LCD_GRP_PORT_NUM                 ((Dio_PortType)GPIO_PORTB_ID) /* PORTF */
 
 /* DIO Configured group channel MASK */
-//#define DioConf_LCD_GRP_MASK                    ((uint8)0x0F) /* 4 Pins at the left */
+
+
+#define DioConf_LCD_GRP_MASK                    ((uint8)0x0F) /* 4 Pins at the left */
 
 /* DIO Configured group channel offset */
-//#define DioConf_LCD_GRP_OFFSET                  ((uint8)0)
+#define DioConf_LCD_GRP_OFFSET                  ((uint8)0)
 
 /* DIO Configuired group channel offset */
 
