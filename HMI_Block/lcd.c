@@ -47,9 +47,9 @@ void LCD_init(void)
     /* configure the LCD to be used in 8 bits mode */ 
     LCD_sendCommand(RETURN_HOME);
 	LCD_sendCommand(LCD_TWO_LINES_EIGHT_BITS_MODE); /* initialize the LCD 8 bit mode*/
-	LCD_sendCommand(CLEAR_DISPLAY_SCREEN);   /* Clear the LCD */
 #endif
 	LCD_sendCommand(DISPLAY_ON_CURSOR_BLINKING);  /* Display ON and Cursor OFF */
+	LCD_sendCommand(CLEAR_DISPLAY_SCREEN);   /* Clear the LCD */
 }
 
 /**************************************************************************************
