@@ -26,6 +26,10 @@
 #define LCD_RW  DioConf_LCD_RW_CHANNEL_ID_INDEX
 #define LCD_EN  DioConf_LCD_EN_CHANNEL_ID_INDEX
 
+#if (LCD_DATA_BITS_MODE == LCD_FOUR_BIT_MODE)
+#define LCD_PTR DioConf_LCD_GRP_PTR
+#endif
+
 /*
 ==============================================================================
 *                              LCD Commands 

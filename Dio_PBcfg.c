@@ -47,5 +47,6 @@ const Dio_ConfigType Dio_Configuration = {
                             DioConf_LCD_RW_PORT_NUM,DioConf_LCD_RW_CHANNEL_NUM,
                             DioConf_LCD_EN_PORT_NUM,DioConf_LCD_EN_CHANNEL_NUM,
 							/* Channel Groups - Mask, Offset, Port Number */
+                            DioConf_LCD_GRP_MASK,DioConf_LCD_GRP_OFFSET,DioConf_LCD_GRP_PORT_NUM
 				         };
 
