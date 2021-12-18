@@ -66,7 +66,7 @@
 
 /* DIO Configured group channel Port ID's  */
 
-#define DioConf_LCD_GRP_PORT_NUM                 ((Dio_PortType)GPIO_PORTB_ID) /* PORTF */
+#define DioConf_LCD_GRP_PORT_NUM                 ((Dio_PortType)GPIO_PORTC_ID) /* PORTF */
 
 /* DIO Configured group channel MASK */
 
@@ -85,7 +85,7 @@
 
 
 /* Dio Configuration for LCD */
-#define DioConf_LCD_PORT_NUM GPIO_PORTB_ID
+#define DioConf_LCD_PORT_NUM GPIO_PORTC_ID
 
 #define DioConf_LCD_RS_CHANNEL_ID_INDEX ((uint8)0)
 #define DioConf_LCD_RW_CHANNEL_ID_INDEX ((uint8)1)
