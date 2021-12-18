@@ -68,10 +68,10 @@ const Port_ConfigType Port_Configuration = {
     PORT_C, PORT_C_PIN_1, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
     PORT_C, PORT_C_PIN_2, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
     PORT_C, PORT_C_PIN_3, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_C, PORT_C_PIN_4, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_C, PORT_C_PIN_5, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_C, PORT_C_PIN_6, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_C, PORT_C_PIN_7, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_C, PORT_C_PIN_4, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_C, PORT_C_PIN_5, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_C, PORT_C_PIN_6, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_C, PORT_C_PIN_7, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
     
     /* PORT D pins*/
     PORT_D, PORT_D_PIN_0, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
