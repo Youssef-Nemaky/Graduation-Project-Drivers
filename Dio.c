@@ -186,25 +186,7 @@ Dio_LevelType Dio_ReadChannel(Dio_ChannelType ChannelId)
 		/* No Action Required */
 	}
 #endif
-    if(FALSE == error){
-        switch (Dio_PortChannels[ChannelId].Port_Num)
-        {
-        case GPIO_PORTA_ID:
-            Port_Ptr = &GPIO_PORTA_DATA_REG;
-            break;
-        case GPIO_PORTB_ID:
-            Port_Ptr = &GPIO_PORTB_DATA_REG;
-            break;
-        case GPIO_PORTC_ID:
-            Port_Ptr = &GPIO_PORTC_DATA_REG;
-        default:
-            break;
-        }
 
-        if(IS_BIT_SET(*Port_Ptr,Dio_PortChannels[ChannelId].Ch_Num)){
-
-        }
-    }
 	/* In-case there are no errors */
 	if(FALSE == error)
 	{

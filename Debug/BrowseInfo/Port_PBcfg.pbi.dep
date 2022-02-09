@@ -1,8 +1,8 @@
 D:\Embedded_non-stop\Graduation\ Project\Debug\BrowseInfo\Port_PBcfg.pbi: \
-  D:\Embedded_non-stop\Graduation\ Project\Port_PBcfg.c \
-  D:\Embedded_non-stop\Graduation\ Project\Port.h \
-  D:\Embedded_non-stop\Graduation\ Project\Std_Types.h \
-  D:\Embedded_non-stop\Graduation\ Project\Platform_Types.h \
-  D:\Embedded_non-stop\Graduation\ Project\Compiler.h \
+  D:\Embedded_non-stop\Graduation\ Project\Common_Macros.h \
   D:\Embedded_non-stop\Graduation\ Project\Port_Cfg.h \
-  D:\Embedded_non-stop\Graduation\ Project\Common_Macros.h
+  D:\Embedded_non-stop\Graduation\ Project\Compiler.h \
+  D:\Embedded_non-stop\Graduation\ Project\Platform_Types.h \
+  D:\Embedded_non-stop\Graduation\ Project\Std_Types.h \
+  D:\Embedded_non-stop\Graduation\ Project\Port.h \
+  D:\Embedded_non-stop\Graduation\ Project\Port_PBcfg.c
