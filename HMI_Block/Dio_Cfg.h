@@ -40,7 +40,7 @@
 /****************** Dio Channels Settings ******************/
 
 /* Number of the configured Dio Channels */
-#define DIO_CONFIGURED_CHANNLES              (3U)
+#define DIO_CONFIGURED_CHANNLES              (11U)
 
 /* Channel Index in the array of structures in Dio_PBcfg.c */
 //#define DioConf_LED1_CHANNEL_ID_INDEX        ((uint8)0x00)
@@ -98,5 +98,29 @@
 #define DioConf_LCD_RS_CHANNEL_NUM (GPIO_PA5)
 #define DioConf_LCD_RW_CHANNEL_NUM (GPIO_PA6)
 #define DioConf_LCD_EN_CHANNEL_NUM (GPIO_PA7)
+
+
+
+
+
+/* keypad */
+
+#define DioConf_KEPAD_ROW0_PORT_NUM ((Dio_PortType)GPIO_PORTB_ID)
+#define DioConf_KEPAD_ROW1_PORT_NUM ((Dio_PortType)GPIO_PORTB_ID)
+#define DioConf_KEPAD_ROW2_PORT_NUM ((Dio_PortType)GPIO_PORTB_ID)
+#define DioConf_KEPAD_ROW3_PORT_NUM ((Dio_PortType)GPIO_PORTB_ID)
+#define DioConf_KEPAD_COL0_PORT_NUM ((Dio_PortType)GPIO_PORTB_ID)
+#define DioConf_KEPAD_COL1_PORT_NUM ((Dio_PortType)GPIO_PORTB_ID)
+#define DioConf_KEPAD_COL2_PORT_NUM ((Dio_PortType)GPIO_PORTB_ID)
+#define DioConf_KEPAD_COL3_PORT_NUM ((Dio_PortType)GPIO_PORTB_ID)
+
+#define DioConf_KEYPAD_ROW0_CHANNEL_NUM ((uint8) 0)
+#define DioConf_KEYPAD_ROW1_CHANNEL_NUM ((uint8) 1)
+#define DioConf_KEYPAD_ROW2_CHANNEL_NUM ((uint8) 2)
+#define DioConf_KEYPAD_ROW3_CHANNEL_NUM ((uint8) 3)
+#define DioConf_KEYPAD_COL0_CHANNEL_NUM ((uint8) 4)
+#define DioConf_KEYPAD_COL1_CHANNEL_NUM ((uint8) 5)
+#define DioConf_KEYPAD_COL2_CHANNEL_NUM ((uint8) 6)
+#define DioConf_KEYPAD_COL3_CHANNEL_NUM ((uint8) 7)
 
 #endif /* DIO_CFG_H */

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>5</fileVersion>
-    <fileChecksum>3073900609</fileChecksum>
+    <fileChecksum>718979323</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
@@ -39,6 +39,9 @@
             <file>$PROJ_DIR$\Det.h</file>
             <file>$PROJ_DIR$\Dio_Cfg.h</file>
             <file>$PROJ_DIR$\Dio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\keypad.o</file>
+            <file>$PROJ_DIR$\keypad.c</file>
+            <file>$PROJ_DIR$\keypad.h</file>
         </outputs>
         <file>
             <name>[ROOT_NODE]</name>
@@ -60,7 +63,7 @@
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 2 10 0 11 28 4 9 5 6 1 7 24</file>
+                    <file> 2 10 0 11 28 4 9 5 6 1 34 7 24</file>
                 </tool>
             </inputs>
         </file>
@@ -120,7 +123,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 17 25 33 32 26 18 27 19 23 20 14</file>
+                    <file> 17 25 33 32 26 18 27 19 23 36 20 14</file>
                 </tool>
             </inputs>
         </file>
@@ -169,6 +172,25 @@
                 </tool>
             </inputs>
         </file>
+        <file>
+            <name>$PROJ_DIR$\keypad.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 34</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17 25 33 32 26 18 27 19 36 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
         <forcedrebuild>
             <name>[REBUILD_ALL]</name>
         </forcedrebuild>
