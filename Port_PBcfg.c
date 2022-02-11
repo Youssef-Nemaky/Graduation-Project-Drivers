@@ -44,7 +44,7 @@
 /* PB structure used with Port_Init API */
 const Port_ConfigType Port_Configuration = {
     /* PORT A pins*/
-    PORT_A, PORT_A_PIN_0, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_A, PORT_A_PIN_0, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
     PORT_A, PORT_A_PIN_1, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
     PORT_A, PORT_A_PIN_2, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
     PORT_A, PORT_A_PIN_3, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
@@ -54,10 +54,10 @@ const Port_ConfigType Port_Configuration = {
     PORT_A, PORT_A_PIN_7, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
 
     /* PORT B pins*/
-    PORT_B, PORT_B_PIN_0, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_B, PORT_B_PIN_1, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_B, PORT_B_PIN_2, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_B, PORT_B_PIN_3, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_B, PORT_B_PIN_0, PORT_PIN_IN, PORT_MODE_0, PULL_DOWN, STD_LOW, changeable, changeable,
+    PORT_B, PORT_B_PIN_1, PORT_PIN_IN, PORT_MODE_0, PULL_DOWN, STD_LOW, changeable, changeable,
+    PORT_B, PORT_B_PIN_2, PORT_PIN_IN, PORT_MODE_0, PULL_DOWN, STD_LOW, changeable, changeable,
+    PORT_B, PORT_B_PIN_3, PORT_PIN_IN, PORT_MODE_0, PULL_DOWN, STD_LOW, changeable, changeable,
     PORT_B, PORT_B_PIN_4, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
     PORT_B, PORT_B_PIN_5, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
     PORT_B, PORT_B_PIN_6, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
@@ -68,20 +68,20 @@ const Port_ConfigType Port_Configuration = {
     PORT_C, PORT_C_PIN_1, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
     PORT_C, PORT_C_PIN_2, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
     PORT_C, PORT_C_PIN_3, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_C, PORT_C_PIN_4, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_C, PORT_C_PIN_5, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_C, PORT_C_PIN_6, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_C, PORT_C_PIN_7, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_C, PORT_C_PIN_4, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_C, PORT_C_PIN_5, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_C, PORT_C_PIN_6, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_C, PORT_C_PIN_7, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
     
     /* PORT D pins*/
-    PORT_D, PORT_D_PIN_0, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_D, PORT_D_PIN_1, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_D, PORT_D_PIN_2, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_D, PORT_D_PIN_3, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_D, PORT_D_PIN_4, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_D, PORT_D_PIN_5, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_D, PORT_D_PIN_6, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_D, PORT_D_PIN_7, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_D, PORT_D_PIN_0, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_D, PORT_D_PIN_1, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_D, PORT_D_PIN_2, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_D, PORT_D_PIN_3, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_D, PORT_D_PIN_4, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_D, PORT_D_PIN_5, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_D, PORT_D_PIN_6, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_D, PORT_D_PIN_7, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
     
     /* PORT E pins*/
     PORT_E, PORT_E_PIN_0, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
@@ -94,9 +94,9 @@ const Port_ConfigType Port_Configuration = {
     
     /* PORT F pins*/
     PORT_F, PORT_F_PIN_0, PORT_PIN_IN,  PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_F, PORT_F_PIN_1, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_F, PORT_F_PIN_2, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_F, PORT_F_PIN_3, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
-    PORT_F, PORT_F_PIN_4, PORT_PIN_IN,  PORT_MODE_0, PULL_UP, STD_HIGH, changeable, changeable
+    PORT_F, PORT_F_PIN_1, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_F, PORT_F_PIN_2, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_F, PORT_F_PIN_3, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable,
+    PORT_F, PORT_F_PIN_4, PORT_PIN_IN,  PORT_MODE_0, STD_OFF, STD_LOW, changeable, changeable
 };
 

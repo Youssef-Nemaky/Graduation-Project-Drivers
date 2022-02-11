@@ -46,6 +46,14 @@ const Dio_ConfigType Dio_Configuration = {
 				            DioConf_LCD_RS_PORT_NUM,DioConf_LCD_RS_CHANNEL_NUM,
                             DioConf_LCD_RW_PORT_NUM,DioConf_LCD_RW_CHANNEL_NUM,
                             DioConf_LCD_EN_PORT_NUM,DioConf_LCD_EN_CHANNEL_NUM,
+                            DioConf_KEPAD_ROW0_PORT_NUM,DioConf_KEYPAD_ROW0_CHANNEL_NUM,
+                            DioConf_KEPAD_ROW1_PORT_NUM,DioConf_KEYPAD_ROW1_CHANNEL_NUM,
+                            DioConf_KEPAD_ROW2_PORT_NUM,DioConf_KEYPAD_ROW2_CHANNEL_NUM,
+                            DioConf_KEPAD_ROW3_PORT_NUM,DioConf_KEYPAD_ROW3_CHANNEL_NUM,
+                            DioConf_KEPAD_COL0_PORT_NUM,DioConf_KEYPAD_COL0_CHANNEL_NUM,
+                            DioConf_KEPAD_COL1_PORT_NUM,DioConf_KEYPAD_COL1_CHANNEL_NUM,
+                            DioConf_KEPAD_COL2_PORT_NUM,DioConf_KEYPAD_COL2_CHANNEL_NUM,
+                            DioConf_KEPAD_COL3_PORT_NUM,DioConf_KEYPAD_COL3_CHANNEL_NUM,
 							/* Channel Groups - Mask, Offset, Port Number */
                             DioConf_LCD_GRP_MASK,DioConf_LCD_GRP_OFFSET,DioConf_LCD_GRP_PORT_NUM
 				         };

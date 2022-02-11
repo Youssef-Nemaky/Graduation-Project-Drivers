@@ -2137,6 +2137,12 @@
         <name>$PROJ_DIR$\Dio_Regs.h</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\keypad.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\keypad.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\lcd.c</name>
     </file>
     <file>
