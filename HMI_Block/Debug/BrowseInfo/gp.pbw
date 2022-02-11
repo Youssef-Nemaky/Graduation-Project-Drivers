@@ -5054,13 +5054,71 @@
     "scope": null
   },
   {
+    "ID": "c:@EA@Port_OpenDrainMode",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@Port_OpenDrainMode@OPEN_DRAIN_OFF",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "OPEN_DRAIN_OFF",
+        "location": {
+          "column": "5",
+          "line": "180",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
+        },
+        "name": "OPEN_DRAIN_OFF",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@Port_OpenDrainMode@OPEN_DRAIN_ON",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "OPEN_DRAIN_ON",
+        "location": {
+          "column": "21",
+          "line": "180",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
+        },
+        "name": "OPEN_DRAIN_ON",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "179",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@Port_OpenDrainMode",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum Port_OpenDrainMode",
+    "location": {
+      "column": "3",
+      "line": "181",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
+    },
+    "name": "Port_OpenDrainMode",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@SA@Port_ConfigPin",
     "What": "Struct",
     "defdec": "Def",
     "display": "",
     "location": {
       "column": "9",
-      "line": "193",
+      "line": "196",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "members": [
@@ -5071,12 +5129,12 @@
         "display": "port_num",
         "location": {
           "column": "19",
-          "line": "194",
+          "line": "197",
           "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
         },
         "name": "port_num",
         "origin": "user_include",
-        "scope": "_anonymous_Port_h_193_9"
+        "scope": "_anonymous_Port_h_196_9"
       },
       {
         "ID": "c:@SA@Port_ConfigPin@FI@pin_num",
@@ -5085,12 +5143,12 @@
         "display": "pin_num",
         "location": {
           "column": "18",
-          "line": "195",
+          "line": "198",
           "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
         },
         "name": "pin_num",
         "origin": "user_include",
-        "scope": "_anonymous_Port_h_193_9"
+        "scope": "_anonymous_Port_h_196_9"
       },
       {
         "ID": "c:@SA@Port_ConfigPin@FI@pin_direction",
@@ -5099,12 +5157,12 @@
         "display": "pin_direction",
         "location": {
           "column": "27",
-          "line": "196",
+          "line": "199",
           "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
         },
         "name": "pin_direction",
         "origin": "user_include",
-        "scope": "_anonymous_Port_h_193_9"
+        "scope": "_anonymous_Port_h_196_9"
       },
       {
         "ID": "c:@SA@Port_ConfigPin@FI@pin_mode",
@@ -5113,12 +5171,12 @@
         "display": "pin_mode",
         "location": {
           "column": "22",
-          "line": "197",
+          "line": "200",
           "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
         },
         "name": "pin_mode",
         "origin": "user_include",
-        "scope": "_anonymous_Port_h_193_9"
+        "scope": "_anonymous_Port_h_196_9"
       },
       {
         "ID": "c:@SA@Port_ConfigPin@FI@pin_internal_resistor",
@@ -5127,12 +5185,12 @@
         "display": "pin_internal_resistor",
         "location": {
           "column": "27",
-          "line": "198",
+          "line": "201",
           "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
         },
         "name": "pin_internal_resistor",
         "origin": "user_include",
-        "scope": "_anonymous_Port_h_193_9"
+        "scope": "_anonymous_Port_h_196_9"
       },
       {
         "ID": "c:@SA@Port_ConfigPin@FI@pin_initial_value",
@@ -5141,12 +5199,12 @@
         "display": "pin_initial_value",
         "location": {
           "column": "11",
-          "line": "199",
+          "line": "202",
           "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
         },
         "name": "pin_initial_value",
         "origin": "user_include",
-        "scope": "_anonymous_Port_h_193_9"
+        "scope": "_anonymous_Port_h_196_9"
       },
       {
         "ID": "c:@SA@Port_ConfigPin@FI@pin_direction_changeability",
@@ -5155,12 +5213,12 @@
         "display": "pin_direction_changeability",
         "location": {
           "column": "24",
-          "line": "200",
+          "line": "203",
           "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
         },
         "name": "pin_direction_changeability",
         "origin": "user_include",
-        "scope": "_anonymous_Port_h_193_9"
+        "scope": "_anonymous_Port_h_196_9"
       },
       {
         "ID": "c:@SA@Port_ConfigPin@FI@pin_mode_changeability",
@@ -5169,12 +5227,26 @@
         "display": "pin_mode_changeability",
         "location": {
           "column": "24",
-          "line": "201",
+          "line": "204",
           "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
         },
         "name": "pin_mode_changeability",
         "origin": "user_include",
-        "scope": "_anonymous_Port_h_193_9"
+        "scope": "_anonymous_Port_h_196_9"
+      },
+      {
+        "ID": "c:@SA@Port_ConfigPin@FI@open_drain_mode",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "open_drain_mode",
+        "location": {
+          "column": "24",
+          "line": "205",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
+        },
+        "name": "open_drain_mode",
+        "origin": "user_include",
+        "scope": "_anonymous_Port_h_196_9"
       }
     ],
     "name": "",
@@ -5188,7 +5260,7 @@
     "display": "struct Port_ConfigPin",
     "location": {
       "column": "3",
-      "line": "202",
+      "line": "206",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "name": "Port_ConfigPin",
@@ -5202,7 +5274,7 @@
     "display": "",
     "location": {
       "column": "9",
-      "line": "204",
+      "line": "208",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "members": [
@@ -5213,12 +5285,12 @@
         "display": "Pins",
         "location": {
           "column": "20",
-          "line": "205",
+          "line": "209",
           "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
         },
         "name": "Pins",
         "origin": "user_include",
-        "scope": "_anonymous_Port_h_204_9"
+        "scope": "_anonymous_Port_h_208_9"
       }
     ],
     "name": "",
@@ -5232,7 +5304,7 @@
     "display": "struct Port_ConfigType",
     "location": {
       "column": "3",
-      "line": "206",
+      "line": "210",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "name": "Port_ConfigType",
@@ -5246,7 +5318,7 @@
     "display": "void Port_Init(const Port_ConfigType *)",
     "location": {
       "column": "6",
-      "line": "213",
+      "line": "217",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "name": "Port_Init",
@@ -5260,7 +5332,7 @@
     "display": "void Port_Init(const Port_ConfigType *)",
     "location": {
       "column": "6",
-      "line": "213",
+      "line": "217",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "name": "Port_Init",
@@ -5274,7 +5346,7 @@
     "display": "void Port_SetPinDirection(Port_PinType, Port_PinDirectionType)",
     "location": {
       "column": "6",
-      "line": "217",
+      "line": "221",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "name": "Port_SetPinDirection",
@@ -5288,7 +5360,7 @@
     "display": "void Port_SetPinDirection(Port_PinType, Port_PinDirectionType)",
     "location": {
       "column": "6",
-      "line": "217",
+      "line": "221",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "name": "Port_SetPinDirection",
@@ -5302,7 +5374,7 @@
     "display": "void Port_RefreshPortDirection(void)",
     "location": {
       "column": "6",
-      "line": "221",
+      "line": "225",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "name": "Port_RefreshPortDirection",
@@ -5316,7 +5388,7 @@
     "display": "void Port_RefreshPortDirection(void)",
     "location": {
       "column": "6",
-      "line": "221",
+      "line": "225",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "name": "Port_RefreshPortDirection",
@@ -5330,7 +5402,7 @@
     "display": "void Port_GetVersionInfo(Std_VersionInfoType *)",
     "location": {
       "column": "6",
-      "line": "225",
+      "line": "229",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "name": "Port_GetVersionInfo",
@@ -5344,7 +5416,7 @@
     "display": "void Port_SetPinMode(Port_PinType, Port_PinModeType)",
     "location": {
       "column": "6",
-      "line": "230",
+      "line": "234",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "name": "Port_SetPinMode",
@@ -5358,7 +5430,7 @@
     "display": "void Port_SetPinMode(Port_PinType, Port_PinModeType)",
     "location": {
       "column": "6",
-      "line": "230",
+      "line": "234",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "name": "Port_SetPinMode",
@@ -5372,7 +5444,7 @@
     "display": "Port_Configuration",
     "location": {
       "column": "30",
-      "line": "237",
+      "line": "241",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "name": "Port_Configuration",
@@ -5386,7 +5458,7 @@
     "display": "Port_Configuration",
     "location": {
       "column": "30",
-      "line": "237",
+      "line": "241",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.h"
     },
     "name": "Port_Configuration",
@@ -7416,7 +7488,7 @@
     "display": "void Port_SetPinDirection(Port_PinType, Port_PinDirectionType)",
     "location": {
       "column": "6",
-      "line": "219",
+      "line": "232",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.c"
     },
     "name": "Port_SetPinDirection",
@@ -7424,13 +7496,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@11589@F@Port_SetPinDirection@PortGpio_Ptr",
+    "ID": "c:Port.c@12425@F@Port_SetPinDirection@PortGpio_Ptr",
     "What": "Variable",
     "defdec": "Def",
     "display": "PortGpio_Ptr",
     "location": {
       "column": "23",
-      "line": "222",
+      "line": "235",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.c"
     },
     "name": "PortGpio_Ptr",
@@ -7438,13 +7510,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@11746@F@Port_SetPinDirection@delay",
+    "ID": "c:Port.c@12582@F@Port_SetPinDirection@delay",
     "What": "Variable",
     "defdec": "Def",
     "display": "delay",
     "location": {
       "column": "21",
-      "line": "225",
+      "line": "238",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.c"
     },
     "name": "delay",
@@ -7452,13 +7524,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@11864@F@Port_SetPinDirection@error",
+    "ID": "c:Port.c@12700@F@Port_SetPinDirection@error",
     "What": "Variable",
     "defdec": "Def",
     "display": "error",
     "location": {
       "column": "13",
-      "line": "228",
+      "line": "241",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.c"
     },
     "name": "error",
@@ -7472,7 +7544,7 @@
     "display": "void Port_RefreshPortDirection(void)",
     "location": {
       "column": "6",
-      "line": "349",
+      "line": "362",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.c"
     },
     "name": "Port_RefreshPortDirection",
@@ -7480,13 +7552,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@16561@F@Port_RefreshPortDirection@pinsCounter",
+    "ID": "c:Port.c@17397@F@Port_RefreshPortDirection@pinsCounter",
     "What": "Variable",
     "defdec": "Def",
     "display": "pinsCounter",
     "location": {
       "column": "18",
-      "line": "352",
+      "line": "365",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.c"
     },
     "name": "pinsCounter",
@@ -7494,13 +7566,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@16660@F@Port_RefreshPortDirection@PortGpio_Ptr",
+    "ID": "c:Port.c@17496@F@Port_RefreshPortDirection@PortGpio_Ptr",
     "What": "Variable",
     "defdec": "Def",
     "display": "PortGpio_Ptr",
     "location": {
       "column": "23",
-      "line": "355",
+      "line": "368",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.c"
     },
     "name": "PortGpio_Ptr",
@@ -7508,13 +7580,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@16817@F@Port_RefreshPortDirection@delay",
+    "ID": "c:Port.c@17653@F@Port_RefreshPortDirection@delay",
     "What": "Variable",
     "defdec": "Def",
     "display": "delay",
     "location": {
       "column": "21",
-      "line": "358",
+      "line": "371",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.c"
     },
     "name": "delay",
@@ -7522,13 +7594,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@16935@F@Port_RefreshPortDirection@error",
+    "ID": "c:Port.c@17771@F@Port_RefreshPortDirection@error",
     "What": "Variable",
     "defdec": "Def",
     "display": "error",
     "location": {
       "column": "13",
-      "line": "361",
+      "line": "374",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.c"
     },
     "name": "error",
@@ -7542,7 +7614,7 @@
     "display": "void Dio_GetVersionInfo(Std_VersionInfoType *)",
     "location": {
       "column": "6",
-      "line": "464",
+      "line": "477",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.c"
     },
     "name": "Dio_GetVersionInfo",
@@ -7556,7 +7628,7 @@
     "display": "void Port_SetPinMode(Port_PinType, Port_PinModeType)",
     "location": {
       "column": "6",
-      "line": "504",
+      "line": "517",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.c"
     },
     "name": "Port_SetPinMode",
@@ -7564,13 +7636,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@23551@F@Port_SetPinMode@PortGpio_Ptr",
+    "ID": "c:Port.c@24387@F@Port_SetPinMode@PortGpio_Ptr",
     "What": "Variable",
     "defdec": "Def",
     "display": "PortGpio_Ptr",
     "location": {
       "column": "23",
-      "line": "507",
+      "line": "520",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.c"
     },
     "name": "PortGpio_Ptr",
@@ -7578,13 +7650,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@23708@F@Port_SetPinMode@delay",
+    "ID": "c:Port.c@24544@F@Port_SetPinMode@delay",
     "What": "Variable",
     "defdec": "Def",
     "display": "delay",
     "location": {
       "column": "21",
-      "line": "510",
+      "line": "523",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.c"
     },
     "name": "delay",
@@ -7592,13 +7664,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@23826@F@Port_SetPinMode@error",
+    "ID": "c:Port.c@24662@F@Port_SetPinMode@error",
     "What": "Variable",
     "defdec": "Def",
     "display": "error",
     "location": {
       "column": "13",
-      "line": "513",
+      "line": "526",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port.c"
     },
     "name": "error",
@@ -7844,13 +7916,27 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@1827@macro@SYSCTL_REGCGC2_REG",
+    "ID": "c:Port_Regs.h@1825@macro@PORT_OPEN_DRAIN_REG_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PORT_OPEN_DRAIN_REG_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
+    },
+    "name": "PORT_OPEN_DRAIN_REG_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Port_Regs.h@1911@macro@SYSCTL_REGCGC2_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SYSCTL_REGCGC2_REG",
     "location": {
       "column": "9",
-      "line": "37",
+      "line": "38",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "SYSCTL_REGCGC2_REG",
@@ -7858,13 +7944,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@1980@macro@GPIO_PORTA_ID",
+    "ID": "c:Port_Regs.h@2064@macro@GPIO_PORTA_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_ID",
     "location": {
       "column": "9",
-      "line": "40",
+      "line": "41",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PORTA_ID",
@@ -7872,13 +7958,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2041@macro@GPIO_PA0",
+    "ID": "c:Port_Regs.h@2125@macro@GPIO_PA0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA0",
     "location": {
       "column": "9",
-      "line": "42",
+      "line": "43",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PA0",
@@ -7886,13 +7972,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2096@macro@GPIO_PA1",
+    "ID": "c:Port_Regs.h@2180@macro@GPIO_PA1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA1",
     "location": {
       "column": "9",
-      "line": "43",
+      "line": "44",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PA1",
@@ -7900,13 +7986,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2151@macro@GPIO_PA2",
+    "ID": "c:Port_Regs.h@2235@macro@GPIO_PA2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA2",
     "location": {
       "column": "9",
-      "line": "44",
+      "line": "45",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PA2",
@@ -7914,13 +8000,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2206@macro@GPIO_PA3",
+    "ID": "c:Port_Regs.h@2290@macro@GPIO_PA3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA3",
     "location": {
       "column": "9",
-      "line": "45",
+      "line": "46",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PA3",
@@ -7928,13 +8014,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2261@macro@GPIO_PA4",
+    "ID": "c:Port_Regs.h@2345@macro@GPIO_PA4",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA4",
     "location": {
       "column": "9",
-      "line": "46",
+      "line": "47",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PA4",
@@ -7942,13 +8028,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2316@macro@GPIO_PA5",
+    "ID": "c:Port_Regs.h@2400@macro@GPIO_PA5",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA5",
     "location": {
       "column": "9",
-      "line": "47",
+      "line": "48",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PA5",
@@ -7956,13 +8042,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2371@macro@GPIO_PA6",
+    "ID": "c:Port_Regs.h@2455@macro@GPIO_PA6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA6",
     "location": {
       "column": "9",
-      "line": "48",
+      "line": "49",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PA6",
@@ -7970,13 +8056,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2426@macro@GPIO_PA7",
+    "ID": "c:Port_Regs.h@2510@macro@GPIO_PA7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA7",
     "location": {
       "column": "9",
-      "line": "49",
+      "line": "50",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PA7",
@@ -7984,13 +8070,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2496@macro@GPIO_PORTB_ID",
+    "ID": "c:Port_Regs.h@2580@macro@GPIO_PORTB_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_ID",
     "location": {
       "column": "9",
-      "line": "52",
+      "line": "53",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PORTB_ID",
@@ -7998,13 +8084,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2557@macro@GPIO_PB0",
+    "ID": "c:Port_Regs.h@2641@macro@GPIO_PB0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB0",
     "location": {
       "column": "9",
-      "line": "54",
+      "line": "55",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PB0",
@@ -8012,13 +8098,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2612@macro@GPIO_PB1",
+    "ID": "c:Port_Regs.h@2696@macro@GPIO_PB1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB1",
     "location": {
       "column": "9",
-      "line": "55",
+      "line": "56",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PB1",
@@ -8026,13 +8112,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2667@macro@GPIO_PB2",
+    "ID": "c:Port_Regs.h@2751@macro@GPIO_PB2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB2",
     "location": {
       "column": "9",
-      "line": "56",
+      "line": "57",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PB2",
@@ -8040,13 +8126,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2722@macro@GPIO_PB3",
+    "ID": "c:Port_Regs.h@2806@macro@GPIO_PB3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB3",
     "location": {
       "column": "9",
-      "line": "57",
+      "line": "58",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PB3",
@@ -8054,13 +8140,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2777@macro@GPIO_PB4",
+    "ID": "c:Port_Regs.h@2861@macro@GPIO_PB4",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB4",
     "location": {
       "column": "9",
-      "line": "58",
+      "line": "59",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PB4",
@@ -8068,13 +8154,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2832@macro@GPIO_PB5",
+    "ID": "c:Port_Regs.h@2916@macro@GPIO_PB5",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB5",
     "location": {
       "column": "9",
-      "line": "59",
+      "line": "60",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PB5",
@@ -8082,13 +8168,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2887@macro@GPIO_PB6",
+    "ID": "c:Port_Regs.h@2971@macro@GPIO_PB6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB6",
     "location": {
       "column": "9",
-      "line": "60",
+      "line": "61",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PB6",
@@ -8096,13 +8182,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2942@macro@GPIO_PB7",
+    "ID": "c:Port_Regs.h@3026@macro@GPIO_PB7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB7",
     "location": {
       "column": "9",
-      "line": "61",
+      "line": "62",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PB7",
@@ -8110,13 +8196,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3012@macro@GPIO_PORTC_ID",
+    "ID": "c:Port_Regs.h@3096@macro@GPIO_PORTC_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_ID",
     "location": {
       "column": "9",
-      "line": "64",
+      "line": "65",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PORTC_ID",
@@ -8124,13 +8210,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3073@macro@GPIO_PC0",
+    "ID": "c:Port_Regs.h@3157@macro@GPIO_PC0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC0",
     "location": {
       "column": "9",
-      "line": "66",
+      "line": "67",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PC0",
@@ -8138,13 +8224,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3128@macro@GPIO_PC1",
+    "ID": "c:Port_Regs.h@3212@macro@GPIO_PC1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC1",
     "location": {
       "column": "9",
-      "line": "67",
+      "line": "68",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PC1",
@@ -8152,13 +8238,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3183@macro@GPIO_PC2",
+    "ID": "c:Port_Regs.h@3267@macro@GPIO_PC2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC2",
     "location": {
       "column": "9",
-      "line": "68",
+      "line": "69",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PC2",
@@ -8166,13 +8252,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3238@macro@GPIO_PC3",
+    "ID": "c:Port_Regs.h@3322@macro@GPIO_PC3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC3",
     "location": {
       "column": "9",
-      "line": "69",
+      "line": "70",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PC3",
@@ -8180,13 +8266,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3293@macro@GPIO_PC4",
+    "ID": "c:Port_Regs.h@3377@macro@GPIO_PC4",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC4",
     "location": {
       "column": "9",
-      "line": "70",
+      "line": "71",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PC4",
@@ -8194,13 +8280,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3348@macro@GPIO_PC5",
+    "ID": "c:Port_Regs.h@3432@macro@GPIO_PC5",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC5",
     "location": {
       "column": "9",
-      "line": "71",
+      "line": "72",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PC5",
@@ -8208,13 +8294,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3403@macro@GPIO_PC6",
+    "ID": "c:Port_Regs.h@3487@macro@GPIO_PC6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC6",
     "location": {
       "column": "9",
-      "line": "72",
+      "line": "73",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PC6",
@@ -8222,13 +8308,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3458@macro@GPIO_PC7",
+    "ID": "c:Port_Regs.h@3542@macro@GPIO_PC7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC7",
     "location": {
       "column": "9",
-      "line": "73",
+      "line": "74",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PC7",
@@ -8236,13 +8322,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3528@macro@GPIO_PORTD_ID",
+    "ID": "c:Port_Regs.h@3612@macro@GPIO_PORTD_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_ID",
     "location": {
       "column": "9",
-      "line": "76",
+      "line": "77",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PORTD_ID",
@@ -8250,13 +8336,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3589@macro@GPIO_PD0",
+    "ID": "c:Port_Regs.h@3673@macro@GPIO_PD0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD0",
     "location": {
       "column": "9",
-      "line": "78",
+      "line": "79",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PD0",
@@ -8264,13 +8350,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3644@macro@GPIO_PD1",
+    "ID": "c:Port_Regs.h@3728@macro@GPIO_PD1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD1",
     "location": {
       "column": "9",
-      "line": "79",
+      "line": "80",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PD1",
@@ -8278,13 +8364,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3699@macro@GPIO_PD2",
+    "ID": "c:Port_Regs.h@3783@macro@GPIO_PD2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD2",
     "location": {
       "column": "9",
-      "line": "80",
+      "line": "81",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PD2",
@@ -8292,13 +8378,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3754@macro@GPIO_PD3",
+    "ID": "c:Port_Regs.h@3838@macro@GPIO_PD3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD3",
     "location": {
       "column": "9",
-      "line": "81",
+      "line": "82",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PD3",
@@ -8306,13 +8392,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3809@macro@GPIO_PD4",
+    "ID": "c:Port_Regs.h@3893@macro@GPIO_PD4",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD4",
     "location": {
       "column": "9",
-      "line": "82",
+      "line": "83",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PD4",
@@ -8320,13 +8406,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3864@macro@GPIO_PD5",
+    "ID": "c:Port_Regs.h@3948@macro@GPIO_PD5",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD5",
     "location": {
       "column": "9",
-      "line": "83",
+      "line": "84",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PD5",
@@ -8334,13 +8420,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3919@macro@GPIO_PD6",
+    "ID": "c:Port_Regs.h@4003@macro@GPIO_PD6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD6",
     "location": {
       "column": "9",
-      "line": "84",
+      "line": "85",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PD6",
@@ -8348,13 +8434,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3974@macro@GPIO_PD7",
+    "ID": "c:Port_Regs.h@4058@macro@GPIO_PD7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD7",
     "location": {
       "column": "9",
-      "line": "85",
+      "line": "86",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PD7",
@@ -8362,13 +8448,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4044@macro@GPIO_PORTE_ID",
+    "ID": "c:Port_Regs.h@4128@macro@GPIO_PORTE_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_ID",
     "location": {
       "column": "9",
-      "line": "88",
+      "line": "89",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PORTE_ID",
@@ -8376,13 +8462,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4105@macro@GPIO_PE0",
+    "ID": "c:Port_Regs.h@4189@macro@GPIO_PE0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE0",
     "location": {
       "column": "9",
-      "line": "90",
+      "line": "91",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PE0",
@@ -8390,13 +8476,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4160@macro@GPIO_PE1",
+    "ID": "c:Port_Regs.h@4244@macro@GPIO_PE1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE1",
     "location": {
       "column": "9",
-      "line": "91",
+      "line": "92",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PE1",
@@ -8404,13 +8490,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4215@macro@GPIO_PE2",
+    "ID": "c:Port_Regs.h@4299@macro@GPIO_PE2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE2",
     "location": {
       "column": "9",
-      "line": "92",
+      "line": "93",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PE2",
@@ -8418,13 +8504,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4270@macro@GPIO_PE3",
+    "ID": "c:Port_Regs.h@4354@macro@GPIO_PE3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE3",
     "location": {
       "column": "9",
-      "line": "93",
+      "line": "94",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PE3",
@@ -8432,13 +8518,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4325@macro@GPIO_PE4",
+    "ID": "c:Port_Regs.h@4409@macro@GPIO_PE4",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE4",
     "location": {
       "column": "9",
-      "line": "94",
+      "line": "95",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PE4",
@@ -8446,13 +8532,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4380@macro@GPIO_PE5",
+    "ID": "c:Port_Regs.h@4464@macro@GPIO_PE5",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE5",
     "location": {
       "column": "9",
-      "line": "95",
+      "line": "96",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PE5",
@@ -8460,13 +8546,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4435@macro@GPIO_PE6",
+    "ID": "c:Port_Regs.h@4519@macro@GPIO_PE6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE6",
     "location": {
       "column": "9",
-      "line": "96",
+      "line": "97",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PE6",
@@ -8474,13 +8560,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4490@macro@GPIO_PE7",
+    "ID": "c:Port_Regs.h@4574@macro@GPIO_PE7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE7",
     "location": {
       "column": "9",
-      "line": "97",
+      "line": "98",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PE7",
@@ -8488,13 +8574,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4560@macro@GPIO_PORTF_ID",
+    "ID": "c:Port_Regs.h@4644@macro@GPIO_PORTF_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_ID",
     "location": {
       "column": "9",
-      "line": "100",
+      "line": "101",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PORTF_ID",
@@ -8502,13 +8588,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4621@macro@GPIO_PF0",
+    "ID": "c:Port_Regs.h@4705@macro@GPIO_PF0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF0",
     "location": {
       "column": "9",
-      "line": "102",
+      "line": "103",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PF0",
@@ -8516,13 +8602,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4676@macro@GPIO_PF1",
+    "ID": "c:Port_Regs.h@4760@macro@GPIO_PF1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF1",
     "location": {
       "column": "9",
-      "line": "103",
+      "line": "104",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PF1",
@@ -8530,13 +8616,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4731@macro@GPIO_PF2",
+    "ID": "c:Port_Regs.h@4815@macro@GPIO_PF2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF2",
     "location": {
       "column": "9",
-      "line": "104",
+      "line": "105",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PF2",
@@ -8544,13 +8630,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4786@macro@GPIO_PF3",
+    "ID": "c:Port_Regs.h@4870@macro@GPIO_PF3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF3",
     "location": {
       "column": "9",
-      "line": "105",
+      "line": "106",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PF3",
@@ -8558,13 +8644,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4841@macro@GPIO_PF4",
+    "ID": "c:Port_Regs.h@4925@macro@GPIO_PF4",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF4",
     "location": {
       "column": "9",
-      "line": "106",
+      "line": "107",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PF4",
@@ -8572,13 +8658,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4896@macro@GPIO_PF5",
+    "ID": "c:Port_Regs.h@4980@macro@GPIO_PF5",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF5",
     "location": {
       "column": "9",
-      "line": "107",
+      "line": "108",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PF5",
@@ -8586,13 +8672,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4951@macro@GPIO_PF6",
+    "ID": "c:Port_Regs.h@5035@macro@GPIO_PF6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF6",
     "location": {
       "column": "9",
-      "line": "108",
+      "line": "109",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PF6",
@@ -8600,13 +8686,13 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@5006@macro@GPIO_PF7",
+    "ID": "c:Port_Regs.h@5090@macro@GPIO_PF7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF7",
     "location": {
       "column": "9",
-      "line": "109",
+      "line": "110",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Port_Regs.h"
     },
     "name": "GPIO_PF7",

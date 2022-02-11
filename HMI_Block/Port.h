@@ -175,7 +175,10 @@ typedef enum
     unchangeable, changeable
 }Port_Changeability;
 
-
+/* Possible modes for open-drain */
+typedef enum{
+    OPEN_DRAIN_OFF, OPEN_DRAIN_ON
+} Port_OpenDrainMode;
 
 
 /* Description: Structure to configure each individual PIN:
@@ -199,6 +202,7 @@ typedef struct{
     uint8 pin_initial_value;
     Port_Changeability pin_direction_changeability; 
     Port_Changeability pin_mode_changeability;
+    Port_OpenDrainMode open_drain_mode;
 } Port_ConfigPin;
 
 typedef struct{

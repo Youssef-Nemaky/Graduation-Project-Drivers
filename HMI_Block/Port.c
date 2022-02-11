@@ -197,6 +197,19 @@ void Port_Init(const Port_ConfigType * ConfigPtr)
             {
                 /* Do Nothing */
             }
+
+            /* Open-Drain Setting */
+            if (Port_PinsPtr[pinsCounter].open_drain_mode == OPEN_DRAIN_ON) {
+                /* Set the corresponding bit in the open-drain register to enable open drain functionality of the pin */
+                SET_BIT(*(volatile uint32*)((volatile uint8*)PortGpio_Ptr + PORT_OPEN_DRAIN_REG_OFFSET), Port_PinsPtr[pinsCounter].pin_num);
+            }
+            else if (Port_PinsPtr[pinsCounter].open_drain_mode == OPEN_DRAIN_OFF) {
+                /* Clear the corresponding bit in the open-drain register to disable open drain functionality of the pin */
+                CLEAR_BIT(*(volatile uint32*)((volatile uint8*)PortGpio_Ptr + PORT_OPEN_DRAIN_REG_OFFSET), Port_PinsPtr[pinsCounter].pin_num);
+            }
+            else {
+                /* Do Nothing */
+            }
         }
         Port_Status = PORT_INITIALIZED;
     }
