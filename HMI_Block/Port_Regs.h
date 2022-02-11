@@ -33,6 +33,7 @@
 #define PORT_COMMIT_REG_OFFSET            (0x524) /* Commit Register Offset */
 #define PORT_ANALOG_MODE_SEL_REG_OFFSET   (0x528) /* Analog Mode Selection Register Offset */
 #define PORT_CTL_REG_OFFSET               (0x52C) /* Control Register Offset */
+#define PORT_OPEN_DRAIN_REG_OFFSET        (0x50C) /* Open drain Register Offset */
 
 #define SYSCTL_REGCGC2_REG                (*((volatile uint32 *)0x400FE108)) /* system control register to enable clock for the ports */
 
