@@ -3,7 +3,9 @@
         "dio.h": "c",
         "common_macros.h": "c",
         "port.h": "c",
-        "keypad.h": "c"
+        "keypad.h": "c",
+        "platform_types.h": "c",
+        "compiler.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
