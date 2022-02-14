@@ -2,8 +2,8 @@
 #include "Port.h"
 #include "lcd.h"
 #include "keypad.h"
+#include "sw_delay.h"
 
-void Delay_Ms(unsigned long long n);
 int main()
 {
     uint8 pressedKey = 0;
