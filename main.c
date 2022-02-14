@@ -10,8 +10,15 @@ int main()
     Dio_Init(&Dio_Configuration);
     Port_Init(&Port_Configuration);
     LCD_init();
+    LCD_displayString("TESTING");
+    Delay_Ms(2000);
+    LCD_clearScreen();
+    LCD_displayInteger(9845);
+    Delay_Ms(2000);
+    LCD_clearScreen();
     LCD_displayCharacter('S');
-    Delay_Ms(5000);
+    Delay_Ms(2000);
+    LCD_clearScreen();
     while(1){
 
         /*

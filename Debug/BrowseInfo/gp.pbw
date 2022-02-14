@@ -1616,20 +1616,6 @@
     "scope": null
   },
   {
-    "ID": "c:Std_Types.h@345@macro@STD_TYPES_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_TYPES_H",
-    "location": {
-      "column": "9",
-      "line": "14",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Std_Types.h"
-    },
-    "name": "STD_TYPES_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:std_types.h@345@macro@STD_TYPES_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -1644,16 +1630,16 @@
     "scope": null
   },
   {
-    "ID": "c:Std_Types.h@463@macro@STD_TYPES_VENDOR_ID",
+    "ID": "c:Std_Types.h@345@macro@STD_TYPES_H",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "STD_TYPES_VENDOR_ID",
+    "display": "STD_TYPES_H",
     "location": {
       "column": "9",
-      "line": "20",
+      "line": "14",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Std_Types.h"
     },
-    "name": "STD_TYPES_VENDOR_ID",
+    "name": "STD_TYPES_H",
     "origin": "user_include",
     "scope": null
   },
@@ -1672,16 +1658,16 @@
     "scope": null
   },
   {
-    "ID": "c:Std_Types.h@569@macro@STD_TYPES_SW_MAJOR_VERSION",
+    "ID": "c:Std_Types.h@463@macro@STD_TYPES_VENDOR_ID",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "STD_TYPES_SW_MAJOR_VERSION",
+    "display": "STD_TYPES_VENDOR_ID",
     "location": {
       "column": "9",
-      "line": "25",
+      "line": "20",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Std_Types.h"
     },
-    "name": "STD_TYPES_SW_MAJOR_VERSION",
+    "name": "STD_TYPES_VENDOR_ID",
     "origin": "user_include",
     "scope": null
   },
@@ -1700,16 +1686,16 @@
     "scope": null
   },
   {
-    "ID": "c:Std_Types.h@636@macro@STD_TYPES_SW_MINOR_VERSION",
+    "ID": "c:Std_Types.h@569@macro@STD_TYPES_SW_MAJOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "STD_TYPES_SW_MINOR_VERSION",
+    "display": "STD_TYPES_SW_MAJOR_VERSION",
     "location": {
       "column": "9",
-      "line": "26",
+      "line": "25",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Std_Types.h"
     },
-    "name": "STD_TYPES_SW_MINOR_VERSION",
+    "name": "STD_TYPES_SW_MAJOR_VERSION",
     "origin": "user_include",
     "scope": null
   },
@@ -1728,7 +1714,21 @@
     "scope": null
   },
   {
-    "ID": "c:Std_Types.h@703@macro@STD_TYPES_SW_PATCH_VERSION",
+    "ID": "c:Std_Types.h@636@macro@STD_TYPES_SW_MINOR_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_TYPES_SW_MINOR_VERSION",
+    "location": {
+      "column": "9",
+      "line": "26",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Std_Types.h"
+    },
+    "name": "STD_TYPES_SW_MINOR_VERSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@703@macro@STD_TYPES_SW_PATCH_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "STD_TYPES_SW_PATCH_VERSION",
@@ -1742,7 +1742,7 @@
     "scope": null
   },
   {
-    "ID": "c:std_types.h@703@macro@STD_TYPES_SW_PATCH_VERSION",
+    "ID": "c:Std_Types.h@703@macro@STD_TYPES_SW_PATCH_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "STD_TYPES_SW_PATCH_VERSION",
@@ -1784,20 +1784,6 @@
     "scope": null
   },
   {
-    "ID": "c:Std_Types.h@874@macro@STD_TYPES_AR_RELEASE_MINOR_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_TYPES_AR_RELEASE_MINOR_VERSION",
-    "location": {
-      "column": "9",
-      "line": "33",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Std_Types.h"
-    },
-    "name": "STD_TYPES_AR_RELEASE_MINOR_VERSION",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:std_types.h@874@macro@STD_TYPES_AR_RELEASE_MINOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
@@ -1812,16 +1798,16 @@
     "scope": null
   },
   {
-    "ID": "c:Std_Types.h@941@macro@STD_TYPES_AR_RELEASE_PATCH_VERSION",
+    "ID": "c:Std_Types.h@874@macro@STD_TYPES_AR_RELEASE_MINOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "STD_TYPES_AR_RELEASE_PATCH_VERSION",
+    "display": "STD_TYPES_AR_RELEASE_MINOR_VERSION",
     "location": {
       "column": "9",
-      "line": "34",
+      "line": "33",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Std_Types.h"
     },
-    "name": "STD_TYPES_AR_RELEASE_PATCH_VERSION",
+    "name": "STD_TYPES_AR_RELEASE_MINOR_VERSION",
     "origin": "user_include",
     "scope": null
   },
@@ -1840,7 +1826,21 @@
     "scope": null
   },
   {
-    "ID": "c:Std_Types.h@T@Std_ReturnType",
+    "ID": "c:Std_Types.h@941@macro@STD_TYPES_AR_RELEASE_PATCH_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_TYPES_AR_RELEASE_PATCH_VERSION",
+    "location": {
+      "column": "9",
+      "line": "34",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Std_Types.h"
+    },
+    "name": "STD_TYPES_AR_RELEASE_PATCH_VERSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@T@Std_ReturnType",
     "What": "Typedef",
     "defdec": "Def",
     "display": "uint8",
@@ -1854,7 +1854,7 @@
     "scope": null
   },
   {
-    "ID": "c:std_types.h@T@Std_ReturnType",
+    "ID": "c:Std_Types.h@T@Std_ReturnType",
     "What": "Typedef",
     "defdec": "Def",
     "display": "uint8",
@@ -1968,20 +1968,6 @@
     "scope": null
   },
   {
-    "ID": "c:Std_Types.h@1411@macro@STD_HIGH",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_HIGH",
-    "location": {
-      "column": "9",
-      "line": "54",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Std_Types.h"
-    },
-    "name": "STD_HIGH",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:std_types.h@1411@macro@STD_HIGH",
     "What": "MacroDef",
     "defdec": "Def",
@@ -1996,16 +1982,16 @@
     "scope": null
   },
   {
-    "ID": "c:Std_Types.h@1470@macro@STD_LOW",
+    "ID": "c:Std_Types.h@1411@macro@STD_HIGH",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "STD_LOW",
+    "display": "STD_HIGH",
     "location": {
       "column": "9",
-      "line": "55",
+      "line": "54",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Std_Types.h"
     },
-    "name": "STD_LOW",
+    "name": "STD_HIGH",
     "origin": "user_include",
     "scope": null
   },
@@ -2024,7 +2010,21 @@
     "scope": null
   },
   {
-    "ID": "c:Std_Types.h@1530@macro@STD_ACTIVE",
+    "ID": "c:Std_Types.h@1470@macro@STD_LOW",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_LOW",
+    "location": {
+      "column": "9",
+      "line": "55",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Std_Types.h"
+    },
+    "name": "STD_LOW",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@1530@macro@STD_ACTIVE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "STD_ACTIVE",
@@ -2038,7 +2038,7 @@
     "scope": null
   },
   {
-    "ID": "c:std_types.h@1530@macro@STD_ACTIVE",
+    "ID": "c:Std_Types.h@1530@macro@STD_ACTIVE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "STD_ACTIVE",
@@ -2080,20 +2080,6 @@
     "scope": null
   },
   {
-    "ID": "c:Std_Types.h@1662@macro@STD_ON",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STD_ON",
-    "location": {
-      "column": "9",
-      "line": "60",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Std_Types.h"
-    },
-    "name": "STD_ON",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:std_types.h@1662@macro@STD_ON",
     "What": "MacroDef",
     "defdec": "Def",
@@ -2108,7 +2094,21 @@
     "scope": null
   },
   {
-    "ID": "c:Std_Types.h@1719@macro@STD_OFF",
+    "ID": "c:Std_Types.h@1662@macro@STD_ON",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STD_ON",
+    "location": {
+      "column": "9",
+      "line": "60",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Std_Types.h"
+    },
+    "name": "STD_ON",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:std_types.h@1719@macro@STD_OFF",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "STD_OFF",
@@ -2122,7 +2122,7 @@
     "scope": null
   },
   {
-    "ID": "c:std_types.h@1719@macro@STD_OFF",
+    "ID": "c:Std_Types.h@1719@macro@STD_OFF",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "STD_OFF",
@@ -4246,6 +4246,1166 @@
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Det.c"
     },
     "name": "Det_ReportError",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:external_eeprom_cfg.h@379@macro@EXTERNAL_EEPROM_CFG_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "EXTERNAL_EEPROM_CFG_H",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom_cfg.h"
+    },
+    "name": "EXTERNAL_EEPROM_CFG_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:external_eeprom_cfg.h@428@macro@EXTERNAL_EEPROM_I2C_MODULE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "EXTERNAL_EEPROM_I2C_MODULE",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom_cfg.h"
+    },
+    "name": "EXTERNAL_EEPROM_I2C_MODULE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c_Regs.h@354@macro@I2C_REGS_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_REGS_H",
+    "location": {
+      "column": "9",
+      "line": "12",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_Regs.h"
+    },
+    "name": "I2C_REGS_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c_Regs.h@374@macro@I2C_0_BASE_ADDRESS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_0_BASE_ADDRESS",
+    "location": {
+      "column": "9",
+      "line": "14",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_Regs.h"
+    },
+    "name": "I2C_0_BASE_ADDRESS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c_Regs.h@440@macro@I2C_1_BASE_ADDRESS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_1_BASE_ADDRESS",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_Regs.h"
+    },
+    "name": "I2C_1_BASE_ADDRESS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c_Regs.h@506@macro@I2C_2_BASE_ADDRESS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_2_BASE_ADDRESS",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_Regs.h"
+    },
+    "name": "I2C_2_BASE_ADDRESS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c_Regs.h@572@macro@I2C_3_BASE_ADDRESS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_3_BASE_ADDRESS",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_Regs.h"
+    },
+    "name": "I2C_3_BASE_ADDRESS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c_Regs.h@640@macro@I2C_MASTER_CONFIG_REG_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_MASTER_CONFIG_REG_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "20",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_Regs.h"
+    },
+    "name": "I2C_MASTER_CONFIG_REG_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c_Regs.h@729@macro@I2C_MASTER_TIMER_PERIOD_REG_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_MASTER_TIMER_PERIOD_REG_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_Regs.h"
+    },
+    "name": "I2C_MASTER_TIMER_PERIOD_REG_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c_Regs.h@827@macro@I2C_MASTER_SLAVE_ADDRESS_REG_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_MASTER_SLAVE_ADDRESS_REG_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "22",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_Regs.h"
+    },
+    "name": "I2C_MASTER_SLAVE_ADDRESS_REG_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c_Regs.h@924@macro@I2C_MASTER_DATA_REG_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_MASTER_DATA_REG_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "23",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_Regs.h"
+    },
+    "name": "I2C_MASTER_DATA_REG_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c_Regs.h@1012@macro@I2C_MASTER_CONTROL_STATUS_REG_OFFSET",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_MASTER_CONTROL_STATUS_REG_OFFSET",
+    "location": {
+      "column": "9",
+      "line": "24",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_Regs.h"
+    },
+    "name": "I2C_MASTER_CONTROL_STATUS_REG_OFFSET",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c_Regs.h@1111@macro@I2C_MFE_BIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_MFE_BIT",
+    "location": {
+      "column": "9",
+      "line": "26",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_Regs.h"
+    },
+    "name": "I2C_MFE_BIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c_Regs.h@1173@macro@I2C_SFE_BIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_SFE_BIT",
+    "location": {
+      "column": "9",
+      "line": "27",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_Regs.h"
+    },
+    "name": "I2C_SFE_BIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c_Regs.h@1320@macro@I2C_RCGC_REG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_RCGC_REG",
+    "location": {
+      "column": "9",
+      "line": "30",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_Regs.h"
+    },
+    "name": "I2C_RCGC_REG",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:external_eeprom.h@346@macro@EXTERNAL_EEPROM_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "EXTERNAL_EEPROM_H",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
+    },
+    "name": "EXTERNAL_EEPROM_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:external_eeprom.h@932@macro@ERROR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ERROR",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
+    },
+    "name": "ERROR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:external_eeprom.h@972@macro@SUCCESS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SUCCESS",
+    "location": {
+      "column": "9",
+      "line": "29",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
+    },
+    "name": "SUCCESS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EEPROM_writeByte",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 EEPROM_writeByte(uint16, uint8)",
+    "location": {
+      "column": "7",
+      "line": "35",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
+    },
+    "name": "EEPROM_writeByte",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EEPROM_readByte",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 EEPROM_readByte(uint16, uint8 *)",
+    "location": {
+      "column": "7",
+      "line": "36",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
+    },
+    "name": "EEPROM_readByte",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.h@334@macro@I2C_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_H",
+    "location": {
+      "column": "9",
+      "line": "12",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2C_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.h@1040@macro@NUMBER_OF_I2C_MODULES",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NUMBER_OF_I2C_MODULES",
+    "location": {
+      "column": "9",
+      "line": "31",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "NUMBER_OF_I2C_MODULES",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.h@1078@macro@I2C_STANDARD_MODE_FREQUENCY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C_STANDARD_MODE_FREQUENCY",
+    "location": {
+      "column": "9",
+      "line": "35",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2C_STANDARD_MODE_FREQUENCY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.h@1124@macro@SCL_LP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SCL_LP",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "SCL_LP",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.h@1144@macro@SCL_HP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SCL_HP",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "SCL_HP",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@I2c_ModuleNumber",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@I2c_ModuleNumber@I2C_MODULE_0",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "I2C_MODULE_0",
+        "location": {
+          "column": "5",
+          "line": "40",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "I2C_MODULE_0",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@I2c_ModuleNumber@I2C_MODULE_1",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "I2C_MODULE_1",
+        "location": {
+          "column": "5",
+          "line": "41",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "I2C_MODULE_1",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@I2c_ModuleNumber@I2C_MODULE_2",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "I2C_MODULE_2",
+        "location": {
+          "column": "5",
+          "line": "42",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "I2C_MODULE_2",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@I2c_ModuleNumber@I2C_MODULE_3",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "I2C_MODULE_3",
+        "location": {
+          "column": "5",
+          "line": "43",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "I2C_MODULE_3",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "39",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@I2c_ModuleNumber",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum I2c_ModuleNumber",
+    "location": {
+      "column": "3",
+      "line": "44",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_ModuleNumber",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@I2c_StatusMode",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@I2c_StatusMode@I2C_DISABLED",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "I2C_DISABLED",
+        "location": {
+          "column": "5",
+          "line": "47",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "I2C_DISABLED",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@I2c_StatusMode@I2C_ENABLED",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "I2C_ENABLED",
+        "location": {
+          "column": "19",
+          "line": "47",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "I2C_ENABLED",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "46",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@I2c_StatusMode",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum I2c_StatusMode",
+    "location": {
+      "column": "3",
+      "line": "48",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_StatusMode",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@I2c_SpeedMode",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@I2c_SpeedMode@I2C_STANDARD_SPEED_MODE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "I2C_STANDARD_SPEED_MODE",
+        "location": {
+          "column": "5",
+          "line": "51",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "I2C_STANDARD_SPEED_MODE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@I2c_SpeedMode@I2C_FAST_SPEED_MODE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "I2C_FAST_SPEED_MODE",
+        "location": {
+          "column": "5",
+          "line": "52",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "I2C_FAST_SPEED_MODE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@I2c_SpeedMode@I2C_FAST_SPEED_PLUS_MODE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "I2C_FAST_SPEED_PLUS_MODE",
+        "location": {
+          "column": "5",
+          "line": "53",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "I2C_FAST_SPEED_PLUS_MODE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@I2c_SpeedMode@I2C_HIGH_SPEED_MODE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "I2C_HIGH_SPEED_MODE",
+        "location": {
+          "column": "5",
+          "line": "54",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "I2C_HIGH_SPEED_MODE",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "50",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@I2c_SpeedMode",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum I2c_SpeedMode",
+    "location": {
+      "column": "3",
+      "line": "55",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_SpeedMode",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@I2c_MasterSlaveMode",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@I2c_MasterSlaveMode@I2C_MASTER_MODE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "I2C_MASTER_MODE",
+        "location": {
+          "column": "5",
+          "line": "58",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "I2C_MASTER_MODE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@I2c_MasterSlaveMode@I2C_SLAVE_MODE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "I2C_SLAVE_MODE",
+        "location": {
+          "column": "5",
+          "line": "59",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "I2C_SLAVE_MODE",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "57",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@I2c_MasterSlaveMode",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum I2c_MasterSlaveMode",
+    "location": {
+      "column": "3",
+      "line": "60",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_MasterSlaveMode",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@I2c_ConfigModule",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "62",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@I2c_ConfigModule@FI@i2c_status_mode",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "i2c_status_mode",
+        "location": {
+          "column": "20",
+          "line": "63",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "i2c_status_mode",
+        "origin": "user_include",
+        "scope": "_anonymous_I2c_h_62_9"
+      },
+      {
+        "ID": "c:@SA@I2c_ConfigModule@FI@i2c_master_slave_mode",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "i2c_master_slave_mode",
+        "location": {
+          "column": "25",
+          "line": "64",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "i2c_master_slave_mode",
+        "origin": "user_include",
+        "scope": "_anonymous_I2c_h_62_9"
+      },
+      {
+        "ID": "c:@SA@I2c_ConfigModule@FI@i2c_speed_mode",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "i2c_speed_mode",
+        "location": {
+          "column": "19",
+          "line": "65",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "i2c_speed_mode",
+        "origin": "user_include",
+        "scope": "_anonymous_I2c_h_62_9"
+      }
+    ],
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@I2c_ConfigModule",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct I2c_ConfigModule",
+    "location": {
+      "column": "3",
+      "line": "66",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_ConfigModule",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@I2c_ConfigType",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "68",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@I2c_ConfigType@FI@I2cModules",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "I2cModules",
+        "location": {
+          "column": "22",
+          "line": "69",
+          "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+        },
+        "name": "I2cModules",
+        "origin": "user_include",
+        "scope": "_anonymous_I2c_h_68_9"
+      }
+    ],
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@I2c_ConfigType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct I2c_ConfigType",
+    "location": {
+      "column": "3",
+      "line": "70",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_ConfigType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2c_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void I2c_Init(const I2c_ConfigType *)",
+    "location": {
+      "column": "6",
+      "line": "77",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2c_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void I2c_Init(const I2c_ConfigType *)",
+    "location": {
+      "column": "6",
+      "line": "77",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2c_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void I2c_Init(const I2c_ConfigType *)",
+    "location": {
+      "column": "6",
+      "line": "78",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2c_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void I2c_Init(const I2c_ConfigType *)",
+    "location": {
+      "column": "6",
+      "line": "78",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2c_WriteByte",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 I2c_WriteByte(I2c_ModuleNumber, uint8, uint8, uint8)",
+    "location": {
+      "column": "7",
+      "line": "79",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_WriteByte",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2c_WriteByte",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 I2c_WriteByte(I2c_ModuleNumber, uint8, uint8, uint8)",
+    "location": {
+      "column": "7",
+      "line": "79",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_WriteByte",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2c_ReadByte",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 I2c_ReadByte(I2c_ModuleNumber, uint8, uint8, uint8 *)",
+    "location": {
+      "column": "7",
+      "line": "80",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_ReadByte",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2c_ReadByte",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 I2c_ReadByte(I2c_ModuleNumber, uint8, uint8, uint8 *)",
+    "location": {
+      "column": "7",
+      "line": "80",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_ReadByte",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@I2c_Confiuration",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "I2c_Confiuration",
+    "location": {
+      "column": "29",
+      "line": "89",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_Confiuration",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@I2c_Confiuration",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "I2c_Confiuration",
+    "location": {
+      "column": "29",
+      "line": "89",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.h"
+    },
+    "name": "I2c_Confiuration",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EEPROM_writeByte",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8 EEPROM_writeByte(uint16, uint8)",
+    "location": {
+      "column": "7",
+      "line": "19",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.c"
+    },
+    "name": "EEPROM_writeByte",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:external_eeprom.c@646@F@EEPROM_writeByte@writeOperationStatus",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "writeOperationStatus",
+    "location": {
+      "column": "11",
+      "line": "20",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.c"
+    },
+    "name": "writeOperationStatus",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EEPROM_readByte",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8 EEPROM_readByte(uint16, uint8 *)",
+    "location": {
+      "column": "7",
+      "line": "27",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.c"
+    },
+    "name": "EEPROM_readByte",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:external_eeprom.c@951@F@EEPROM_readByte@readOperationStatus",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "readOperationStatus",
+    "location": {
+      "column": "11",
+      "line": "28",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.c"
+    },
+    "name": "readOperationStatus",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.c@375@macro@F_CPU",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "F_CPU",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.c"
+    },
+    "name": "F_CPU",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.c@I2c_ModulePtr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "I2c_ModulePtr",
+    "location": {
+      "column": "33",
+      "line": "19",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.c"
+    },
+    "name": "I2c_ModulePtr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.c@F@I2C_wait_till_done",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int I2C_wait_till_done(uint32 *)",
+    "location": {
+      "column": "12",
+      "line": "20",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.c"
+    },
+    "name": "I2C_wait_till_done",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2c_Init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void I2c_Init(const I2c_ConfigType *)",
+    "location": {
+      "column": "6",
+      "line": "35",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.c"
+    },
+    "name": "I2c_Init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.c@1179@F@I2c_Init@i2cCounter",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i2cCounter",
+    "location": {
+      "column": "11",
+      "line": "38",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.c"
+    },
+    "name": "i2cCounter",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.c@1205@F@I2c_Init@masterTimerPerioidValue",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "masterTimerPerioidValue",
+    "location": {
+      "column": "12",
+      "line": "39",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.c"
+    },
+    "name": "masterTimerPerioidValue",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.c@1245@F@I2c_Init@i2cModuleBasePtr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i2cModuleBasePtr",
+    "location": {
+      "column": "23",
+      "line": "40",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.c"
+    },
+    "name": "i2cModuleBasePtr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2c_WriteByte",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8 I2c_WriteByte(I2c_ModuleNumber, uint8, uint8, uint8)",
+    "location": {
+      "column": "7",
+      "line": "116",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.c"
+    },
+    "name": "I2c_WriteByte",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.c@4502@F@I2c_WriteByte@i2cModuleBasePtr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i2cModuleBasePtr",
+    "location": {
+      "column": "23",
+      "line": "117",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.c"
+    },
+    "name": "i2cModuleBasePtr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.c@4553@F@I2c_WriteByte@error",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "error",
+    "location": {
+      "column": "11",
+      "line": "118",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.c"
+    },
+    "name": "error",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@I2c_ReadByte",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8 I2c_ReadByte(I2c_ModuleNumber, uint8, uint8, uint8 *)",
+    "location": {
+      "column": "7",
+      "line": "157",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.c"
+    },
+    "name": "I2c_ReadByte",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.c@5974@F@I2c_ReadByte@i2cModuleBasePtr",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i2cModuleBasePtr",
+    "location": {
+      "column": "23",
+      "line": "158",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.c"
+    },
+    "name": "i2cModuleBasePtr",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.c@6025@F@I2c_ReadByte@error",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "error",
+    "location": {
+      "column": "11",
+      "line": "159",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.c"
+    },
+    "name": "error",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.c@F@I2C_wait_till_done",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int I2C_wait_till_done(uint32 *)",
+    "location": {
+      "column": "12",
+      "line": "197",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c.c"
+    },
+    "name": "I2C_wait_till_done",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@I2c_Confiuration",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "I2c_Confiuration",
+    "location": {
+      "column": "22",
+      "line": "14",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_PBcfg.c"
+    },
+    "name": "I2c_Confiuration",
     "origin": "project_file",
     "scope": null
   },
@@ -6516,6 +7676,202 @@
     "scope": null
   },
   {
+    "ID": "c:@F@LCD_init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LCD_init(void)",
+    "location": {
+      "column": "6",
+      "line": "31",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
+    },
+    "name": "LCD_init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LCD_sendCommand",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LCD_sendCommand(uint8)",
+    "location": {
+      "column": "6",
+      "line": "54",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
+    },
+    "name": "LCD_sendCommand",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LCD_displayCharacter",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LCD_displayCharacter(uint8)",
+    "location": {
+      "column": "6",
+      "line": "105",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
+    },
+    "name": "LCD_displayCharacter",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LCD_displayString",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LCD_displayString(uint8 *)",
+    "location": {
+      "column": "6",
+      "line": "156",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
+    },
+    "name": "LCD_displayString",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@6334@F@LCD_displayString@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "8",
+      "line": "158",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LCD_moveCursor",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LCD_moveCursor(uint8, uint8)",
+    "location": {
+      "column": "6",
+      "line": "172",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
+    },
+    "name": "LCD_moveCursor",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@6929@F@LCD_moveCursor@lcd_memory_address",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "lcd_memory_address",
+    "location": {
+      "column": "8",
+      "line": "174",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
+    },
+    "name": "lcd_memory_address",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LCD_clearScreen",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LCD_clearScreen(void)",
+    "location": {
+      "column": "6",
+      "line": "206",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
+    },
+    "name": "LCD_clearScreen",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LCD_displayStringRowColumn",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LCD_displayStringRowColumn(uint8, uint8, uint8 *)",
+    "location": {
+      "column": "6",
+      "line": "220",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
+    },
+    "name": "LCD_displayStringRowColumn",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@8414@F@LCD_displayStringRowColumn@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "8",
+      "line": "222",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LCD_displayInteger",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void LCD_displayInteger(sint32)",
+    "location": {
+      "column": "6",
+      "line": "238",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
+    },
+    "name": "LCD_displayInteger",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@9387@F@LCD_displayInteger@buffer",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "buffer",
+    "location": {
+      "column": "11",
+      "line": "245",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
+    },
+    "name": "buffer",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@9412@F@LCD_displayInteger@counter",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "counter",
+    "location": {
+      "column": "11",
+      "line": "247",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
+    },
+    "name": "counter",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:lcd.c@9412@F@LCD_displayInteger@i",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "i",
+    "location": {
+      "column": "24",
+      "line": "247",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:lcd.h@314@macro@LCD_H_",
     "What": "MacroDef",
     "defdec": "Def",
@@ -7065,7 +8421,7 @@
     "ID": "c:@F@LCD_displayInteger",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void LCD_displayInteger(uint8)",
+    "display": "void LCD_displayInteger(sint32)",
     "location": {
       "column": "6",
       "line": "130",
@@ -7079,7 +8435,7 @@
     "ID": "c:@F@LCD_displayInteger",
     "What": "Function",
     "defdec": "Dec",
-    "display": "void LCD_displayInteger(uint8)",
+    "display": "void LCD_displayInteger(sint32)",
     "location": {
       "column": "6",
       "line": "130",
@@ -7087,174 +8443,6 @@
     },
     "name": "LCD_displayInteger",
     "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LCD_init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void LCD_init(void)",
-    "location": {
-      "column": "6",
-      "line": "31",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
-    },
-    "name": "LCD_init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LCD_sendCommand",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void LCD_sendCommand(uint8)",
-    "location": {
-      "column": "6",
-      "line": "54",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
-    },
-    "name": "LCD_sendCommand",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LCD_displayCharacter",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void LCD_displayCharacter(uint8)",
-    "location": {
-      "column": "6",
-      "line": "105",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
-    },
-    "name": "LCD_displayCharacter",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LCD_displayString",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void LCD_displayString(uint8 *)",
-    "location": {
-      "column": "6",
-      "line": "156",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
-    },
-    "name": "LCD_displayString",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@6177@F@LCD_displayString@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "8",
-      "line": "158",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LCD_moveCursor",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void LCD_moveCursor(uint8, uint8)",
-    "location": {
-      "column": "6",
-      "line": "172",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
-    },
-    "name": "LCD_moveCursor",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@6756@F@LCD_moveCursor@lcd_memory_address",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "lcd_memory_address",
-    "location": {
-      "column": "8",
-      "line": "174",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
-    },
-    "name": "lcd_memory_address",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LCD_clearScreen",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void LCD_clearScreen(void)",
-    "location": {
-      "column": "6",
-      "line": "206",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
-    },
-    "name": "LCD_clearScreen",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LCD_displayStringRowColumn",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void LCD_displayStringRowColumn(uint8, uint8, uint8 *)",
-    "location": {
-      "column": "6",
-      "line": "220",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
-    },
-    "name": "LCD_displayStringRowColumn",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@8193@F@LCD_displayStringRowColumn@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "8",
-      "line": "222",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LCD_displayInteger",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void LCD_displayInteger(uint8)",
-    "location": {
-      "column": "6",
-      "line": "238",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
-    },
-    "name": "LCD_displayInteger",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:lcd.c@8833@F@LCD_displayInteger@buff",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "buff",
-    "location": {
-      "column": "7",
-      "line": "240",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\lcd.c"
-    },
-    "name": "buff",
-    "origin": "project_file",
     "scope": null
   },
   {

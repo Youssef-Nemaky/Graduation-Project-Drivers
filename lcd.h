@@ -123,11 +123,11 @@ void LCD_clearScreen(void);
 
 /**************************************************************************************
  * [Function Name]: LCD_integerToString
- * [Args]: uint8 data: number that would be displayed on the LCD
+ * [Args]: sint32 a_numberToDisplay: number that would be displayed on the LCD
  * [Returns]: void
  * [Description]: Display an integer on the LCD
  ***************************************************************************************/
-void LCD_displayInteger(uint8 data);
+void LCD_displayInteger(sint32 a_numberToDisplay);
 
 
 #endif /* LCD_H_ */

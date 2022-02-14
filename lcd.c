@@ -231,13 +231,55 @@ void LCD_displayStringRowColumn(uint8 row,uint8 col,uint8 *str)
 
 /**************************************************************************************
  * [Function Name]: LCD_integerToString
- * [Args]: uint8 data: number that would be displayed on the LCD
+ * [Args]: sint32 a_numberToDisplay: number that would be displayed on the LCD
  * [Returns]: void
  * [Description]: Display an integer on the LCD
  ***************************************************************************************/
-void LCD_displayInteger(uint8 data)
+void LCD_displayInteger(sint32 a_numberToDisplay)
 {
-	char buff[16]; /* String to hold the ascii result */
-	itoa(data,buff,10); /* Use itoa C function to convert the data to its corresponding ASCII value, 10 for decimal */
-	LCD_displayString(buff); /* Display the string */
+    /* Why 12?
+     * The largest number in a signed number of 32 bits is 2,147,483,647 = 10 numbers
+     * and the lowest number is -2,147,483,648 -> 10 numbers + 1 for the sign = 11 numbers
+     * and if we add the string terminator we have 12 number(buffer size)     
+     */
+    uint8 buffer[12];
+
+    uint8 counter = 0, i = 0;
+
+    if(a_numberToDisplay == 0){
+        /* display zero on the LCD */
+        LCD_displayCharacter('0');
+        /* Exit from the function by returning */
+        return;
+    } else if(a_numberToDisplay < 0){
+        /* in case of negative number */
+        
+        /* Add the sign to the buffer */
+        buffer[counter++] = '-';
+        /* Make the number positive */
+        a_numberToDisplay = -a_numberToDisplay;
+
+        /* start i at 1 to leave the sign at reversing the number */
+        i = 1;
+    } 
+
+    while(a_numberToDisplay != 0){
+        /* Add the last digit in the number to the buffer */
+        buffer[counter++] = (a_numberToDisplay % 10) + '0';
+
+        /* Update the number after dividing by 10 */
+        a_numberToDisplay /= 10;
+    }
+
+    /* Add the string terminator \0 to the buffer */
+    buffer[counter--] = '\0';
+
+    /* Now we need to reverse the number */
+    for(;i < counter; i++, counter--){
+        buffer[i] = buffer[i] ^ buffer[counter]; 
+        buffer[counter] = buffer[i] ^ buffer[counter]; 
+        buffer[i] = buffer[i] ^ buffer[counter]; 
+    }
+    /* Display the number */
+    LCD_displayString(buffer);
 }
