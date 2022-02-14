@@ -5200,7 +5200,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@390@macro@F_CPU",
+    "ID": "c:I2c.c@375@macro@F_CPU",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "F_CPU",
@@ -5256,7 +5256,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@1216@F@I2c_Init@i2cCounter",
+    "ID": "c:I2c.c@1179@F@I2c_Init@i2cCounter",
     "What": "Variable",
     "defdec": "Def",
     "display": "i2cCounter",
@@ -5270,7 +5270,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@1243@F@I2c_Init@masterTimerPerioidValue",
+    "ID": "c:I2c.c@1205@F@I2c_Init@masterTimerPerioidValue",
     "What": "Variable",
     "defdec": "Def",
     "display": "masterTimerPerioidValue",
@@ -5284,7 +5284,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@1284@F@I2c_Init@i2cModuleBasePtr",
+    "ID": "c:I2c.c@1245@F@I2c_Init@i2cModuleBasePtr",
     "What": "Variable",
     "defdec": "Def",
     "display": "i2cModuleBasePtr",
@@ -5312,7 +5312,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@4618@F@I2c_WriteByte@i2cModuleBasePtr",
+    "ID": "c:I2c.c@4502@F@I2c_WriteByte@i2cModuleBasePtr",
     "What": "Variable",
     "defdec": "Def",
     "display": "i2cModuleBasePtr",
@@ -5326,7 +5326,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@4670@F@I2c_WriteByte@error",
+    "ID": "c:I2c.c@4553@F@I2c_WriteByte@error",
     "What": "Variable",
     "defdec": "Def",
     "display": "error",
@@ -5354,7 +5354,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@6131@F@I2c_ReadByte@i2cModuleBasePtr",
+    "ID": "c:I2c.c@5974@F@I2c_ReadByte@i2cModuleBasePtr",
     "What": "Variable",
     "defdec": "Def",
     "display": "i2cModuleBasePtr",
@@ -5368,7 +5368,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@6183@F@I2c_ReadByte@error",
+    "ID": "c:I2c.c@6025@F@I2c_ReadByte@error",
     "What": "Variable",
     "defdec": "Def",
     "display": "error",
@@ -9860,7 +9860,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_PBcfg.c@421@macro@PORT_PBCFG_SW_MAJOR_VERSION",
+    "ID": "c:Port_PBcfg.c@405@macro@PORT_PBCFG_SW_MAJOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PBCFG_SW_MAJOR_VERSION",
@@ -9874,7 +9874,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_PBcfg.c@476@macro@PORT_PBCFG_SW_MINOR_VERSION",
+    "ID": "c:Port_PBcfg.c@459@macro@PORT_PBCFG_SW_MINOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PBCFG_SW_MINOR_VERSION",
@@ -9888,7 +9888,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_PBcfg.c@531@macro@PORT_PBCFG_SW_PATCH_VERSION",
+    "ID": "c:Port_PBcfg.c@513@macro@PORT_PBCFG_SW_PATCH_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PBCFG_SW_PATCH_VERSION",
@@ -9902,7 +9902,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_PBcfg.c@623@macro@PORT_PBCFG_AR_RELEASE_MAJOR_VERSION",
+    "ID": "c:Port_PBcfg.c@600@macro@PORT_PBCFG_AR_RELEASE_MAJOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PBCFG_AR_RELEASE_MAJOR_VERSION",
@@ -9916,7 +9916,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_PBcfg.c@677@macro@PORT_PBCFG_AR_RELEASE_MINOR_VERSION",
+    "ID": "c:Port_PBcfg.c@653@macro@PORT_PBCFG_AR_RELEASE_MINOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PBCFG_AR_RELEASE_MINOR_VERSION",
@@ -9930,7 +9930,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_PBcfg.c@731@macro@PORT_PBCFG_AR_RELEASE_PATCH_VERSION",
+    "ID": "c:Port_PBcfg.c@706@macro@PORT_PBCFG_AR_RELEASE_PATCH_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PBCFG_AR_RELEASE_PATCH_VERSION",
