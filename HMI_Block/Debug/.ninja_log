@@ -16,3 +16,7 @@
 6	156	6665336952500985	D:/Embedded_non-stop/Graduation Project/Debug/Obj/I2c_PBcfg.o	baf76d16426b036a
 1	71	6665338606055124	D:/Embedded_non-stop/Graduation Project/Debug/Obj/I2c.o	7f98e8904cb6649b
 77	117	6665338606520717	D:/Embedded_non-stop/Graduation Project/Debug/Exe/gp.out	64b43763eb07dfd5
+9	310	6665371679533619	D:/Embedded_non-stop/Graduation Project/Debug/Obj/I2c_PBcfg.o	baf76d16426b036a
+1	355	6665371680008864	D:/Embedded_non-stop/Graduation Project/Debug/Obj/external_eeprom.o	4820670d067c4b6f
+35	373	6665371680080232	D:/Embedded_non-stop/Graduation Project/Debug/Obj/I2c.o	7f98e8904cb6649b
+379	630	6665371682725877	D:/Embedded_non-stop/Graduation Project/Debug/Exe/gp.out	ef63e6799225d04b
