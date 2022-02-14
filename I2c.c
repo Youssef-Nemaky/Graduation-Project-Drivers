@@ -17,7 +17,7 @@
 #endif
 
 STATIC const I2c_ConfigModule * I2c_ModulePtr = NULL_PTR;
-STATIC int I2C_wait_till_done(uint32 * i2cModuleBasePtr)
+STATIC int I2C_wait_till_done(uint32 * i2cModuleBasePtr);
 
 /************************************************************************************
 * Service Name: I2c_Init
@@ -114,23 +114,23 @@ void I2c_Init(const I2c_ConfigType * ConfigPtr)
 * Description: Function to write a byte through i2c.
 ************************************************************************************/
 uint8 I2c_WriteByte(I2c_ModuleNumber i2cModuleNumber,uint8 slaveAddress, uint8 slaveMemoryAddress, uint8 byte){
-    uint32 * i2cModuleBasePtr = NULL_PTR;
+    volatile uint32 * i2cModuleBasePtr = NULL_PTR;
     uint8 error = 0;
 
     /* Get the base address of the used i2c module */
     switch (i2cModuleNumber)
     {
     case I2C_MODULE_0:
-        i2cModuleBasePtr = I2C_0_BASE_ADDRESS;
+        i2cModuleBasePtr = (volatile uint32 *)I2C_0_BASE_ADDRESS;
         break;
     case I2C_MODULE_1:
-        i2cModuleBasePtr = I2C_1_BASE_ADDRESS;
+        i2cModuleBasePtr = (volatile uint32 *)I2C_1_BASE_ADDRESS;
         break;
     case I2C_MODULE_2:
-        i2cModuleBasePtr = I2C_2_BASE_ADDRESS;
+        i2cModuleBasePtr = (volatile uint32 *)I2C_2_BASE_ADDRESS;
         break;
     case I2C_MODULE_3:
-        i2cModuleBasePtr = I2C_3_BASE_ADDRESS;
+        i2cModuleBasePtr = (volatile uint32 *)I2C_3_BASE_ADDRESS;
         break;
     default:
         break;
@@ -140,36 +140,36 @@ uint8 I2c_WriteByte(I2c_ModuleNumber i2cModuleNumber,uint8 slaveAddress, uint8 s
     *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_DATA_REG_OFFSET) = slaveMemoryAddress;
     *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_CONTROL_STATUS_REG_OFFSET) = 3;
 
-    error = I2C_wait_till_done(i2cModuleBasePtr);
+    error = I2C_wait_till_done((uint32 *)i2cModuleBasePtr);
 
     if(error) return error;
 
     *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_DATA_REG_OFFSET) = byte;
     *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_CONTROL_STATUS_REG_OFFSET) = 5;
 
-    error = I2C_wait_till_done(i2cModuleBasePtr);
+    error = I2C_wait_till_done((uint32 *)i2cModuleBasePtr);
 
     if(error) return error;
     
     return 0;
 }
 
-uint8 I2c_ReadByte(uint8 slaveAddress, uint8 slaveMemoryAddress,uint8 * data){
-    uint32 * i2cModuleBasePtr = NULL_PTR;
+uint8 I2c_ReadByte(I2c_ModuleNumber i2cModuleNumber,uint8 slaveAddress, uint8 slaveMemoryAddress,uint8 * data){
+    volatile uint32 * i2cModuleBasePtr = NULL_PTR;
     uint8 error = 0;
     switch (i2cModuleNumber)
     {
     case I2C_MODULE_0:
-        i2cModuleBasePtr = I2C_0_BASE_ADDRESS;
+        i2cModuleBasePtr = (volatile uint32 *)I2C_0_BASE_ADDRESS;
         break;
     case I2C_MODULE_1:
-        i2cModuleBasePtr = I2C_1_BASE_ADDRESS;
+        i2cModuleBasePtr = (volatile uint32 *)I2C_1_BASE_ADDRESS;
         break;
     case I2C_MODULE_2:
-        i2cModuleBasePtr = I2C_2_BASE_ADDRESS;
+        i2cModuleBasePtr = (volatile uint32 *)I2C_2_BASE_ADDRESS;
         break;
     case I2C_MODULE_3:
-        i2cModuleBasePtr = I2C_3_BASE_ADDRESS;
+        i2cModuleBasePtr = (volatile uint32 *)I2C_3_BASE_ADDRESS;
         break;
     default:
         break;
@@ -179,13 +179,13 @@ uint8 I2c_ReadByte(uint8 slaveAddress, uint8 slaveMemoryAddress,uint8 * data){
     *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_DATA_REG_OFFSET) = slaveMemoryAddress;
     *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_CONTROL_STATUS_REG_OFFSET) = 3;
 
-    error = I2C_wait_till_done(i2cModuleBasePtr);
+    error = I2C_wait_till_done((uint32 *)i2cModuleBasePtr);
     if(error) return error;
     
     *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_SLAVE_ADDRESS_REG_OFFSET) = (slaveAddress << 1) + 1;
     *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_CONTROL_STATUS_REG_OFFSET) = 7;
 
-    error = I2C_wait_till_done(i2cModuleBasePtr);
+    error = I2C_wait_till_done((uint32 *)i2cModuleBasePtr);
     if(error) return error;
 
     *data = *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_DATA_REG_OFFSET);

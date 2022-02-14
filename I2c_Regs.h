@@ -23,8 +23,8 @@
 #define I2C_MASTER_DATA_REG_OFFSET              (0x008) /* I2C MDR - Master Data Reg */
 #define I2C_MASTER_CONTROL_STATUS_REG_OFFSET    (0x004) /* I2C MCS - Master Control Status Reg */
 
-#define I2C_MFE_BIT (4U) /* I2C Master Function Enable Bit *
-#define I2C_SFE_BIT (5U) /* I2C Slave Function Enable Bit *
+#define I2C_MFE_BIT (4U) /* I2C Master Function Enable Bit */
+#define I2C_SFE_BIT (5U) /* I2C Slave Function Enable Bit */
 
 /* I2C Run Mode Clock Gating Control Register to enable clock for the i2c modules */
 #define I2C_RCGC_REG  (*((volatile uint32 *)0x400FE620))
