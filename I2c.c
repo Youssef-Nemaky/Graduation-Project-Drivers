@@ -151,7 +151,7 @@ uint8 I2c_WriteByte(I2c_ModuleNumber i2cModuleNumber,uint8 slaveAddress, uint8 s
 
     if(error) return error;
     
-    return 0;
+    return 1;
 }
 
 uint8 I2c_ReadByte(I2c_ModuleNumber i2cModuleNumber,uint8 slaveAddress, uint8 slaveMemoryAddress,uint8 * data){
@@ -192,7 +192,7 @@ uint8 I2c_ReadByte(I2c_ModuleNumber i2cModuleNumber,uint8 slaveAddress, uint8 sl
 
     /* wait until bus is not busy */
     while((*(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_CONTROL_STATUS_REG_OFFSET)) & 0x40);    
-    return 0;       /* no error */
+    return 1;       /* no error */
 }
 STATIC int I2C_wait_till_done(uint32 * i2cModuleBasePtr)
 {

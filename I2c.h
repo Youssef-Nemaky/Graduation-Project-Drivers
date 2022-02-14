@@ -11,6 +11,9 @@
 #ifndef I2C_H
 #define I2C_H
 
+/*******************************************************************************
+ *                            Include Files                                    *
+ *******************************************************************************/
 /* Include I2C registers */
 #include "I2c_Regs.h"
 
@@ -72,6 +75,10 @@ typedef struct {
 
 /* Function prototype for I2C init Function */
 void I2c_Init(const I2c_ConfigType * ConfigPtr);
+void I2c_Init(const I2c_ConfigType * ConfigPtr);
+uint8 I2c_WriteByte(I2c_ModuleNumber i2cModuleNumber,uint8 slaveAddress, uint8 slaveMemoryAddress, uint8 byte);
+uint8 I2c_ReadByte(I2c_ModuleNumber i2cModuleNumber,uint8 slaveAddress, uint8 slaveMemoryAddress,uint8 * data);
+
 
 
 /*******************************************************************************
