@@ -2137,6 +2137,15 @@
         <name>$PROJ_DIR$\Dio_Regs.h</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\external_eeprom.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\external_eeprom.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\external_eeprom_cfg.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\I2c.c</name>
     </file>
     <file>
