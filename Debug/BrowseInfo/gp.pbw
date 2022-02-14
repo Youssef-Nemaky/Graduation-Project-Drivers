@@ -4250,7 +4250,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@351@macro@PORT_H",
+    "ID": "c:Port.h@339@macro@PORT_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_H",
@@ -4264,7 +4264,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@410@macro@PORT_VENDOR_ID",
+    "ID": "c:Port.h@395@macro@PORT_VENDOR_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_VENDOR_ID",
@@ -4278,7 +4278,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@469@macro@PORT_MODULE_ID",
+    "ID": "c:Port.h@451@macro@PORT_MODULE_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODULE_ID",
@@ -4292,7 +4292,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@529@macro@PORT_INSTANCE_ID",
+    "ID": "c:Port.h@508@macro@PORT_INSTANCE_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_INSTANCE_ID",
@@ -4306,7 +4306,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@597@macro@PORT_SW_MAJOR_VERSION",
+    "ID": "c:Port.h@571@macro@PORT_SW_MAJOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_SW_MAJOR_VERSION",
@@ -4320,7 +4320,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@643@macro@PORT_SW_MINOR_VERSION",
+    "ID": "c:Port.h@616@macro@PORT_SW_MINOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_SW_MINOR_VERSION",
@@ -4334,7 +4334,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@689@macro@PORT_SW_PATCH_VERSION",
+    "ID": "c:Port.h@661@macro@PORT_SW_PATCH_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_SW_PATCH_VERSION",
@@ -4348,7 +4348,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@772@macro@PORT_AR_RELEASE_MAJOR_VERSION",
+    "ID": "c:Port.h@739@macro@PORT_AR_RELEASE_MAJOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_AR_RELEASE_MAJOR_VERSION",
@@ -4362,7 +4362,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@818@macro@PORT_AR_RELEASE_MINOR_VERSION",
+    "ID": "c:Port.h@784@macro@PORT_AR_RELEASE_MINOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_AR_RELEASE_MINOR_VERSION",
@@ -4376,7 +4376,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@864@macro@PORT_AR_RELEASE_PATCH_VERSION",
+    "ID": "c:Port.h@829@macro@PORT_AR_RELEASE_PATCH_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_AR_RELEASE_PATCH_VERSION",
@@ -4390,7 +4390,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@948@macro@PORT_INITIALIZED",
+    "ID": "c:Port.h@908@macro@PORT_INITIALIZED",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_INITIALIZED",
@@ -4404,7 +4404,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@994@macro@PORT_NOT_INITIALIZED",
+    "ID": "c:Port.h@953@macro@PORT_NOT_INITIALIZED",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_NOT_INITIALIZED",
@@ -4418,7 +4418,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@2599@macro@PORT_INIT_SID",
+    "ID": "c:Port.h@2522@macro@PORT_INIT_SID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_INIT_SID",
@@ -4432,7 +4432,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@2760@macro@PORT_SET_PIN_DIRECTION_SID",
+    "ID": "c:Port.h@2679@macro@PORT_SET_PIN_DIRECTION_SID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_SET_PIN_DIRECTION_SID",
@@ -4446,7 +4446,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@2890@macro@PORT_REFRESH_PORT_DIRECTION_SID",
+    "ID": "c:Port.h@2805@macro@PORT_REFRESH_PORT_DIRECTION_SID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_REFRESH_PORT_DIRECTION_SID",
@@ -4460,7 +4460,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@3045@macro@PORT_GET_VERSION_INFO_SID",
+    "ID": "c:Port.h@2956@macro@PORT_GET_VERSION_INFO_SID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_GET_VERSION_INFO_SID",
@@ -4474,7 +4474,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@3165@macro@PORT_SET_PIN_MODE_SID",
+    "ID": "c:Port.h@3072@macro@PORT_SET_PIN_MODE_SID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_SET_PIN_MODE_SID",
@@ -4488,7 +4488,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@3532@macro@PORT_E_PARAM_PIN",
+    "ID": "c:Port.h@3432@macro@PORT_E_PARAM_PIN",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_E_PARAM_PIN",
@@ -4502,7 +4502,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@3666@macro@PORT_E_DIRECTION_UNCHANGEABLE",
+    "ID": "c:Port.h@3563@macro@PORT_E_DIRECTION_UNCHANGEABLE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_E_DIRECTION_UNCHANGEABLE",
@@ -4516,7 +4516,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@3797@macro@PORT_E_PARAM_CONFIG",
+    "ID": "c:Port.h@3691@macro@PORT_E_PARAM_CONFIG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_E_PARAM_CONFIG",
@@ -4530,7 +4530,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@3912@macro@PORT_E_PARAM_INVALID_MODE",
+    "ID": "c:Port.h@3803@macro@PORT_E_PARAM_INVALID_MODE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_E_PARAM_INVALID_MODE",
@@ -4544,7 +4544,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@4047@macro@PORT_E_MODE_UNCHANGEABLE",
+    "ID": "c:Port.h@3935@macro@PORT_E_MODE_UNCHANGEABLE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_E_MODE_UNCHANGEABLE",
@@ -4558,7 +4558,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@4170@macro@PORT_E_UNINIT",
+    "ID": "c:Port.h@4055@macro@PORT_E_UNINIT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_E_UNINIT",
@@ -4572,7 +4572,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@4276@macro@PORT_E_PARAM_POINTER",
+    "ID": "c:Port.h@4158@macro@PORT_E_PARAM_POINTER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_E_PARAM_POINTER",
@@ -4628,7 +4628,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@4857@macro@PORT_PINS_NUM",
+    "ID": "c:Port.h@4724@macro@PORT_PINS_NUM",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PINS_NUM",
@@ -4642,7 +4642,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@4918@macro@PORT_MODE_MAXIMUM_NUMBER",
+    "ID": "c:Port.h@4782@macro@PORT_MODE_MAXIMUM_NUMBER",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_MAXIMUM_NUMBER",
@@ -4656,7 +4656,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5016@macro@PORT_MODE_0",
+    "ID": "c:Port.h@4877@macro@PORT_MODE_0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_0",
@@ -4670,7 +4670,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5080@macro@PORT_MODE_1",
+    "ID": "c:Port.h@4940@macro@PORT_MODE_1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_1",
@@ -4684,7 +4684,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5130@macro@PORT_MODE_2",
+    "ID": "c:Port.h@4989@macro@PORT_MODE_2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_2",
@@ -4698,7 +4698,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5180@macro@PORT_MODE_3",
+    "ID": "c:Port.h@5038@macro@PORT_MODE_3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_3",
@@ -4712,7 +4712,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5230@macro@PORT_MODE_4",
+    "ID": "c:Port.h@5087@macro@PORT_MODE_4",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_4",
@@ -4726,7 +4726,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5280@macro@PORT_MODE_5",
+    "ID": "c:Port.h@5136@macro@PORT_MODE_5",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_5",
@@ -4740,7 +4740,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5330@macro@PORT_MODE_6",
+    "ID": "c:Port.h@5185@macro@PORT_MODE_6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_6",
@@ -4754,7 +4754,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5380@macro@PORT_MODE_7",
+    "ID": "c:Port.h@5234@macro@PORT_MODE_7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_7",
@@ -4768,7 +4768,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5430@macro@PORT_MODE_8",
+    "ID": "c:Port.h@5283@macro@PORT_MODE_8",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_8",
@@ -4782,7 +4782,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5480@macro@PORT_MODE_9",
+    "ID": "c:Port.h@5332@macro@PORT_MODE_9",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_9",
@@ -4796,7 +4796,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5530@macro@PORT_MODE_10",
+    "ID": "c:Port.h@5381@macro@PORT_MODE_10",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_10",
@@ -4810,7 +4810,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5581@macro@PORT_MODE_11",
+    "ID": "c:Port.h@5431@macro@PORT_MODE_11",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_11",
@@ -4824,7 +4824,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5632@macro@PORT_MODE_12",
+    "ID": "c:Port.h@5481@macro@PORT_MODE_12",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_12",
@@ -4838,7 +4838,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5683@macro@PORT_MODE_13",
+    "ID": "c:Port.h@5531@macro@PORT_MODE_13",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_13",
@@ -4852,7 +4852,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5734@macro@PORT_MODE_14",
+    "ID": "c:Port.h@5581@macro@PORT_MODE_14",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_14",
@@ -4866,7 +4866,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5785@macro@PORT_MODE_15",
+    "ID": "c:Port.h@5631@macro@PORT_MODE_15",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_15",
@@ -4880,7 +4880,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.h@5838@macro@PORT_MODE_ADC",
+    "ID": "c:Port.h@5682@macro@PORT_MODE_ADC",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_MODE_ADC",
@@ -7440,7 +7440,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@1539@F@Port_Init@pinsCounter",
+    "ID": "c:Port.c@1496@F@Port_Init@pinsCounter",
     "What": "Variable",
     "defdec": "Def",
     "display": "pinsCounter",
@@ -7454,7 +7454,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@1638@F@Port_Init@PortGpio_Ptr",
+    "ID": "c:Port.c@1592@F@Port_Init@PortGpio_Ptr",
     "What": "Variable",
     "defdec": "Def",
     "display": "PortGpio_Ptr",
@@ -7468,7 +7468,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@1795@F@Port_Init@delay",
+    "ID": "c:Port.c@1746@F@Port_Init@delay",
     "What": "Variable",
     "defdec": "Def",
     "display": "delay",
@@ -7496,7 +7496,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@12425@F@Port_SetPinDirection@PortGpio_Ptr",
+    "ID": "c:Port.c@12191@F@Port_SetPinDirection@PortGpio_Ptr",
     "What": "Variable",
     "defdec": "Def",
     "display": "PortGpio_Ptr",
@@ -7510,7 +7510,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@12582@F@Port_SetPinDirection@delay",
+    "ID": "c:Port.c@12345@F@Port_SetPinDirection@delay",
     "What": "Variable",
     "defdec": "Def",
     "display": "delay",
@@ -7524,7 +7524,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@12700@F@Port_SetPinDirection@error",
+    "ID": "c:Port.c@12460@F@Port_SetPinDirection@error",
     "What": "Variable",
     "defdec": "Def",
     "display": "error",
@@ -7552,7 +7552,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@17397@F@Port_RefreshPortDirection@pinsCounter",
+    "ID": "c:Port.c@17033@F@Port_RefreshPortDirection@pinsCounter",
     "What": "Variable",
     "defdec": "Def",
     "display": "pinsCounter",
@@ -7566,7 +7566,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@17496@F@Port_RefreshPortDirection@PortGpio_Ptr",
+    "ID": "c:Port.c@17129@F@Port_RefreshPortDirection@PortGpio_Ptr",
     "What": "Variable",
     "defdec": "Def",
     "display": "PortGpio_Ptr",
@@ -7580,7 +7580,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@17653@F@Port_RefreshPortDirection@delay",
+    "ID": "c:Port.c@17283@F@Port_RefreshPortDirection@delay",
     "What": "Variable",
     "defdec": "Def",
     "display": "delay",
@@ -7594,7 +7594,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@17771@F@Port_RefreshPortDirection@error",
+    "ID": "c:Port.c@17398@F@Port_RefreshPortDirection@error",
     "What": "Variable",
     "defdec": "Def",
     "display": "error",
@@ -7636,7 +7636,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@24387@F@Port_SetPinMode@PortGpio_Ptr",
+    "ID": "c:Port.c@23868@F@Port_SetPinMode@PortGpio_Ptr",
     "What": "Variable",
     "defdec": "Def",
     "display": "PortGpio_Ptr",
@@ -7650,7 +7650,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@24544@F@Port_SetPinMode@delay",
+    "ID": "c:Port.c@24022@F@Port_SetPinMode@delay",
     "What": "Variable",
     "defdec": "Def",
     "display": "delay",
@@ -7664,7 +7664,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port.c@24662@F@Port_SetPinMode@error",
+    "ID": "c:Port.c@24137@F@Port_SetPinMode@error",
     "What": "Variable",
     "defdec": "Def",
     "display": "error",
@@ -7678,7 +7678,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@371@macro@PORT_REGS_H",
+    "ID": "c:Port_Regs.h@359@macro@PORT_REGS_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_REGS_H",
@@ -7692,7 +7692,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@457@macro@GPIO_PORTA_BASE_ADDRESS",
+    "ID": "c:Port_Regs.h@440@macro@GPIO_PORTA_BASE_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_BASE_ADDRESS",
@@ -7706,7 +7706,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@538@macro@GPIO_PORTB_BASE_ADDRESS",
+    "ID": "c:Port_Regs.h@520@macro@GPIO_PORTB_BASE_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_BASE_ADDRESS",
@@ -7720,7 +7720,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@619@macro@GPIO_PORTC_BASE_ADDRESS",
+    "ID": "c:Port_Regs.h@600@macro@GPIO_PORTC_BASE_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_BASE_ADDRESS",
@@ -7734,7 +7734,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@700@macro@GPIO_PORTD_BASE_ADDRESS",
+    "ID": "c:Port_Regs.h@680@macro@GPIO_PORTD_BASE_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_BASE_ADDRESS",
@@ -7748,7 +7748,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@781@macro@GPIO_PORTE_BASE_ADDRESS",
+    "ID": "c:Port_Regs.h@760@macro@GPIO_PORTE_BASE_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_BASE_ADDRESS",
@@ -7762,7 +7762,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@862@macro@GPIO_PORTF_BASE_ADDRESS",
+    "ID": "c:Port_Regs.h@840@macro@GPIO_PORTF_BASE_ADDRESS",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_BASE_ADDRESS",
@@ -7776,7 +7776,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@984@macro@PORT_DATA_REG_OFFSET",
+    "ID": "c:Port_Regs.h@959@macro@PORT_DATA_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_DATA_REG_OFFSET",
@@ -7790,7 +7790,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@1062@macro@PORT_DIR_REG_OFFSET",
+    "ID": "c:Port_Regs.h@1036@macro@PORT_DIR_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_DIR_REG_OFFSET",
@@ -7804,7 +7804,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@1145@macro@PORT_ALT_FUNC_REG_OFFSET",
+    "ID": "c:Port_Regs.h@1118@macro@PORT_ALT_FUNC_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_ALT_FUNC_REG_OFFSET",
@@ -7818,7 +7818,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@1239@macro@PORT_PULL_UP_REG_OFFSET",
+    "ID": "c:Port_Regs.h@1211@macro@PORT_PULL_UP_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PULL_UP_REG_OFFSET",
@@ -7832,7 +7832,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@1320@macro@PORT_PULL_DOWN_REG_OFFSET",
+    "ID": "c:Port_Regs.h@1291@macro@PORT_PULL_DOWN_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PULL_DOWN_REG_OFFSET",
@@ -7846,7 +7846,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@1403@macro@PORT_DIGITAL_ENABLE_REG_OFFSET",
+    "ID": "c:Port_Regs.h@1373@macro@PORT_DIGITAL_ENABLE_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_DIGITAL_ENABLE_REG_OFFSET",
@@ -7860,7 +7860,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@1491@macro@PORT_LOCK_REG_OFFSET",
+    "ID": "c:Port_Regs.h@1460@macro@PORT_LOCK_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_LOCK_REG_OFFSET",
@@ -7874,7 +7874,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@1569@macro@PORT_COMMIT_REG_OFFSET",
+    "ID": "c:Port_Regs.h@1537@macro@PORT_COMMIT_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_COMMIT_REG_OFFSET",
@@ -7888,7 +7888,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@1649@macro@PORT_ANALOG_MODE_SEL_REG_OFFSET",
+    "ID": "c:Port_Regs.h@1616@macro@PORT_ANALOG_MODE_SEL_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_ANALOG_MODE_SEL_REG_OFFSET",
@@ -7902,7 +7902,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@1744@macro@PORT_CTL_REG_OFFSET",
+    "ID": "c:Port_Regs.h@1710@macro@PORT_CTL_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_CTL_REG_OFFSET",
@@ -7916,7 +7916,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@1825@macro@PORT_OPEN_DRAIN_REG_OFFSET",
+    "ID": "c:Port_Regs.h@1790@macro@PORT_OPEN_DRAIN_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_OPEN_DRAIN_REG_OFFSET",
@@ -7930,7 +7930,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@1911@macro@SYSCTL_REGCGC2_REG",
+    "ID": "c:Port_Regs.h@1874@macro@SYSCTL_REGCGC2_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SYSCTL_REGCGC2_REG",
@@ -7944,7 +7944,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2064@macro@GPIO_PORTA_ID",
+    "ID": "c:Port_Regs.h@2024@macro@GPIO_PORTA_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTA_ID",
@@ -7958,7 +7958,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2125@macro@GPIO_PA0",
+    "ID": "c:Port_Regs.h@2083@macro@GPIO_PA0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA0",
@@ -7972,7 +7972,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2180@macro@GPIO_PA1",
+    "ID": "c:Port_Regs.h@2137@macro@GPIO_PA1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA1",
@@ -7986,7 +7986,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2235@macro@GPIO_PA2",
+    "ID": "c:Port_Regs.h@2191@macro@GPIO_PA2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA2",
@@ -8000,7 +8000,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2290@macro@GPIO_PA3",
+    "ID": "c:Port_Regs.h@2245@macro@GPIO_PA3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA3",
@@ -8014,7 +8014,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2345@macro@GPIO_PA4",
+    "ID": "c:Port_Regs.h@2299@macro@GPIO_PA4",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA4",
@@ -8028,7 +8028,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2400@macro@GPIO_PA5",
+    "ID": "c:Port_Regs.h@2353@macro@GPIO_PA5",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA5",
@@ -8042,7 +8042,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2455@macro@GPIO_PA6",
+    "ID": "c:Port_Regs.h@2407@macro@GPIO_PA6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA6",
@@ -8056,7 +8056,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2510@macro@GPIO_PA7",
+    "ID": "c:Port_Regs.h@2461@macro@GPIO_PA7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PA7",
@@ -8070,7 +8070,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2580@macro@GPIO_PORTB_ID",
+    "ID": "c:Port_Regs.h@2528@macro@GPIO_PORTB_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTB_ID",
@@ -8084,7 +8084,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2641@macro@GPIO_PB0",
+    "ID": "c:Port_Regs.h@2587@macro@GPIO_PB0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB0",
@@ -8098,7 +8098,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2696@macro@GPIO_PB1",
+    "ID": "c:Port_Regs.h@2641@macro@GPIO_PB1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB1",
@@ -8112,7 +8112,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2751@macro@GPIO_PB2",
+    "ID": "c:Port_Regs.h@2695@macro@GPIO_PB2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB2",
@@ -8126,7 +8126,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2806@macro@GPIO_PB3",
+    "ID": "c:Port_Regs.h@2749@macro@GPIO_PB3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB3",
@@ -8140,7 +8140,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2861@macro@GPIO_PB4",
+    "ID": "c:Port_Regs.h@2803@macro@GPIO_PB4",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB4",
@@ -8154,7 +8154,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2916@macro@GPIO_PB5",
+    "ID": "c:Port_Regs.h@2857@macro@GPIO_PB5",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB5",
@@ -8168,7 +8168,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@2971@macro@GPIO_PB6",
+    "ID": "c:Port_Regs.h@2911@macro@GPIO_PB6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB6",
@@ -8182,7 +8182,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3026@macro@GPIO_PB7",
+    "ID": "c:Port_Regs.h@2965@macro@GPIO_PB7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PB7",
@@ -8196,7 +8196,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3096@macro@GPIO_PORTC_ID",
+    "ID": "c:Port_Regs.h@3032@macro@GPIO_PORTC_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTC_ID",
@@ -8210,7 +8210,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3157@macro@GPIO_PC0",
+    "ID": "c:Port_Regs.h@3091@macro@GPIO_PC0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC0",
@@ -8224,7 +8224,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3212@macro@GPIO_PC1",
+    "ID": "c:Port_Regs.h@3145@macro@GPIO_PC1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC1",
@@ -8238,7 +8238,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3267@macro@GPIO_PC2",
+    "ID": "c:Port_Regs.h@3199@macro@GPIO_PC2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC2",
@@ -8252,7 +8252,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3322@macro@GPIO_PC3",
+    "ID": "c:Port_Regs.h@3253@macro@GPIO_PC3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC3",
@@ -8266,7 +8266,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3377@macro@GPIO_PC4",
+    "ID": "c:Port_Regs.h@3307@macro@GPIO_PC4",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC4",
@@ -8280,7 +8280,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3432@macro@GPIO_PC5",
+    "ID": "c:Port_Regs.h@3361@macro@GPIO_PC5",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC5",
@@ -8294,7 +8294,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3487@macro@GPIO_PC6",
+    "ID": "c:Port_Regs.h@3415@macro@GPIO_PC6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC6",
@@ -8308,7 +8308,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3542@macro@GPIO_PC7",
+    "ID": "c:Port_Regs.h@3469@macro@GPIO_PC7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PC7",
@@ -8322,7 +8322,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3612@macro@GPIO_PORTD_ID",
+    "ID": "c:Port_Regs.h@3536@macro@GPIO_PORTD_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTD_ID",
@@ -8336,7 +8336,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3673@macro@GPIO_PD0",
+    "ID": "c:Port_Regs.h@3595@macro@GPIO_PD0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD0",
@@ -8350,7 +8350,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3728@macro@GPIO_PD1",
+    "ID": "c:Port_Regs.h@3649@macro@GPIO_PD1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD1",
@@ -8364,7 +8364,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3783@macro@GPIO_PD2",
+    "ID": "c:Port_Regs.h@3703@macro@GPIO_PD2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD2",
@@ -8378,7 +8378,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3838@macro@GPIO_PD3",
+    "ID": "c:Port_Regs.h@3757@macro@GPIO_PD3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD3",
@@ -8392,7 +8392,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3893@macro@GPIO_PD4",
+    "ID": "c:Port_Regs.h@3811@macro@GPIO_PD4",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD4",
@@ -8406,7 +8406,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@3948@macro@GPIO_PD5",
+    "ID": "c:Port_Regs.h@3865@macro@GPIO_PD5",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD5",
@@ -8420,7 +8420,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4003@macro@GPIO_PD6",
+    "ID": "c:Port_Regs.h@3919@macro@GPIO_PD6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD6",
@@ -8434,7 +8434,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4058@macro@GPIO_PD7",
+    "ID": "c:Port_Regs.h@3973@macro@GPIO_PD7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PD7",
@@ -8448,7 +8448,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4128@macro@GPIO_PORTE_ID",
+    "ID": "c:Port_Regs.h@4040@macro@GPIO_PORTE_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTE_ID",
@@ -8462,7 +8462,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4189@macro@GPIO_PE0",
+    "ID": "c:Port_Regs.h@4099@macro@GPIO_PE0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE0",
@@ -8476,7 +8476,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4244@macro@GPIO_PE1",
+    "ID": "c:Port_Regs.h@4153@macro@GPIO_PE1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE1",
@@ -8490,7 +8490,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4299@macro@GPIO_PE2",
+    "ID": "c:Port_Regs.h@4207@macro@GPIO_PE2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE2",
@@ -8504,7 +8504,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4354@macro@GPIO_PE3",
+    "ID": "c:Port_Regs.h@4261@macro@GPIO_PE3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE3",
@@ -8518,7 +8518,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4409@macro@GPIO_PE4",
+    "ID": "c:Port_Regs.h@4315@macro@GPIO_PE4",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE4",
@@ -8532,7 +8532,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4464@macro@GPIO_PE5",
+    "ID": "c:Port_Regs.h@4369@macro@GPIO_PE5",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE5",
@@ -8546,7 +8546,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4519@macro@GPIO_PE6",
+    "ID": "c:Port_Regs.h@4423@macro@GPIO_PE6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE6",
@@ -8560,7 +8560,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4574@macro@GPIO_PE7",
+    "ID": "c:Port_Regs.h@4477@macro@GPIO_PE7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PE7",
@@ -8574,7 +8574,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4644@macro@GPIO_PORTF_ID",
+    "ID": "c:Port_Regs.h@4544@macro@GPIO_PORTF_ID",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PORTF_ID",
@@ -8588,7 +8588,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4705@macro@GPIO_PF0",
+    "ID": "c:Port_Regs.h@4603@macro@GPIO_PF0",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF0",
@@ -8602,7 +8602,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4760@macro@GPIO_PF1",
+    "ID": "c:Port_Regs.h@4657@macro@GPIO_PF1",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF1",
@@ -8616,7 +8616,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4815@macro@GPIO_PF2",
+    "ID": "c:Port_Regs.h@4711@macro@GPIO_PF2",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF2",
@@ -8630,7 +8630,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4870@macro@GPIO_PF3",
+    "ID": "c:Port_Regs.h@4765@macro@GPIO_PF3",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF3",
@@ -8644,7 +8644,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4925@macro@GPIO_PF4",
+    "ID": "c:Port_Regs.h@4819@macro@GPIO_PF4",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF4",
@@ -8658,7 +8658,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@4980@macro@GPIO_PF5",
+    "ID": "c:Port_Regs.h@4873@macro@GPIO_PF5",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF5",
@@ -8672,7 +8672,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@5035@macro@GPIO_PF6",
+    "ID": "c:Port_Regs.h@4927@macro@GPIO_PF6",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF6",
@@ -8686,7 +8686,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_Regs.h@5090@macro@GPIO_PF7",
+    "ID": "c:Port_Regs.h@4981@macro@GPIO_PF7",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "GPIO_PF7",
@@ -8700,7 +8700,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_PBcfg.c@405@macro@PORT_PBCFG_SW_MAJOR_VERSION",
+    "ID": "c:Port_PBcfg.c@421@macro@PORT_PBCFG_SW_MAJOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PBCFG_SW_MAJOR_VERSION",
@@ -8714,7 +8714,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_PBcfg.c@459@macro@PORT_PBCFG_SW_MINOR_VERSION",
+    "ID": "c:Port_PBcfg.c@476@macro@PORT_PBCFG_SW_MINOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PBCFG_SW_MINOR_VERSION",
@@ -8728,7 +8728,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_PBcfg.c@513@macro@PORT_PBCFG_SW_PATCH_VERSION",
+    "ID": "c:Port_PBcfg.c@531@macro@PORT_PBCFG_SW_PATCH_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PBCFG_SW_PATCH_VERSION",
@@ -8742,7 +8742,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_PBcfg.c@600@macro@PORT_PBCFG_AR_RELEASE_MAJOR_VERSION",
+    "ID": "c:Port_PBcfg.c@623@macro@PORT_PBCFG_AR_RELEASE_MAJOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PBCFG_AR_RELEASE_MAJOR_VERSION",
@@ -8756,7 +8756,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_PBcfg.c@653@macro@PORT_PBCFG_AR_RELEASE_MINOR_VERSION",
+    "ID": "c:Port_PBcfg.c@677@macro@PORT_PBCFG_AR_RELEASE_MINOR_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PBCFG_AR_RELEASE_MINOR_VERSION",
@@ -8770,7 +8770,7 @@
     "scope": null
   },
   {
-    "ID": "c:Port_PBcfg.c@706@macro@PORT_PBCFG_AR_RELEASE_PATCH_VERSION",
+    "ID": "c:Port_PBcfg.c@731@macro@PORT_PBCFG_AR_RELEASE_PATCH_VERSION",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "PORT_PBCFG_AR_RELEASE_PATCH_VERSION",
