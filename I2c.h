@@ -27,14 +27,18 @@
 /* Number of I2C Modules in the tiva c */
 #define NUMBER_OF_I2C_MODULES (4U)
 
-#define I2C_MODULE_0 (0U)
-#define I2C_MODULE_1 (1U)
-#define I2C_MODULE_2 (2U)
-#define I2C_MODULE_3 (3U)
+
 
 #define I2C_STANDARD_MODE_FREQUENCY (100000U)
 #define SCL_LP (6U)
 #define SCL_HP (4U)
+
+typedef enum {
+    I2C_MODULE_0,
+    I2C_MODULE_1,
+    I2C_MODULE_2,
+    I2C_MODULE_3
+} I2c_ModuleNumber;
 
 typedef enum {
     I2C_DISABLED, I2C_ENABLED
