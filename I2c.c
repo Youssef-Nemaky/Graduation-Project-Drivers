@@ -43,7 +43,7 @@ void I2c_Init(const I2c_ConfigType * ConfigPtr)
 
     /* Loop through the four I2C Modules */
     for(i2cCounter = 0; i2cCounter < NUMBER_OF_I2C_MODULES; i2cCounter++){
-        if( (I2c_ModulePtr->i2c_status_mode) == I2C_DISABLED){
+        if(I2c_ModulePtr[i2cCounter].i2c_status_mode == I2C_DISABLED){
             /* I2C Module is not used so skip it */
             continue;
         }
@@ -69,7 +69,7 @@ void I2c_Init(const I2c_ConfigType * ConfigPtr)
         /* Enable the clock for the i2c module */
         SET_BIT(I2C_RCGC_REG, i2cCounter);
         
-        if( (I2c_ModulePtr->i2c_master_slave_mode) == I2C_MASTER_MODE){
+        if( (I2c_ModulePtr[i2cCounter].i2c_master_slave_mode) == I2C_MASTER_MODE){
             /* Master Mode */
             SET_BIT(*(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_CONFIG_REG_OFFSET), I2C_MFE_BIT);
             CLEAR_BIT(*(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_CONFIG_REG_OFFSET), I2C_SFE_BIT);
@@ -81,7 +81,7 @@ void I2c_Init(const I2c_ConfigType * ConfigPtr)
         
         /* Set the frequency of I2C */
         /* (1 + TIME_PERIOD ) = SYS_CLK /(2 * ( SCL_LP + SCL_HP ) * I2C_CLK_Freq ) */
-        switch (I2c_ModulePtr->i2c_speed_mode)
+        switch (I2c_ModulePtr[i2cCounter].i2c_speed_mode)
         {
         case I2C_STANDARD_SPEED_MODE:
             masterTimerPerioidValue = (((1.0f/I2C_STANDARD_MODE_FREQUENCY) / ( (SCL_LP+SCL_HP) * (1.0f/ F_CPU) )) / 2 ) - 1;
@@ -175,14 +175,14 @@ uint8 I2c_ReadByte(I2c_ModuleNumber i2cModuleNumber,uint8 slaveAddress, uint8 sl
         break;
     } 
 
-    *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_SLAVE_ADDRESS_REG_OFFSET) = slaveAddress << 1;
-    *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_DATA_REG_OFFSET) = slaveMemoryAddress;
+    *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_SLAVE_ADDRESS_REG_OFFSET) = slaveAddress;
+    *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_DATA_REG_OFFSET) = (uint8)slaveMemoryAddress;
     *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_CONTROL_STATUS_REG_OFFSET) = 3;
-
+    
     error = I2C_wait_till_done((uint32 *)i2cModuleBasePtr);
     if(error) return error;
     
-    *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_SLAVE_ADDRESS_REG_OFFSET) = (slaveAddress << 1) + 1;
+    *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_SLAVE_ADDRESS_REG_OFFSET) = slaveAddress + 1;
     *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_CONTROL_STATUS_REG_OFFSET) = 7;
 
     error = I2C_wait_till_done((uint32 *)i2cModuleBasePtr);
