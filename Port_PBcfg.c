@@ -88,8 +88,8 @@ const Port_ConfigType Port_Configuration = {
     PORT_E, PORT_E_PIN_1, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
     PORT_E, PORT_E_PIN_2, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
     PORT_E, PORT_E_PIN_3, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
-    PORT_E, PORT_E_PIN_4, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
-    PORT_E, PORT_E_PIN_5, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
+    PORT_E, PORT_E_PIN_4, PORT_PIN_IN, PORT_MODE_3, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
+    PORT_E, PORT_E_PIN_5, PORT_PIN_IN, PORT_MODE_3, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_ON,
 
     
     /* PORT F pins*/

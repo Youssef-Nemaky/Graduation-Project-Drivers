@@ -24,9 +24,9 @@ int main()
     LCD_clearScreen();
     LCD_displayString("Content of 0x000");
     LCD_displayStringRowColumn(1,0,"is ");
-    EEPROM_readByte(0x03F0, &byteToRead);
+    EEPROM_readByte(0x0000, &byteToRead);
     LCD_displayInteger(byteToRead);
-    EEPROM_writeByte(0x03F0, 99);
+    EEPROM_writeByte(0x0000, 99);
     Delay_Ms(5000);
     LCD_clearScreen();
     LCD_displayString("After changing it");
@@ -34,7 +34,7 @@ int main()
     LCD_clearScreen();
     LCD_displayString("Content of 0x000");
     LCD_displayStringRowColumn(1,0,"is ");
-    EEPROM_readByte(0x03F0, &byteToRead);
+    EEPROM_readByte(0x0000, &byteToRead);
     LCD_displayInteger(byteToRead);
     Delay_Ms(5000);
     
