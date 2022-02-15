@@ -136,7 +136,7 @@ uint8 I2c_WriteByte(I2c_ModuleNumber i2cModuleNumber,uint8 slaveAddress, uint8 s
         break;
     }
     
-    *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_SLAVE_ADDRESS_REG_OFFSET) = slaveAddress << 1;
+    *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_SLAVE_ADDRESS_REG_OFFSET) = slaveAddress;
     *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_DATA_REG_OFFSET) = slaveMemoryAddress;
     *(volatile uint32 *)((volatile uint8 *)i2cModuleBasePtr + I2C_MASTER_CONTROL_STATUS_REG_OFFSET) = 3;
 

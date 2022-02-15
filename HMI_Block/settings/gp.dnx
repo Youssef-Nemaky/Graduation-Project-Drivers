@@ -32,7 +32,7 @@
         <LMIFTDIfoundProbes />
     </LmiFtdiDriver>
     <DebugChecksum>
-        <Checksum>2550367945</Checksum>
+        <Checksum>3899828773</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
