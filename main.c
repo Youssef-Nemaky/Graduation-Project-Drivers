@@ -3,12 +3,15 @@
 #include "lcd.h"
 #include "keypad.h"
 #include "sw_delay.h"
+#include "external_eeprom.h"
 
 int main()
 {
     uint8 pressedKey = 0;
+    uint8 byteToRead = 0;
     Dio_Init(&Dio_Configuration);
     Port_Init(&Port_Configuration);
+    I2c_Init(&I2c_Confiuration);
     LCD_init();
     LCD_displayString("TESTING");
     Delay_Ms(2000);
@@ -19,6 +22,22 @@ int main()
     LCD_displayCharacter('S');
     Delay_Ms(2000);
     LCD_clearScreen();
+    LCD_displayString("Content of 0x000");
+    LCD_displayStringRowColumn(1,0,"is ");
+    EEPROM_readByte(0x03F0, &byteToRead);
+    LCD_displayInteger(byteToRead);
+    EEPROM_writeByte(0x03F0, 99);
+    Delay_Ms(5000);
+    LCD_clearScreen();
+    LCD_displayString("After changing it");
+    Delay_Ms(2000);
+    LCD_clearScreen();
+    LCD_displayString("Content of 0x000");
+    LCD_displayStringRowColumn(1,0,"is ");
+    EEPROM_readByte(0x03F0, &byteToRead);
+    LCD_displayInteger(byteToRead);
+    Delay_Ms(5000);
+    
     while(1){
 
         /*

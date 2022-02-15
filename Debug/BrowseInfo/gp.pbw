@@ -4250,34 +4250,6 @@
     "scope": null
   },
   {
-    "ID": "c:external_eeprom_cfg.h@379@macro@EXTERNAL_EEPROM_CFG_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "EXTERNAL_EEPROM_CFG_H",
-    "location": {
-      "column": "9",
-      "line": "13",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom_cfg.h"
-    },
-    "name": "EXTERNAL_EEPROM_CFG_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:external_eeprom_cfg.h@428@macro@EXTERNAL_EEPROM_I2C_MODULE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "EXTERNAL_EEPROM_I2C_MODULE",
-    "location": {
-      "column": "9",
-      "line": "17",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom_cfg.h"
-    },
-    "name": "EXTERNAL_EEPROM_I2C_MODULE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:I2c_Regs.h@354@macro@I2C_REGS_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -4362,7 +4334,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c_Regs.h@729@macro@I2C_MASTER_TIMER_PERIOD_REG_OFFSET",
+    "ID": "c:I2c_Regs.h@730@macro@I2C_MASTER_TIMER_PERIOD_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "I2C_MASTER_TIMER_PERIOD_REG_OFFSET",
@@ -4376,7 +4348,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c_Regs.h@827@macro@I2C_MASTER_SLAVE_ADDRESS_REG_OFFSET",
+    "ID": "c:I2c_Regs.h@829@macro@I2C_MASTER_SLAVE_ADDRESS_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "I2C_MASTER_SLAVE_ADDRESS_REG_OFFSET",
@@ -4390,7 +4362,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c_Regs.h@924@macro@I2C_MASTER_DATA_REG_OFFSET",
+    "ID": "c:I2c_Regs.h@927@macro@I2C_MASTER_DATA_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "I2C_MASTER_DATA_REG_OFFSET",
@@ -4404,7 +4376,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c_Regs.h@1012@macro@I2C_MASTER_CONTROL_STATUS_REG_OFFSET",
+    "ID": "c:I2c_Regs.h@1016@macro@I2C_MASTER_CONTROL_STATUS_REG_OFFSET",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "I2C_MASTER_CONTROL_STATUS_REG_OFFSET",
@@ -4418,7 +4390,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c_Regs.h@1111@macro@I2C_MFE_BIT",
+    "ID": "c:I2c_Regs.h@1116@macro@I2C_MFE_BIT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "I2C_MFE_BIT",
@@ -4432,7 +4404,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c_Regs.h@1173@macro@I2C_SFE_BIT",
+    "ID": "c:I2c_Regs.h@1178@macro@I2C_SFE_BIT",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "I2C_SFE_BIT",
@@ -4446,7 +4418,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c_Regs.h@1320@macro@I2C_RCGC_REG",
+    "ID": "c:I2c_Regs.h@1325@macro@I2C_RCGC_REG",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "I2C_RCGC_REG",
@@ -4456,76 +4428,6 @@
       "path": "D:\\Embedded_non-stop\\Graduation Project\\I2c_Regs.h"
     },
     "name": "I2C_RCGC_REG",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:external_eeprom.h@346@macro@EXTERNAL_EEPROM_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "EXTERNAL_EEPROM_H",
-    "location": {
-      "column": "9",
-      "line": "13",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
-    },
-    "name": "EXTERNAL_EEPROM_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:external_eeprom.h@932@macro@ERROR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ERROR",
-    "location": {
-      "column": "9",
-      "line": "25",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
-    },
-    "name": "ERROR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:external_eeprom.h@972@macro@SUCCESS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SUCCESS",
-    "location": {
-      "column": "9",
-      "line": "29",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
-    },
-    "name": "SUCCESS",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EEPROM_writeByte",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint8 EEPROM_writeByte(uint16, uint8)",
-    "location": {
-      "column": "7",
-      "line": "35",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
-    },
-    "name": "EEPROM_writeByte",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@EEPROM_readByte",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint8 EEPROM_readByte(uint16, uint8 *)",
-    "location": {
-      "column": "7",
-      "line": "36",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
-    },
-    "name": "EEPROM_readByte",
     "origin": "user_include",
     "scope": null
   },
@@ -5144,6 +5046,104 @@
     "scope": null
   },
   {
+    "ID": "c:external_eeprom.h@346@macro@EXTERNAL_EEPROM_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "EXTERNAL_EEPROM_H",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
+    },
+    "name": "EXTERNAL_EEPROM_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:external_eeprom.h@949@macro@ERROR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ERROR",
+    "location": {
+      "column": "9",
+      "line": "26",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
+    },
+    "name": "ERROR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:external_eeprom.h@989@macro@SUCCESS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SUCCESS",
+    "location": {
+      "column": "9",
+      "line": "30",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
+    },
+    "name": "SUCCESS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EEPROM_writeByte",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 EEPROM_writeByte(uint16, uint8)",
+    "location": {
+      "column": "7",
+      "line": "36",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
+    },
+    "name": "EEPROM_writeByte",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EEPROM_writeByte",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 EEPROM_writeByte(uint16, uint8)",
+    "location": {
+      "column": "7",
+      "line": "36",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
+    },
+    "name": "EEPROM_writeByte",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EEPROM_readByte",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 EEPROM_readByte(uint16, uint8 *)",
+    "location": {
+      "column": "7",
+      "line": "37",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
+    },
+    "name": "EEPROM_readByte",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@EEPROM_readByte",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8 EEPROM_readByte(uint16, uint8 *)",
+    "location": {
+      "column": "7",
+      "line": "37",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom.h"
+    },
+    "name": "EEPROM_readByte",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@EEPROM_writeByte",
     "What": "Function",
     "defdec": "Def",
@@ -5158,7 +5158,7 @@
     "scope": null
   },
   {
-    "ID": "c:external_eeprom.c@646@F@EEPROM_writeByte@writeOperationStatus",
+    "ID": "c:external_eeprom.c@665@F@EEPROM_writeByte@writeOperationStatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "writeOperationStatus",
@@ -5186,7 +5186,7 @@
     "scope": null
   },
   {
-    "ID": "c:external_eeprom.c@951@F@EEPROM_readByte@readOperationStatus",
+    "ID": "c:external_eeprom.c@978@F@EEPROM_readByte@readOperationStatus",
     "What": "Variable",
     "defdec": "Def",
     "display": "readOperationStatus",
@@ -5200,7 +5200,35 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@375@macro@F_CPU",
+    "ID": "c:external_eeprom_cfg.h@379@macro@EXTERNAL_EEPROM_CFG_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "EXTERNAL_EEPROM_CFG_H",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom_cfg.h"
+    },
+    "name": "EXTERNAL_EEPROM_CFG_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:external_eeprom_cfg.h@428@macro@EXTERNAL_EEPROM_I2C_MODULE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "EXTERNAL_EEPROM_I2C_MODULE",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\external_eeprom_cfg.h"
+    },
+    "name": "EXTERNAL_EEPROM_I2C_MODULE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:I2c.c@390@macro@F_CPU",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "F_CPU",
@@ -5256,7 +5284,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@1179@F@I2c_Init@i2cCounter",
+    "ID": "c:I2c.c@1216@F@I2c_Init@i2cCounter",
     "What": "Variable",
     "defdec": "Def",
     "display": "i2cCounter",
@@ -5270,7 +5298,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@1205@F@I2c_Init@masterTimerPerioidValue",
+    "ID": "c:I2c.c@1243@F@I2c_Init@masterTimerPerioidValue",
     "What": "Variable",
     "defdec": "Def",
     "display": "masterTimerPerioidValue",
@@ -5284,7 +5312,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@1245@F@I2c_Init@i2cModuleBasePtr",
+    "ID": "c:I2c.c@1284@F@I2c_Init@i2cModuleBasePtr",
     "What": "Variable",
     "defdec": "Def",
     "display": "i2cModuleBasePtr",
@@ -5312,7 +5340,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@4502@F@I2c_WriteByte@i2cModuleBasePtr",
+    "ID": "c:I2c.c@4648@F@I2c_WriteByte@i2cModuleBasePtr",
     "What": "Variable",
     "defdec": "Def",
     "display": "i2cModuleBasePtr",
@@ -5326,7 +5354,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@4553@F@I2c_WriteByte@error",
+    "ID": "c:I2c.c@4700@F@I2c_WriteByte@error",
     "What": "Variable",
     "defdec": "Def",
     "display": "error",
@@ -5354,7 +5382,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@5974@F@I2c_ReadByte@i2cModuleBasePtr",
+    "ID": "c:I2c.c@6161@F@I2c_ReadByte@i2cModuleBasePtr",
     "What": "Variable",
     "defdec": "Def",
     "display": "i2cModuleBasePtr",
@@ -5368,7 +5396,7 @@
     "scope": null
   },
   {
-    "ID": "c:I2c.c@6025@F@I2c_ReadByte@error",
+    "ID": "c:I2c.c@6213@F@I2c_ReadByte@error",
     "What": "Variable",
     "defdec": "Def",
     "display": "error",
@@ -8564,7 +8592,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "7",
+      "line": "8",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\main.c"
     },
     "name": "main",
@@ -8572,16 +8600,30 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@120@F@main@pressedKey",
+    "ID": "c:main.c@150@F@main@pressedKey",
     "What": "Variable",
     "defdec": "Def",
     "display": "pressedKey",
     "location": {
       "column": "11",
-      "line": "9",
+      "line": "10",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\main.c"
     },
     "name": "pressedKey",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@177@F@main@byteToRead",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "byteToRead",
+    "location": {
+      "column": "11",
+      "line": "11",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\main.c"
+    },
+    "name": "byteToRead",
     "origin": "project_file",
     "scope": null
   },
