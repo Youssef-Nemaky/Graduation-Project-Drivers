@@ -69,6 +69,16 @@ build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Sw_Delay.xcl : 
   flags = "D$:\Embedded_non-stop\Graduation$ Project\Sw_Delay.c" -o "D$:\Embedded_non-stop\Graduation$ Project\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Sw_Delay.tmp"
   rspfile_name = D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Sw_Delay.xcl.rsp
 
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\uart.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Embedded_non-stop\Graduation$ Project\uart.c" -xcl_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\uart.xcl" -macro_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\uart.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Embedded_non-stop\Graduation$ Project\uart.c" -o "D$:\Embedded_non-stop\Graduation$ Project\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\uart.tmp"
+  rspfile_name = D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\uart.xcl.rsp
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Uart_PBcfg.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Embedded_non-stop\Graduation$ Project\Uart_PBcfg.c" -xcl_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Uart_PBcfg.xcl" -macro_file "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Uart_PBcfg.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Embedded_non-stop\Graduation$ Project\Uart_PBcfg.c" -o "D$:\Embedded_non-stop\Graduation$ Project\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Uart_PBcfg.tmp"
+  rspfile_name = D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Uart_PBcfg.xcl.rsp
+
 build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.pbi : INDEXER D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.xcl |  $
 D$:\Embedded_non-stop\Graduation$ Project\Det.c
   flags = "-out=D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.pbi" -f "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Det.xcl"
@@ -105,6 +115,14 @@ build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Sw_Delay.pbi : 
 D$:\Embedded_non-stop\Graduation$ Project\Sw_Delay.c
   flags = "-out=D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Sw_Delay.pbi" -f "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Sw_Delay.xcl"
 
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\uart.pbi : INDEXER D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\uart.xcl |  $
+D$:\Embedded_non-stop\Graduation$ Project\uart.c
+  flags = "-out=D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\uart.pbi" -f "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\uart.xcl"
+
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Uart_PBcfg.pbi : INDEXER D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Uart_PBcfg.xcl |  $
+D$:\Embedded_non-stop\Graduation$ Project\Uart_PBcfg.c
+  flags = "-out=D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Uart_PBcfg.pbi" -f "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Uart_PBcfg.xcl"
+
 build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp.pbw : MAKEBROWSE D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp.pbd
   flags = "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp.pbd" -output "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp.pbw"
 
@@ -123,8 +141,13 @@ D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port_PBcfg.pbi $
 D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Sw_Delay.pbi
   flags = -M "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part2.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Port_PBcfg.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Sw_Delay.pbi"
 
+build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part3.pbi : PDBLINK D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\uart.pbi |  $
+D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Uart_PBcfg.pbi
+  flags = -M "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part3.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\uart.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\Uart_PBcfg.pbi"
+
 build D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp.pbd : PDBLINK D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part0.pbi |  $
 D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part1.pbi $
-D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part2.pbi
-  flags = -M "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp.pbd" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part0.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part1.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part2.pbi"
+D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part2.pbi $
+D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part3.pbi
+  flags = -M "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp.pbd" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part0.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part1.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part2.pbi" "D$:\Embedded_non-stop\Graduation$ Project\Debug\BrowseInfo\gp_part3.pbi"
 

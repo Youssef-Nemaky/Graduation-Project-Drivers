@@ -2155,6 +2155,9 @@
         <name>$PROJ_DIR$\main.c</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\MCU_Config.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\Platform_Types.h</name>
     </file>
     <file>
@@ -2180,5 +2183,20 @@
     </file>
     <file>
         <name>$PROJ_DIR$\Sw_Delay.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\uart.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\uart.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\UART_Cfg.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\Uart_PBcfg.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\uart_regs.h</name>
     </file>
 </project>
