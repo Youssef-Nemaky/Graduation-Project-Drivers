@@ -18,14 +18,16 @@
 #define UART_FBRD_REG_OFFSET         (0x028) /* UART Fractional Baud-Rate Divisor */
 #define UART_CC_REG_OFFSET           (0xFC8) /* UART Clock Configuration */
 #define UART_LCRH_REG_OFFSET         (0x02C) /* UART Line Control */
+#define UART_F_REG_OFFSET            (0x018) /* UART Flag */
+#define UART_D_REG_OFFSET            (0x000) /* UART Data */
 
 /* Uart Run Mode Clock Gating Control Register to enable clock for the Uart modules */
 #define UART_RCGC_REG  (*((volatile uint32 *)0x400FE618))
 
 
-#define UART_EN_BIT                 (0u) 
-#define UART_PARITY_EN_BIT          (1U)
-#define UART_EVEN_PARITY_SELECT_BIT (2U)
-#define UART_TWO_STOP_BITS_SELECT_BIT (2U)
+#define UART_EN_BIT                     (0u) 
+#define UART_PARITY_EN_BIT              (1U)
+#define UART_EVEN_PARITY_SELECT_BIT     (2U)
+#define UART_TWO_STOP_BITS_SELECT_BIT   (2U)
 
 #endif

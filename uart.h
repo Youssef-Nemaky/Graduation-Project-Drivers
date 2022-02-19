@@ -11,8 +11,10 @@
  *******************************************************************************/
 #define NUMBER_OF_UART_MODULES       (8U)
 
-#define CLEAR_WORD_LENGTH_BITS_MASK  (0xFF9F)
-#define UART_WORD_LENGTH_SHIFT_MASK  (4)
+#define UART_CLEAR_WORD_LENGTH_BITS_MASK  (0xFF9F)
+#define UART_WORD_LENGTH_SHIFT_MASK       (4)
+#define UART_TXFF_MASK                    (0x20) /* Mask to check the Transmit Full Flag */
+#define UART_RXEF_MASK                    (0x10) /* Mask to check the Receive Empty Flag */
 
 typedef enum
 {
@@ -99,25 +101,11 @@ void UART_init(const Uart_ConfigType * ConfigPtr);
  * Description :
  * Functional responsible for send byte to another device.
  */
-void UART_sendByte(const uint8 data);
+void Uart_SendByte(Uart_ModuleNumber uartModuleNumber ,const uint8 byteToSend);
 /*
  * Description :
  * Functional responsible for receive byte from another UART device.
  */
-uint8 UART_recieveByte(void);
-/*
- * Description :
- * Send the required string through UART to the other UART device.
- */
-void UART_sendString(const uint8 *Str);
-/*
- * Description :
- * receive the required string from another UART device.
- */
-void UART_receiveString(uint8 *Str);
-/*
- *Description :
- * Enable one of Uart Modules from UART0 to UART7
- * */
-void UART_moduleEnable(uint8 module);
+sint8 Uart_ReceiveByte(Uart_ModuleNumber uartModuleNumber);
+
 #endif
