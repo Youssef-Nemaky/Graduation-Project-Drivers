@@ -3,15 +3,23 @@
 #include "lcd.h"
 #include "keypad.h"
 #include "sw_delay.h"
+#include "Uart.h"
 
 int main()
 {
     uint8 pressedKey = 0;
+    uint8 receivedByte = 0;
     Dio_Init(&Dio_Configuration);
     Port_Init(&Port_Configuration);
+    Uart_Init(&Uart_Configuration);
     LCD_init();
+    LCD_clearScreen();
+    LCD_displayString("Initialized");
+    Delay_Ms(1000);
+    LCD_clearScreen();
     LCD_displayCharacter('S');
     Delay_Ms(5000);
+
     while(1){
 
         /*
@@ -38,7 +46,8 @@ int main()
         counter = 0;
     }
     Delay_Ms(1000);
-*/
+*/  
+/*
     LCD_moveCursor(0,0);
     pressedKey = KEYPAD_getPressedKey();
     if((pressedKey >= 0) && (pressedKey <= 9)){
@@ -46,8 +55,12 @@ int main()
     } else {
         LCD_displayCharacter(pressedKey);
     }
+  */   
     
-    
+        LCD_moveCursor(0,0);
+        receivedByte = Uart_ReceiveByte(UART7_MODULE_NUMBER);
+        Uart_SendByte(UART7_MODULE_NUMBER , '#');
+        LCD_displayCharacter(receivedByte);
     }
 
     return 0;
