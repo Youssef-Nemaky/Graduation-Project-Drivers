@@ -1,9 +1,9 @@
 #ifndef UART_H
 #define UART_H
 
-#include "UART_Cfg.h"
-#include "std_types.h"
-#include "uart_regs.h"
+#include "Uart_Cfg.h"
+#include "Std_Types.h"
+#include "Uart_Regs.h"
 #include "MCU_Config.h"
 
 /*******************************************************************************
@@ -12,7 +12,7 @@
 #define NUMBER_OF_UART_MODULES       (8U)
 
 #define UART_CLEAR_WORD_LENGTH_BITS_MASK  (0xFF9F)
-#define UART_WORD_LENGTH_SHIFT_MASK       (4)
+#define UART_WORD_LENGTH_SHIFT_MASK       (5U)
 #define UART_TXFF_MASK                    (0x20) /* Mask to check the Transmit Full Flag */
 #define UART_RXEF_MASK                    (0x10) /* Mask to check the Receive Empty Flag */
 
@@ -96,7 +96,7 @@ extern uint8 RecDataBuffer;
  * 2. Enable the UART.
  * 3. Setup the UART baud rate.
  */
-void UART_init(const Uart_ConfigType * ConfigPtr);
+void Uart_Init(const Uart_ConfigType * ConfigPtr);
 /*
  * Description :
  * Functional responsible for send byte to another device.

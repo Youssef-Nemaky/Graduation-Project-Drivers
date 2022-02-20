@@ -1,6 +1,6 @@
 
-#include "uart.h"
-#include"common_macros.h"
+#include "Uart.h"
+#include "Common_Macros.h"
 
 STATIC const Uart_ConfigModule * Uart_ModulePtr = NULL_PTR;
 
@@ -13,24 +13,24 @@ STATIC const Uart_ConfigModule * Uart_ModulePtr = NULL_PTR;
  * 3. Setup the UART baud rate.
  */
 
-void UART_Init(const Uart_ConfigType * ConfigPtr)
+void Uart_Init(const Uart_ConfigType * ConfigPtr)
 {
     /* loop on the configuration structure array */
     /* Enable the clock for the registers */
-    uint8 uart_counter = 0;
+    uint8 uartCounter = 0;
     volatile uint32 * uartBaseAddressPtr = NULL_PTR;
     uint16 integerBaudRateDivisor = 0;
     uint8 fractionalBaurdRateDivisor = 0;
 
     Uart_ModulePtr = ConfigPtr->UARTModules;
 
-    for(uart_counter = 0; uart_counter < NUMBER_OF_UART_MODULES; uart_counter++){
+    for(uartCounter = 0; uartCounter < NUMBER_OF_UART_MODULES; uartCounter++){
         /* Skip the configuration if it is a disabled (NOT USED) UART */
-        if(Uart_ModulePtr[uart_counter].statusMode == UART_OFF){
+        if(Uart_ModulePtr[uartCounter].statusMode == UART_OFF){
             continue;
         }
 
-        switch (uart_counter)
+        switch (uartCounter)
         {
         case UART0_MODULE_NUMBER:
             uartBaseAddressPtr = (volatile uint32 *)UART0_BASE_ADDRESS;
@@ -61,20 +61,21 @@ void UART_Init(const Uart_ConfigType * ConfigPtr)
         }
 
         /* Enable the clock for the uart registers */
-        SET_BIT(UART_RCGC_REG, uart_counter); 
+        SET_BIT(UART_RCGC_REG, uartCounter); 
 
         /* Disable the uart module by clearing the UARTEN BIT IN UARTCTL Register*/
-        *(((uint32 *)(uint8 *)uartBaseAddressPtr + UART_CTL_REG_OFFSET)) &= ~(1<<UART_EN_BIT);
-        integerBaudRateDivisor = F_CPU / (16 * Uart_ModulePtr[uart_counter].baudRate);
+        *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_CTL_REG_OFFSET) &= ~(1<<UART_EN_BIT);
+
+        integerBaudRateDivisor = F_CPU / (16 * Uart_ModulePtr[uartCounter].baudRate);
         *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_IBRD_REG_OFFSET) = integerBaudRateDivisor;
 
-        fractionalBaurdRateDivisor = (uint8)((F_CPU / (16.0f * Uart_ModulePtr[uart_counter].baudRate) - integerBaudRateDivisor) * 64 + 0.5);
+        fractionalBaurdRateDivisor = (uint8)((F_CPU / (16.0f * Uart_ModulePtr[uartCounter].baudRate) - integerBaudRateDivisor) * 64 + 0.5);
         *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_FBRD_REG_OFFSET) = fractionalBaurdRateDivisor;
 
         /* Set the setting of the frame of the UART */
 
         /* Setting the parity bits */
-        if(Uart_ModulePtr[uart_counter].parityType == UART_NO_PARITY){
+        if(Uart_ModulePtr[uartCounter].parityType == UART_NO_PARITY){
             /* Parity is disabled and no parity bit is added to the data frame */
             *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_LCRH_REG_OFFSET) &= ~(1<<UART_PARITY_EN_BIT);
         } else {
@@ -82,7 +83,7 @@ void UART_Init(const Uart_ConfigType * ConfigPtr)
             *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_LCRH_REG_OFFSET) |= (1<<UART_PARITY_EN_BIT);
 
             /* Check whether it's even or odd parity */
-            if(Uart_ModulePtr[uart_counter].parityType == UART_EVEN_PARITY){
+            if(Uart_ModulePtr[uartCounter].parityType == UART_EVEN_PARITY){
                 /* Even parity generation and checking is performed during transmission and reception,
                  which checks for an even number
                  of 1s in data and parity bits */
@@ -94,7 +95,7 @@ void UART_Init(const Uart_ConfigType * ConfigPtr)
         }
 
         /* Setting the stop bits */
-        if(Uart_ModulePtr[uart_counter].noStopBits == UART_TWO_STOP_BIT){
+        if(Uart_ModulePtr[uartCounter].noStopBits == UART_TWO_STOP_BIT){
             /* Two stop bits are transmitted at the end of a frame. The receive
                logic does not check for two stop bits being received. */
             *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_LCRH_REG_OFFSET) |= (1<<UART_TWO_STOP_BITS_SELECT_BIT);
@@ -103,14 +104,14 @@ void UART_Init(const Uart_ConfigType * ConfigPtr)
         }
 
         /* Setting the number of data bits */
-        *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_LCRH_REG_OFFSET) &= CLEAR_WORD_LENGTH_BITS_MASK;
-        *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_LCRH_REG_OFFSET) |= (Uart_ModulePtr[uart_counter].noDataBits)<<UART_WORD_LENGTH_SHIFT_MASK;
+        *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_LCRH_REG_OFFSET) &= UART_CLEAR_WORD_LENGTH_BITS_MASK;
+        *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_LCRH_REG_OFFSET) |= (Uart_ModulePtr[uartCounter].noDataBits)<<UART_WORD_LENGTH_SHIFT_MASK;
 
         /* intializing the clock by giving it zero value to use system clock */
         *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_CC_REG_OFFSET) = 0;
 
-        /* Enable the uart module by clearing the UARTEN BIT IN UARTCTL Register*/
-        *(((uint32 *)(uint8 *)uartBaseAddressPtr + UART_CTL_REG_OFFSET)) |= (1<<UART_EN_BIT);
+        /* Enable the uart module by setting the UARTEN BIT IN UARTCTL Register*/
+        *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_CTL_REG_OFFSET) |= (1<<UART_EN_BIT);
 
 
     }
@@ -192,7 +193,7 @@ sint8 Uart_ReceiveByte(Uart_ModuleNumber uartModuleNumber){
     while(((*(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_F_REG_OFFSET)) & UART_RXEF_MASK) != 0);
 
     /* Read the data from the uart data register and save it into dataReceived variable */
-    dataReceived = *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_D_REG_OFFSET;
+    dataReceived = *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_D_REG_OFFSET);
 
     /* return the read register */
     return dataReceived;
