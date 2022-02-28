@@ -4,21 +4,11 @@
 #include "keypad.h"
 #include "sw_delay.h"
 #include "Uart.h"
+#include "external_eeprom.h"
+
 
 int main()
 {
-    uint8 pressedKey = 0;
-    uint8 receivedByte = 0;
-    Dio_Init(&Dio_Configuration);
-    Port_Init(&Port_Configuration);
-    Uart_Init(&Uart_Configuration);
-    LCD_init();
-    LCD_clearScreen();
-    LCD_displayString("Initialized");
-    Delay_Ms(1000);
-    LCD_clearScreen();
-    LCD_displayCharacter('S');
-    Delay_Ms(5000);
 
     while(1){
 
