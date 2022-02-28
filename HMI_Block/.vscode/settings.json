@@ -6,7 +6,8 @@
         "keypad.h": "c",
         "platform_types.h": "c",
         "compiler.h": "c",
-        "external_eeprom.h": "c"
+        "external_eeprom.h": "c",
+        "lcd.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
