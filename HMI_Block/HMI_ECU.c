@@ -320,34 +320,16 @@ void Options_Menu(void)
 		}
 
 		/* Case The Received Macro is LOCK */
-		else if(receive_new == PASSWORD_OR_LOCK)
-		{
-			/* Clear The Screen to add new Data */
-			LCD_clearScreen();
+		else if(receive_new == LOCK)
+        {
+            /* Clear The Screen to add new Data */
+            LCD_clearScreen();
 
-            /* Enter the random generated number */
-
-            LCD_displayString("Enter Sent Passcode");
-            LCD_moveCursor(1,7);
-
-            Enter_Passcode(pass1);
-            UART_sendByte(CONTROL_BLOCK_UART, 'N');
-
-            for(i = 0 ; i < NUMBER_OF_CHARACTERS_IN_PASSCODE; i++){
-                UART_sendByte(CONTROL_BLOCK_UART, pass1[i]);
-            }
-
-            if(Uart_ReceiveByte(CONTROL_BLOCK_UART) == LOCK){
-                LCD_displayString("Smile To Camera :)");
-                /* Block The System after Executing all Options until it is freed again */
-                Block_System();
-            } else {
-                break;
-            }
-
-
-
-		}
+            LCD_displayString("Smile To Camera :)");
+            
+            Delay_Ms(LOCK_TIME);
+        }
+        
 		break;
 
 		/* Change The Passcode */
@@ -410,33 +392,17 @@ void Options_Menu(void)
 		}
 
 		/* Case The Received Macro is LOCK */
-		else if(receive_new == PASSWORD_OR_LOCK)
-		{
-			/* Clear The Screen to add new Data */
-			LCD_clearScreen();
+        else if (receive_new == LOCK)
+        {
+            /* Clear The Screen to add new Data */
+            LCD_clearScreen();
 
-            /* Enter the random generated number */
-
-            LCD_displayString("Enter Sent Passcode");
-            LCD_moveCursor(1,7);
-
-            Enter_Passcode(pass1);
-            UART_sendByte(CONTROL_BLOCK_UART, 'N');
-
-            for(i = 0 ; i < NUMBER_OF_CHARACTERS_IN_PASSCODE; i++){
-                UART_sendByte(CONTROL_BLOCK_UART, pass1[i]);
-            }
-
-            if(Uart_ReceiveByte(CONTROL_BLOCK_UART) == LOCK){
-                LCD_displayString("Smile To Camera :)");
-                /* Block The System after Executing all Options until it is freed again */
-                Block_System();
-            } else {
-                break;
-            }
-
-		}
-	}
+            LCD_displayString("Smile To Camera :)");
+            
+            Delay_Ms(LOCK_TIME);
+        }
+        break;
+    }
 
 	/* Set first_time to N indicating that The next iteration won't be The First Time Use and There is a saved
 	 * Passcode Already.
