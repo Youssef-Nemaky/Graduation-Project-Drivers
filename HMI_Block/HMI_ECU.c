@@ -209,7 +209,7 @@ void Enter_Passcode(uint8 *pass)
 			LCD_displayCharacter('*');
 
 			/* Wait 250msec before getting a new press from the keypad buttons, Press time is 250msec */
-			Delay_ms(KEYPAD_DELAY);
+			Delay_Ms(KEYPAD_DELAY);
 		}
 	}
 }
@@ -234,8 +234,6 @@ void Options_Menu(void)
 	/* Loops Counter */
 	uint8 i;
 
-	uint8 times = 0;
-
 	/* Clear The Screen to add new Data */
 	LCD_clearScreen();
 
@@ -247,7 +245,7 @@ void Options_Menu(void)
 	LCD_moveCursor(1 , 0);
 	LCD_displayString("2: Change Passcode");
 
-	/* Extra Options
+	/* Extra Options*/
 	/* - Locking and Unlocking The Engine for long Periods of time
 	 - Share The access of the car
 	   every month the user must authenticate his identity using the three authentication methods */
@@ -277,7 +275,7 @@ void Options_Menu(void)
 			Enter_Passcode(pass1);
 
 			/* Send a Certain Character to Control Block to inform it to read the saved Passcode on The EEPROM */
-			UART_sendByte('B');
+			Uart_SendByte(CONTROL_BLOCK_UART,'B');
 
 			/* Send The Entered Passcode to Control Block via UART */
 			for(i = 0; i < NUMBER_OF_CHARACTERS_IN_PASSCODE; i++)
@@ -357,7 +355,7 @@ void Options_Menu(void)
 			}
 
 			/* Receive a certain Macro from Control Block to know if the Passcode is Correct or not */
-			receive_new = UART_receiveByte();
+			receive_new = Uart_ReceiveByte(CONTROL_BLOCK_UART);
 
 			/* Case The Received Macro is INCORRECT */
 			if(receive_new == INCORRECT)
@@ -366,7 +364,7 @@ void Options_Menu(void)
 				LCD_clearScreen();
 
 				LCD_displayStringRowColumn(0 , 1 , "Wrong Passcode");
-				Delay_ms(LCD_MESSAGE_DELAY);
+				Delay_Ms(LCD_MESSAGE_DELAY);
 
 				/* Clear The Screen to add new Data */
 				LCD_clearScreen();
@@ -387,7 +385,7 @@ void Options_Menu(void)
 			/* Send The New Passcode to Control Block via UART */
 			for(i = 0; i < NUMBER_OF_CHARACTERS_IN_PASSCODE; i++)
 			{
-				UART_sendByte(pass2[i]);
+				Uart_SendByte(CONTROL_BLOCK_UART,pass2[i]);
 			}
 		}
 

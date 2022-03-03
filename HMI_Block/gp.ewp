@@ -2137,25 +2137,10 @@
         <name>$PROJ_DIR$\Dio_Regs.h</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\external_eeprom.c</name>
+        <name>$PROJ_DIR$\HMI_ECU.c</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\external_eeprom.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\external_eeprom_cfg.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\I2c.c</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\I2c.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\I2c_PBcfg.c</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\I2c_Regs.h</name>
+        <name>$PROJ_DIR$\HMI_ECU.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\keypad.c</name>
@@ -2171,9 +2156,6 @@
     </file>
     <file>
         <name>$PROJ_DIR$\lcd_cfg.h</name>
-    </file>
-    <file>
-        <name>$PROJ_DIR$\main.c</name>
     </file>
     <file>
         <name>$PROJ_DIR$\MCU_Config.h</name>
@@ -2206,18 +2188,18 @@
         <name>$PROJ_DIR$\Sw_Delay.h</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\Uart.c</name>
+        <name>$PROJ_DIR$\uart.c</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\Uart.h</name>
+        <name>$PROJ_DIR$\uart.h</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\Uart_Cfg.h</name>
+        <name>$PROJ_DIR$\UART_Cfg.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\Uart_PBcfg.c</name>
     </file>
     <file>
-        <name>$PROJ_DIR$\Uart_Regs.h</name>
+        <name>$PROJ_DIR$\uart_regs.h</name>
     </file>
 </project>
