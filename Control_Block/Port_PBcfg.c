@@ -49,13 +49,11 @@ const Port_ConfigType Port_Configuration = {
     PORT_A, PORT_A_PIN_2, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
     PORT_A, PORT_A_PIN_3, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
     PORT_A, PORT_A_PIN_4, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
-    /* LCD Control Pins*/
     PORT_A, PORT_A_PIN_5, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
     PORT_A, PORT_A_PIN_6, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
     PORT_A, PORT_A_PIN_7, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
 
     /* PORT B pins*/
-    /* Keypad Pins */
     PORT_B, PORT_B_PIN_0, PORT_PIN_IN, PORT_MODE_0, PULL_DOWN, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
     PORT_B, PORT_B_PIN_1, PORT_PIN_IN, PORT_MODE_0, PULL_DOWN, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
     PORT_B, PORT_B_PIN_2, PORT_PIN_IN, PORT_MODE_0, PULL_DOWN, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
@@ -70,7 +68,6 @@ const Port_ConfigType Port_Configuration = {
     PORT_C, PORT_C_PIN_1, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
     PORT_C, PORT_C_PIN_2, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
     PORT_C, PORT_C_PIN_3, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
-    /* LCD Data Pins */
     PORT_C, PORT_C_PIN_4, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
     PORT_C, PORT_C_PIN_5, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
     PORT_C, PORT_C_PIN_6, PORT_PIN_OUT, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
@@ -88,13 +85,14 @@ const Port_ConfigType Port_Configuration = {
     
     /* PORT E pins*/
     /* UART7 Pins */
-    PORT_E, PORT_E_PIN_0, PORT_PIN_IN, PORT_MODE_1, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
-    PORT_E, PORT_E_PIN_1, PORT_PIN_IN, PORT_MODE_1, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
+    PORT_E, PORT_E_PIN_0, PORT_PIN_IN, PORT_MODE_1, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF, /* RX */
+    PORT_E, PORT_E_PIN_1, PORT_PIN_IN, PORT_MODE_1, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF, /* TX */
 
     PORT_E, PORT_E_PIN_2, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
     PORT_E, PORT_E_PIN_3, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
-    PORT_E, PORT_E_PIN_4, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
-    PORT_E, PORT_E_PIN_5, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
+    /* I2C Pins */
+    PORT_E, PORT_E_PIN_4, PORT_PIN_IN, PORT_MODE_3, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF, /* SCL */
+    PORT_E, PORT_E_PIN_5, PORT_PIN_IN, PORT_MODE_3, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_ON, /* SDA */
 
     
     /* PORT F pins*/
@@ -104,4 +102,3 @@ const Port_ConfigType Port_Configuration = {
     PORT_F, PORT_F_PIN_3, PORT_PIN_IN, PORT_MODE_0, OFF, STD_LOW, changeable, changeable, OPEN_DRAIN_OFF,
     PORT_F, PORT_F_PIN_4, PORT_PIN_IN,  PORT_MODE_0, OFF, STD_LOW, changeable,  changeable ,OPEN_DRAIN_OFF,
 };
-
