@@ -40,6 +40,13 @@ System_State state = BLOCKED;
  *                       	  Functions Definitions                            *
  *******************************************************************************/
 
+uint8 isFirstTime(){
+    uint8 firstTime = 0;
+    Uart_SendByte(CONTROL_BLOCK_UART, 'F');
+    firstTime = Uart_ReceiveByte(CONTROL_BLOCK_UART);
+    return firstTime;
+}
+
 /*******************************************************************************************************
  * [Name]: Drivers_Init
  * [Parameters]: void (none)
@@ -51,8 +58,9 @@ void Drivers_Init(void){
     Port_Init(&Port_Configuration);
     Dio_Init(&Dio_Configuration);
     Uart_Init(&Uart_Configuration);
-    //Delay_Ms(1000);
     LCD_init();
+    //Delay_Ms(1000);
+
 }
 
 
@@ -86,7 +94,7 @@ void Receive_First_Time_Check(void)
 		/* In case of match Send The Passcode element by element to Control-ECU */
 		for(i = 0; i < NUMBER_OF_CHARACTERS_IN_PASSCODE; i++)
 		{
-            Uart_SendByte(CONTROL_BLOCK_UART, pass1[i]);
+            Uart_SendByte(CONTROL_BLOCK_UART, pass1[i] + '0');
 		}
 
 		/* Calling Options Menu in case of Match */
@@ -98,6 +106,8 @@ void Receive_First_Time_Check(void)
 
 		/* Go to Options Menu Directly without The Setup Process */
 		Options_Menu();
+                break;
+        default: break;
 	}
 }
 
@@ -280,7 +290,7 @@ void Options_Menu(void)
 			/* Send The Entered Passcode to Control Block via UART */
 			for(i = 0; i < NUMBER_OF_CHARACTERS_IN_PASSCODE; i++)
 			{
-                Uart_SendByte(CONTROL_BLOCK_UART, pass1[i]);
+                Uart_SendByte(CONTROL_BLOCK_UART, pass1[i] + '0');
 			}
 
 			/* Receive a certain Macro from Control Block to know if the Passcode is Correct or not */
@@ -351,7 +361,7 @@ void Options_Menu(void)
 			/* Send The Entered Passcode to Control Block via UART */
 			for(i = 0; i < NUMBER_OF_CHARACTERS_IN_PASSCODE; i++)
 			{
-				Uart_SendByte(CONTROL_BLOCK_UART, pass1[i]);
+				Uart_SendByte(CONTROL_BLOCK_UART, pass1[i] + '0');
 			}
 
 			/* Receive a certain Macro from Control Block to know if the Passcode is Correct or not */
@@ -385,7 +395,7 @@ void Options_Menu(void)
 			/* Send The New Passcode to Control Block via UART */
 			for(i = 0; i < NUMBER_OF_CHARACTERS_IN_PASSCODE; i++)
 			{
-				Uart_SendByte(CONTROL_BLOCK_UART,pass2[i]);
+				Uart_SendByte(CONTROL_BLOCK_UART, pass2[i] + '0');
 			}
 		}
 
@@ -449,10 +459,12 @@ int main(void)
         Delay_Ms(1000);
         LCD_clearScreen();
 	/* Receive a certain Byte (Character) from Control Block to know if that is the System First Use or not */
-	first_time = Uart_ReceiveByte(CONTROL_BLOCK_UART);
+	
     
 	while(1)
 	{
+        
+                first_time = isFirstTime();
 		/* Calling The Program Start Function for HMI Block */
 		Receive_First_Time_Check();
 	}
