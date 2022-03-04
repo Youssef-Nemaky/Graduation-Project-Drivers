@@ -159,8 +159,8 @@ void Uart_SendByte(Uart_ModuleNumber uartModuleNumber ,const uint8 byteToSend){
     *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_D_REG_OFFSET) = byteToSend;
 }
 
-sint8 Uart_ReceiveByte(Uart_ModuleNumber uartModuleNumber){
-    sint8 dataReceived = 0;
+uint8 Uart_ReceiveByte(Uart_ModuleNumber uartModuleNumber){
+    uint8 dataReceived = 0;
     volatile uint32 * uartBaseAddressPtr = NULL_PTR;
 
     switch (uartModuleNumber){

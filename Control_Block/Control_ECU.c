@@ -52,8 +52,8 @@ uint8 times;
  ********************************************************************************************************/
 void Drivers_Init(void)
 {
-    Dio_Init(&Dio_Configuration);
     Port_Init(&Port_Configuration);
+    Dio_Init(&Dio_Configuration);
     Uart_Init(&Uart_Configuration);
     I2c_Init(&I2c_Confiuration);
 }
@@ -101,7 +101,10 @@ void Passcode_Receive_and_Check(void)
 	uint8 pass2[5];
 
 	/* Variable to hold The Value of The Received Byte from HMI Block to decide what to do  */
-	uint8 receive_new = Uart_ReceiveByte(HMI_BLOCK_UART);
+	uint8 receive_new = 0;
+        
+        
+        receive_new = Uart_ReceiveByte(HMI_BLOCK_UART);
 
 	/* A: Character Received from HMI Block to Save The Passcode for The first Time.
 	 * B: Character Received from HMI Block to Check The Passcode and Start The Door Operation.
@@ -197,7 +200,10 @@ void Passcode_Receive_and_Check(void)
 				Uart_SendByte(HMI_BLOCK_UART,INCORRECT);
 			}
 		}
-	}
+        }
+ else if(receive_new == 'F'){
+        Send_First_Time_Check();
+    }
 }
 
 
@@ -322,7 +328,6 @@ int main(void)
 	Drivers_Init();
 
 	/* Sending The Byte to HMI to decide the course of action */
-	Send_First_Time_Check();
 
 	while(1)
 	{
