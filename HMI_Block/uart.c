@@ -19,6 +19,7 @@ void Uart_Init(const Uart_ConfigType * ConfigPtr)
     /* Enable the clock for the registers */
     uint8 uartCounter = 0;
     volatile uint32 * uartBaseAddressPtr = NULL_PTR;
+    volatile unsigned long delay = 0;
     uint16 integerBaudRateDivisor = 0;
     uint8 fractionalBaurdRateDivisor = 0;
 
@@ -62,7 +63,9 @@ void Uart_Init(const Uart_ConfigType * ConfigPtr)
 
         /* Enable the clock for the uart registers */
         SET_BIT(UART_RCGC_REG, uartCounter); 
-
+        delay = UART_RCGC_REG; /* Give time for the clock to start */
+        delay = UART_RCGC_REG; /* Give time for the clock to start */
+        
         /* Disable the uart module by clearing the UARTEN BIT IN UARTCTL Register*/
         *(volatile uint32 *)((volatile uint8 *)uartBaseAddressPtr + UART_CTL_REG_OFFSET) &= ~(1<<UART_EN_BIT);
 

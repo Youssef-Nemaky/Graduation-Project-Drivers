@@ -19,7 +19,7 @@
 #include "HMI_ECU.h"
 #include "lcd.h"
 #include "keypad.h"
-#include "uart.h"
+#include "Uart.h"
 #include "Port.h"
 #include "Sw_Delay.h"
 
@@ -48,9 +48,10 @@ System_State state = BLOCKED;
  * like LCD and Enabling Global Interrupt (I-Bit) in HMI Block.
  ********************************************************************************************************/
 void Drivers_Init(void){
-    Dio_Init(&Dio_Configuration);
     Port_Init(&Port_Configuration);
+    Dio_Init(&Dio_Configuration);
     Uart_Init(&Uart_Configuration);
+    //Delay_Ms(1000);
     LCD_init();
 }
 
@@ -65,8 +66,8 @@ void Drivers_Init(void){
 void Receive_First_Time_Check(void)
 {
 	/* Arrays to hold The whole Passcode */
-	uint8 pass1[NUMBER_OF_CHARACTERS_IN_PASSCODE];
-	uint8 pass2[NUMBER_OF_CHARACTERS_IN_PASSCODE];
+	uint8 pass1[NUMBER_OF_CHARACTERS_IN_PASSCODE] = {0};
+	uint8 pass2[NUMBER_OF_CHARACTERS_IN_PASSCODE] = {0};
 
 	/* Loop Counter */
 	uint8 i;
@@ -166,12 +167,13 @@ void Setup_New_Passcode(uint8 *pass1 , uint8 *pass2)
 boolean Passcode_Check_Condition(uint8 *pass1 , uint8 *pass2)
 {
 	/* Loop Counter */
-	uint8 i;
+	uint8 i = 0;
 
 	for(i = 0; i < NUMBER_OF_CHARACTERS_IN_PASSCODE; i++)
 	{
-		if(pass1[i] != pass2[i])
-		return FALSE;
+		if(pass1[i] != pass2[i]){
+            return FALSE;
+        }
 	}
 	return TRUE;
 }
@@ -187,10 +189,10 @@ boolean Passcode_Check_Condition(uint8 *pass1 , uint8 *pass2)
 void Enter_Passcode(uint8 *pass)
 {
 	/* Loop Counter */
-	uint8 i;
+	uint8 i = 0;
 
 	/* Variable to hold The value of the Pressed Key */
-	uint8 pressed_key;
+	uint8 pressed_key = 0;
 
 	/* Repeat for 5 Times only (5 Numbers Passcode) */
 	for(i = 0; i < NUMBER_OF_CHARACTERS_IN_PASSCODE;)
@@ -201,11 +203,9 @@ void Enter_Passcode(uint8 *pass)
 		/* Check that The Entered Key is a Numeric Value */
 		if((pressed_key >= 0) && (pressed_key <= 9))
 		{
-			/* Increment in case of number only */
-			i++;
-
 			/* Get the pressed button from keypad */
-			pass[i] = pressed_key;
+			pass[i++] = pressed_key;
+
 			LCD_displayCharacter('*');
 
 			/* Wait 250msec before getting a new press from the keypad buttons, Press time is 250msec */
@@ -225,8 +225,8 @@ void Enter_Passcode(uint8 *pass)
 void Options_Menu(void)
 {
 	/* Arrays to hold The whole Passcode */
-	uint8 pass1[NUMBER_OF_CHARACTERS_IN_PASSCODE];
-	uint8 pass2[NUMBER_OF_CHARACTERS_IN_PASSCODE];
+  uint8 pass1[NUMBER_OF_CHARACTERS_IN_PASSCODE] = {0};
+  uint8 pass2[NUMBER_OF_CHARACTERS_IN_PASSCODE] = {0};
 
 	/* Variable To Hold The Value of The Received Byte (INCORRECT , CORRECT , LOCK) */
 	uint8 receive_new;
@@ -444,8 +444,10 @@ void Free_System(void)
 int main(void)
 {
 	/* Initialize Drivers to be ready to use when it is needed */
-	Drivers_Init();
-
+	    Drivers_Init();
+        LCD_displayString("2looo");
+        Delay_Ms(1000);
+        LCD_clearScreen();
 	/* Receive a certain Byte (Character) from Control Block to know if that is the System First Use or not */
 	first_time = Uart_ReceiveByte(CONTROL_BLOCK_UART);
     
