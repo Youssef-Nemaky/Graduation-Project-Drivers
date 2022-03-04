@@ -106,6 +106,6 @@ void Uart_SendByte(Uart_ModuleNumber uartModuleNumber ,const uint8 byteToSend);
  * Description :
  * Functional responsible for receive byte from another UART device.
  */
-sint8 Uart_ReceiveByte(Uart_ModuleNumber uartModuleNumber);
+uint8 Uart_ReceiveByte(Uart_ModuleNumber uartModuleNumber);
 
 #endif
