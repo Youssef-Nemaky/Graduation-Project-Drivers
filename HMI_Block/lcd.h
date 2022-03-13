@@ -129,5 +129,6 @@ void LCD_clearScreen(void);
  ***************************************************************************************/
 void LCD_displayInteger(sint32 a_numberToDisplay);
 
+void LCD_displayHex(uint8 number);
 
 #endif /* LCD_H_ */

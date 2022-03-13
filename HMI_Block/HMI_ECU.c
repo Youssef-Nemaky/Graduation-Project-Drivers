@@ -17,11 +17,6 @@
  *******************************************************************************/
 
 #include "HMI_ECU.h"
-#include "lcd.h"
-#include "keypad.h"
-#include "Uart.h"
-#include "Port.h"
-#include "Sw_Delay.h"
 
 
 /*******************************************************************************
@@ -34,11 +29,98 @@ uint8 first_time;
 /* Global Variable of type System_State used to block The System at a certain point for an amount of time */
 System_State state = BLOCKED;
 
+int numOfUsedAuthMethods = 3;
+
+uint8 (*authArray[numOfAvAuthMethods])(void) = {passwordAuth, rfidAuth, raspAuth};
+
+
 
 
 /*******************************************************************************
  *                       	  Functions Definitions                            *
  *******************************************************************************/
+
+uint8  passwordAuth(void){
+    uint8 pass1[NUMBER_OF_CHARACTERS_IN_PASSCODE];
+    uint8 receive_new , passwordCounter = 0;
+
+    /* Clear The Screen to add new Data */
+    LCD_clearScreen();
+
+    /* Enter your new created Passcode */
+    LCD_displayStringRowColumn(0, 3, "Enter Passcode");
+    LCD_moveCursor(1, 7);
+
+    /* Execute Theses Lines at least once */
+    do {
+        /* Enter your new created Passcode */
+        Enter_Passcode(pass1);
+
+        /* Send a Certain Character to Control Block to inform it to read the saved Passcode on The EEPROM */
+        Uart_SendByte(CONTROL_BLOCK_UART, 'B');
+
+        /* Send The Entered Passcode to Control Block via UART */
+        for (passwordCounter = 0; passwordCounter < NUMBER_OF_CHARACTERS_IN_PASSCODE; passwordCounter++)
+        {
+            Uart_SendByte(CONTROL_BLOCK_UART, pass1[passwordCounter] + '0');
+        }
+
+        /* Receive a certain Macro from Control Block to know if the Passcode is Correct or not */
+        receive_new = Uart_ReceiveByte(CONTROL_BLOCK_UART);
+
+        /* Case The Received Macro is INCORRECT */
+        if (receive_new == INCORRECT)
+        {
+            /* Clear The Screen to add new Data */
+            LCD_clearScreen();
+
+            LCD_displayStringRowColumn(0, 3, "Wrong Passcode");
+            Delay_ms(LCD_MESSAGE_DELAY);
+
+            /* Clear The Screen to add new Data */
+            LCD_clearScreen();
+
+            LCD_displayStringRowColumn(0, 0, "Enter Passcode Again");
+            LCD_moveCursor(1, 7);
+        }
+
+        /* As long as The Received Macro is still INCORRECT */
+    } while (receive_new == INCORRECT);
+
+    /* Case The Received Macro is CORRECT */
+    if (receive_new == CORRECT)
+    {
+        /* Clear The Screen to add new Data */
+        LCD_clearScreen();
+
+        return TRUE;
+    }
+
+    /* MOVE ME PLEASE SENPAI */
+    /* Case The Received Macro is LOCK */
+    else if (receive_new == LOCK)
+    {
+        return FALSE;
+    }
+    return FALSE;
+}
+
+void systemAuth(void){
+    uint8 authCounter = 0;
+    boolean authResult = FALSE;
+    for(authCounter = 0; authCounter < numOfUsedAuthMethods; authCounter++){
+        authResult = (*authArray[authCounter])();
+        if(authResult == FALSE){
+            /* Clear The Screen to add new Data */
+            LCD_clearScreen();
+
+            LCD_displayString("Smile To Camera :)");
+
+            Delay_ms(LOCK_TIME);
+        }
+    }
+}
+
 
 uint8 isFirstTime(){
     uint8 firstTime = 0;
@@ -58,11 +140,161 @@ void Drivers_Init(void){
     Port_Init(&Port_Configuration);
     Dio_Init(&Dio_Configuration);
     Uart_Init(&Uart_Configuration);
+    Spi_Init(&Spi_Configuration);
+    RFID_Init();
     LCD_init();
-    //Delay_Ms(1000);
+}
+
+
+void passwordSetup(void){
+    /* Arrays to hold The whole Passcode */
+    uint8 pass1[NUMBER_OF_CHARACTERS_IN_PASSCODE] = { 0 };
+    uint8 pass2[NUMBER_OF_CHARACTERS_IN_PASSCODE] = { 0 };
+
+    /* Loop Counter */
+    uint8 i;
+
+    /* Setup New Passcode for The System */
+    Setup_New_Passcode(pass1, pass2);
+
+    /* Send a Certain Character to Control Block to inform it to save the sent Passcode on The EEPROM */
+    Uart_SendByte(CONTROL_BLOCK_UART, 'A');
+
+    /* In case of match Send The Passcode element by element to Control-ECU */
+    for (i = 0; i < NUMBER_OF_CHARACTERS_IN_PASSCODE; i++)
+    {
+        Uart_SendByte(CONTROL_BLOCK_UART, pass1[i] + '0');
+    }
 
 }
 
+void rfidReadTag(uint8 * a_rfid_tag){
+    uint8 byte;
+
+    byte = RFID_Read(ComIEnReg);
+    RFID_Write(ComIEnReg, byte | 0x20);
+    byte = RFID_Read(DivIEnReg);
+    RFID_Write(DivIEnReg, byte | 0x80);
+
+    while (1) {
+        byte = RFID_Request(PICC_REQALL, a_rfid_tag);
+        if (byte == CARD_FOUND)
+        {
+            byte = RFID_getCardSerial(a_rfid_tag);
+            /* Str has the UID of the rfid tag */
+
+                 /* Delete me later */
+            if (byte == CARD_FOUND)
+            {
+                for (byte = 0;byte < 4;byte++) {
+                   
+                    LCD_moveCursor(2, byte * 2);
+                    LCD_displayHex(a_rfid_tag[byte]);
+                }
+                Delay_ms(2500);
+                return;
+            }
+        }
+        Delay_ms(1000);
+    }
+}
+
+
+void rfidSetup(void){
+    uint8 uidCounter = 0;
+    uint8 rfidTag1[RFID_UNIQUE_ID_LENGTH];
+    uint8 rfidTag2[RFID_UNIQUE_ID_LENGTH];
+
+    LCD_clearScreen();
+    LCD_displayString("Enter your 1st tag");
+    rfidReadTag(rfidTag1);
+
+    LCD_clearScreen();
+    LCD_displayString("Enter your 2nd tag");
+    rfidReadTag(rfidTag2);
+
+    /* store the RFID tags */
+    /* Send a Certain Character to Control Block to inform it to save the sent Passcode on The EEPROM */
+    Uart_SendByte(CONTROL_BLOCK_UART, 'S');
+
+    /* In case of match Send The Passcode element by element to Control-ECU */
+
+    /* First Tag */
+    for (uidCounter = 0; uidCounter < RFID_UNIQUE_ID_LENGTH; uidCounter++)
+    {
+        Uart_SendByte(CONTROL_BLOCK_UART, rfidTag1[uidCounter]);
+    }
+
+    if(Uart_ReceiveByte(CONTROL_BLOCK_UART) == 'Z'){
+        /* Second Tag */
+        for (uidCounter = 0; uidCounter < RFID_UNIQUE_ID_LENGTH; uidCounter++)
+        {
+            Uart_SendByte(CONTROL_BLOCK_UART, rfidTag2[uidCounter]);
+        }
+    }
+}
+
+
+uint8 rfidAuth(void){
+    uint8 rfidTag[RFID_UNIQUE_ID_LENGTH] = {0};
+    uint8 receive_new, rfidCounter = 0;
+
+    /* Clear The Screen to add new Data */
+    LCD_clearScreen();
+
+    /* Enter your new created Passcode */
+    LCD_displayStringRowColumn(0, 3, "Scan your tag");
+
+    /* Execute Theses Lines at least once */
+    do {
+        rfidReadTag(rfidTag);
+
+        /* Send a Certain Character to Control Block to inform it to read the saved Passcode on The EEPROM */
+        Uart_SendByte(CONTROL_BLOCK_UART , 'R');
+
+        /* Send The Entered Passcode to Control Block via UART */
+        for (rfidCounter = 0; rfidCounter < RFID_UNIQUE_ID_LENGTH; rfidCounter++)
+        {
+            Uart_SendByte(CONTROL_BLOCK_UART, rfidTag[rfidCounter]);
+        }
+
+        /* Receive a certain Macro from Control Block to know if the Passcode is Correct or not */
+        receive_new = Uart_ReceiveByte(CONTROL_BLOCK_UART);
+
+        /* Case The Received Macro is INCORRECT */
+        if (receive_new == INCORRECT)
+        {
+            /* Clear The Screen to add new Data */
+            LCD_clearScreen();
+
+            LCD_displayStringRowColumn(0, 5, "Tag Failed");
+            Delay_ms(LCD_MESSAGE_DELAY);
+
+            /* Clear The Screen to add new Data */
+            LCD_clearScreen();
+
+            LCD_displayStringRowColumn(0, 2, "Re-scan your tag");
+        }
+
+        /* As long as The Received Macro is still INCORRECT */
+    } while (receive_new == INCORRECT);
+
+    /* Case The Received Macro is CORRECT */
+    if (receive_new == CORRECT)
+    {
+        /* Clear The Screen to add new Data */
+        LCD_clearScreen();
+        return TRUE;
+    }
+
+    /* MOVE ME PLEASE SENPAI */
+    /* Case The Received Macro is LOCK */
+    else if (receive_new == LOCK)
+    {
+        return FALSE;
+    }
+    return FALSE;
+}
 
 /*******************************************************************************************************
  * [Name]: Receive_First_Time_Check
@@ -73,29 +305,13 @@ void Drivers_Init(void){
  ********************************************************************************************************/
 void Receive_First_Time_Check(void)
 {
-	/* Arrays to hold The whole Passcode */
-	uint8 pass1[NUMBER_OF_CHARACTERS_IN_PASSCODE] = {0};
-	uint8 pass2[NUMBER_OF_CHARACTERS_IN_PASSCODE] = {0};
-
-	/* Loop Counter */
-	uint8 i;
-
 	switch(first_time)
 	{
 		/* Case First Time Use */
 	case 'Y':
 
-		/* Setup New Passcode for The System */
-		Setup_New_Passcode(pass1 , pass2);
-
-		/* Send a Certain Character to Control Block to inform it to save the sent Passcode on The EEPROM */
-		Uart_SendByte(CONTROL_BLOCK_UART, 'A');
-
-		/* In case of match Send The Passcode element by element to Control-ECU */
-		for(i = 0; i < NUMBER_OF_CHARACTERS_IN_PASSCODE; i++)
-		{
-            Uart_SendByte(CONTROL_BLOCK_UART, pass1[i] + '0');
-		}
+        passwordSetup();
+        rfidSetup();
 
 		/* Calling Options Menu in case of Match */
 		Options_Menu();
@@ -111,7 +327,9 @@ void Receive_First_Time_Check(void)
 	}
 }
 
-
+uint8 raspAuth(void){
+    return TRUE;
+}
 /*******************************************************************************************************
  * [Name]: Setup_New_Passcode
  * [Parameters]: uint8 *pass1 , uint8 *pass2
@@ -154,7 +372,7 @@ void Setup_New_Passcode(uint8 *pass1 , uint8 *pass2)
             /* Display an error message */
             LCD_displayString("Passwords Mismatch!");
             /* A short delay to give the user time to read the error message */
-            Delay_Ms(LCD_MESSAGE_DELAY);
+            Delay_ms(LCD_MESSAGE_DELAY);
         }
 
 		/*
@@ -219,7 +437,7 @@ void Enter_Passcode(uint8 *pass)
 			LCD_displayCharacter('*');
 
 			/* Wait 250msec before getting a new press from the keypad buttons, Press time is 250msec */
-			Delay_Ms(KEYPAD_DELAY);
+			Delay_ms(KEYPAD_DELAY);
 		}
 	}
 }
@@ -264,79 +482,19 @@ void Options_Menu(void)
     			/* keep looping until the pressed key is either 1 or 2 */
     do {
         option = KEYPAD_getPressedKey();
-        Delay_Ms(KEYPAD_DELAY);
+        Delay_ms(KEYPAD_DELAY);
     } while (option != 1 && option != 2);
 	
+
 	switch(option)
 	{
 		/* Case Open The Door */
 	case 1:
 
+        systemAuth();
+
 		/* Clear The Screen to add new Data */
 		LCD_clearScreen();
-
-		/* Enter your new created Passcode */
-		LCD_displayStringRowColumn(0 , 3 , "Enter Passcode");
-		LCD_moveCursor(1 , 7);
-
-		/* Execute Theses Lines at least once */
-		do{
-			/* Enter your new created Passcode */
-			Enter_Passcode(pass1);
-
-			/* Send a Certain Character to Control Block to inform it to read the saved Passcode on The EEPROM */
-			Uart_SendByte(CONTROL_BLOCK_UART,'B');
-
-			/* Send The Entered Passcode to Control Block via UART */
-			for(i = 0; i < NUMBER_OF_CHARACTERS_IN_PASSCODE; i++)
-			{
-                Uart_SendByte(CONTROL_BLOCK_UART, pass1[i] + '0');
-			}
-
-			/* Receive a certain Macro from Control Block to know if the Passcode is Correct or not */
-			receive_new = Uart_ReceiveByte(CONTROL_BLOCK_UART);
-            
-			/* Case The Received Macro is INCORRECT */
-			if(receive_new == INCORRECT)
-			{
-				/* Clear The Screen to add new Data */
-				LCD_clearScreen();
-
-				LCD_displayStringRowColumn(0 , 3 , "Wrong Passcode");
-				Delay_Ms(LCD_MESSAGE_DELAY);
-
-				/* Clear The Screen to add new Data */
-				LCD_clearScreen();
-
-				LCD_displayStringRowColumn(0 , 0 , "Enter Passcode Again");
-				LCD_moveCursor(1 , 7);
-			}
-
-			/* As long as The Received Macro is still INCORRECT */
-		}while(receive_new == INCORRECT);
-
-		/* Case The Received Macro is CORRECT */
-		if(receive_new == CORRECT)
-		{
-			/* Clear The Screen to add new Data */
-			LCD_clearScreen();
-
-			LCD_displayString("The Engine is Ready");
-
-            Delay_Ms(LCD_MESSAGE_DELAY);
-
-		}
-
-		/* Case The Received Macro is LOCK */
-		else if(receive_new == LOCK)
-        {
-            /* Clear The Screen to add new Data */
-            LCD_clearScreen();
-
-            LCD_displayString("Smile To Camera :)");
-            
-            Delay_Ms(LOCK_TIME);
-        }
         
 		break;
 
@@ -374,12 +532,11 @@ void Options_Menu(void)
 				LCD_clearScreen();
 
 				LCD_displayStringRowColumn(0 , 1 , "Wrong Passcode");
-				Delay_Ms(LCD_MESSAGE_DELAY);
+				Delay_ms(LCD_MESSAGE_DELAY);
 
 				/* Clear The Screen to add new Data */
 				LCD_clearScreen();
-
-				LCD_displayStringRowColumn(0 , 1 , "Enter Passcode Again");
+                                LCD_displayString("Enter Passcode Again");
 				LCD_moveCursor(1 , 7);
 			}
 
@@ -407,7 +564,7 @@ void Options_Menu(void)
 
             LCD_displayString("Smile To Camera :)");
             
-            Delay_Ms(LOCK_TIME);
+            Delay_ms(LOCK_TIME);
         }
         break;
     }
@@ -456,7 +613,7 @@ int main(void)
 	/* Initialize Drivers to be ready to use when it is needed */
 	    Drivers_Init();
         LCD_displayString("2looo");
-        Delay_Ms(1000);
+        Delay_ms(1000);
         LCD_clearScreen();
 	/* Receive a certain Byte (Character) from Control Block to know if that is the System First Use or not */
 	

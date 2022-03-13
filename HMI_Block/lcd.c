@@ -63,9 +63,9 @@ void LCD_sendCommand(uint8 command)
 
     /* Send a pulse of HIGH to LOW on EN pin with a delay of 1 ms */
     Dio_WriteChannel(LCD_EN,STD_HIGH); 	/* Set EN */
-	Delay_Ms(1); /* A short delay of 1 ms */
+	Delay_ms(1); /* A short delay of 1 ms */
 	Dio_WriteChannel(LCD_EN,STD_LOW);  /* Clear EN */
-	Delay_Ms(1); /* A short delay of 1 ms */
+	Delay_ms(1); /* A short delay of 1 ms */
 
     /* Send the Lower Nibble */
 	Dio_WriteChannelGroup(LCD_PTR,command);
@@ -76,9 +76,9 @@ void LCD_sendCommand(uint8 command)
 
     /* Send a pulse of HIGH to LOW on EN pin with a delay of 1 ms */
 	Dio_WriteChannel(LCD_EN,STD_HIGH); /* Set EN */
-	Delay_Ms(1); /* A short delay of 1 ms */
+	Delay_ms(1); /* A short delay of 1 ms */
 	Dio_WriteChannel(LCD_EN,STD_LOW); /* Clear EN */
-	Delay_Ms(1); /* A short delay of 1 ms */
+	Delay_ms(1); /* A short delay of 1 ms */
 
 #elif(LCD_DATA_BITS_MODE == LCD_EIGHT_BIT_MODE)
 	/* send the command to the LCD data pins */
@@ -90,9 +90,9 @@ void LCD_sendCommand(uint8 command)
         
     /* Send a pulse of high to low */
 	Dio_WriteChannel(LCD_EN,STD_HIGH); /* Set EN */
-    Delay_Ms(1); /* A short delay of 1 ms */
+    Delay_ms(1); /* A short delay of 1 ms */
 	Dio_WriteChannel(LCD_EN,STD_LOW); /* Clear EN */
-	Delay_Ms(1); /* A short delay of 1 ms */
+	Delay_ms(1); /* A short delay of 1 ms */
 #endif
 }
 
@@ -114,9 +114,9 @@ void LCD_displayCharacter(uint8 data)
 	
     /* Send a pulse of HIGH to LOW on EN pin with a delay of 1 ms */
     Dio_WriteChannel(LCD_EN,STD_HIGH); /* Set EN */
-	Delay_Ms(1); /* A short delay of 1 ms */
+	Delay_ms(1); /* A short delay of 1 ms */
 	Dio_WriteChannel(LCD_EN,STD_LOW); /* Clear EN */
-	Delay_Ms(1); /* A short delay of 1 ms */
+	Delay_ms(1); /* A short delay of 1 ms */
     
     /* Send the Lower Nibble */
 	Dio_WriteChannelGroup(LCD_PTR,data);
@@ -127,9 +127,9 @@ void LCD_displayCharacter(uint8 data)
 
     /* Send a pulse of HIGH to LOW on EN pin with a delay of 1 ms */
 	Dio_WriteChannel(LCD_EN,STD_HIGH); /* Set EN */
-	Delay_Ms(1); /* A short delay of 1 ms */
+	Delay_ms(1); /* A short delay of 1 ms */
 	Dio_WriteChannel(LCD_EN,STD_LOW); /* Clear EN */
-	Delay_Ms(1); /* A short delay of 1 ms */
+	Delay_ms(1); /* A short delay of 1 ms */
 #elif(LCD_DATA_BITS_MODE == 8)
 
     /* Send the data (character) to the LCD data pins */
@@ -141,9 +141,9 @@ void LCD_displayCharacter(uint8 data)
 	
     /* Send a pulse of HIGH to LOW on EN pin with a delay of 1 ms */
     Dio_WriteChannel(LCD_EN,STD_HIGH); /* Set EN */
-	Delay_Ms(1); /* A short delay of 1 ms */
+	Delay_ms(1); /* A short delay of 1 ms */
 	Dio_WriteChannel(LCD_EN,STD_LOW); /* Clear EN */
-	Delay_Ms(1); /* A short delay of 1 ms */
+	Delay_ms(1); /* A short delay of 1 ms */
 	#endif
 }
 /**************************************************************************************
@@ -282,4 +282,27 @@ void LCD_displayInteger(sint32 a_numberToDisplay)
     }
     /* Display the number */
     LCD_displayString(buffer);
+}
+
+
+void LCD_displayHex(uint8 number){
+	uint8 byte = '0';
+
+    uint8 valueToCheck = ((number>>4) & 0x0F);
+    if(valueToCheck <= 9){
+        byte = '0' + valueToCheck;
+    } else {
+        byte = 'A' + valueToCheck - 0x0A;
+    }
+    LCD_displayCharacter(byte);
+
+
+    valueToCheck = number & 0x0F;
+    if(valueToCheck <= 9){
+        byte = '0' + valueToCheck;
+    } else {
+        byte = 'A' + valueToCheck - 0x0A;
+    }
+
+    LCD_displayCharacter(byte);
 }

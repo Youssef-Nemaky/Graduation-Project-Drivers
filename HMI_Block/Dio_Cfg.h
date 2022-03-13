@@ -40,7 +40,7 @@
 /****************** Dio Channels Settings ******************/
 
 /* Number of the configured Dio Channels */
-#define DIO_CONFIGURED_CHANNLES              (11U)
+#define DIO_CONFIGURED_CHANNLES              (12U)
 
 /* Channel Index in the array of structures in Dio_PBcfg.c */
 //#define DioConf_LED1_CHANNEL_ID_INDEX        ((uint8)0x00)
@@ -99,8 +99,10 @@
 #define DioConf_LCD_RW_CHANNEL_NUM (GPIO_PA6)
 #define DioConf_LCD_EN_CHANNEL_NUM (GPIO_PA7)
 
-
-
+/* SPI Slave Select */
+#define DioConf_SPI_SS_CHANNEL_ID_INDEX ((uint8)3)
+#define DioConf_SPI_SS_PORT_NUM (GPIO_PORTF_ID)
+#define DioConf_SPI_SS_CHANNEL_NUM (GPIO_PF4)
 
 
 /* keypad */

@@ -2909,6 +2909,27 @@
         <name>$PROJ_DIR$\Port_Regs.h</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\RFID.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\RFID.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\Spi.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\Spi.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\Spi_Cfg.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\Spi_PBcfg.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\Spi_Regs.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\Std_Types.h</name>
     </file>
     <file>

@@ -95,3 +95,16 @@
 224	276	6681128682815236	D:/embedded_non-stop/Graduation Project/Control_Block/Debug/Exe/gp.out	c7cb540f476308df
 2	109	6681135530410095	D:/embedded_non-stop/Graduation Project/Control_Block/Debug/Obj/Control_ECU.o	435e42a7694c82a1
 117	181	6681135531188423	D:/embedded_non-stop/Graduation Project/Control_Block/Debug/Exe/gp.out	c7cb540f476308df
+1	212	6681145965145983	D:/Embedded_non-stop/Graduation Project/Control_Block/Debug/Obj/Control_ECU.o	d3c252d10bd4f18d
+5	219	6681145965215993	D:/Embedded_non-stop/Graduation Project/Control_Block/Debug/Obj/Port_PBcfg.o	e34d0ee7d274191
+19	277	6681145965845973	D:/Embedded_non-stop/Graduation Project/Control_Block/Debug/Obj/Uart_PBcfg.o	58712c8093a6862d
+22	283	6681145965865978	D:/Embedded_non-stop/Graduation Project/Control_Block/Debug/Obj/Uart.o	6c77823364699a2
+290	583	6681145968895963	D:/Embedded_non-stop/Graduation Project/Control_Block/Debug/Exe/gp.out	6034ac289b8c3041
+11	477	6683858134253590	D:/Embedded_non-stop/Graduation Project/Control_Block/Debug/Obj/Control_ECU.o	d3c252d10bd4f18d
+0	82	6683858754574506	D:/Embedded_non-stop/Graduation Project/Control_Block/Debug/Obj/Control_ECU.o	d3c252d10bd4f18d
+88	156	6683858755330590	D:/Embedded_non-stop/Graduation Project/Control_Block/Debug/Exe/gp.out	6034ac289b8c3041
+1	94	6683861806364137	D:/Embedded_non-stop/Graduation Project/Control_Block/Debug/Obj/Control_ECU.o	d3c252d10bd4f18d
+100	146	6683861806917520	D:/Embedded_non-stop/Graduation Project/Control_Block/Debug/Exe/gp.out	6034ac289b8c3041
+5	52	6688263711631063	D:/Embedded_non-stop/Graduation Project/Control_Block/Debug/Obj/Sw_Delay.o	1b34bdbd958612d8
+1	91	6688263712021055	D:/Embedded_non-stop/Graduation Project/Control_Block/Debug/Obj/Control_ECU.o	d3c252d10bd4f18d
+98	202	6688263713151055	D:/Embedded_non-stop/Graduation Project/Control_Block/Debug/Exe/gp.out	6034ac289b8c3041

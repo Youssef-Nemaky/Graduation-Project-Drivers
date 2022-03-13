@@ -34,8 +34,9 @@
 System_State state = BLOCKED;
 
 /* Global Variable that holds The Value of Times The Passcode is entered in case it was entered wrong */
-uint8 times;
+uint8 passWrongAttempts = 0;
 
+uint8 rfidWrongAttempts = 0;
 
 
 /*******************************************************************************
@@ -69,7 +70,7 @@ void Drivers_Init(void)
 void Send_First_Time_Check(void)
 {
 	/* Variable Holds a specific value to inform the system that this a The First Time Use or not */
-	uint8 first_time_use;
+	uint8 first_time_use = 0;
 
 	EEPROM_readByte(0x0321 , &first_time_use);
 
@@ -100,6 +101,12 @@ void Passcode_Receive_and_Check(void)
 	uint8 pass1[5];
 	uint8 pass2[5];
 
+    uint8 rfidTag1[RFID_UNIQUE_ID_LENGTH] = {0};
+    uint8 rfidTag2[RFID_UNIQUE_ID_LENGTH] = {0};
+    uint8 rfidTag3[RFID_UNIQUE_ID_LENGTH] = {0};
+
+    uint8 uniqueIdCounter = 0;
+
 	/* Variable to hold The Value of The Received Byte from HMI Block to decide what to do  */
 	uint8 receive_new = 0;
         
@@ -112,98 +119,123 @@ void Passcode_Receive_and_Check(void)
 	 */
 
 	/* Case The Received Character is A */
-	if(receive_new == 'A')
-	{
-		/* Save The New Created Passcode in The EEPROM */
-		Save_Passcode(pass1);
 
-		/* Writing location of first_time to make sure that its default value is changed */
-		EEPROM_writeByte(0x0321 , 0x00);
-	}
+        switch (receive_new) {
+        case 'A':
+            /* Save The New Created Passcode in The EEPROM */
+            Save_Passcode(pass1);
 
-	/* Case The Received Character is B */
-	else if(receive_new == 'B')
-	{
-		/* Case The Check Condition is True */
-		if(Passcode_Check())
-		{
-			/* Send CORRECT Macro to HMI-ECU Indicating Correct Passcode */
-			Uart_SendByte(HMI_BLOCK_UART,CORRECT);
+            /* Writing location of first_time to make sure that its default value is changed */
+            EEPROM_writeByte(0x0321, 0x00);
+            break;
+        case 'B':
+            /* Case The Check Condition is True */
+            if (Passcode_Check()) {
+                /* Send CORRECT Macro to HMI-ECU Indicating Correct Passcode */
+                Uart_SendByte(HMI_BLOCK_UART, CORRECT);
 
-			/* Unlock The Engine Door */
+                /* Unlock The Engine Door */
 
-		}
+            }
 
-		/* Case The Check Condition is False */
-		else
-		{
-			/* Increment times by 1 each time The Passcode is entered wrong */
-			times++;
+            /* Case The Check Condition is False */
+            else {
+                /* Increment passWrongAttempts by 1 each time The Passcode is entered wrong */
+                passWrongAttempts++;
 
-			/* Case times reached it's Maximum Value 3 Times */
-			if(times >= 3)
-			{
-				/* Send LOCK Macro to HMI-ECU Indicating Incorrect Passcode for 3 times */
-				Uart_SendByte(HMI_BLOCK_UART,LOCK);
+                /* Case passWrongAttempts reached it's Maximum Value 3 Times */
+                if (passWrongAttempts >= 3) {
+                    /* Send LOCK Macro to HMI-ECU Indicating Incorrect Passcode for 3 passWrongAttempts */
+                    Uart_SendByte(HMI_BLOCK_UART, LOCK);
 
-				/* Send Notification via The Mobile Application */
+                    /* Send Notification via The Mobile Application */
 
 
-				/* Rest times back to 0 */
-				times = 0;
-                Delay_Ms(LOCK_TIME);
-			}
+                    /* Rest passWrongAttempts back to 0 */
+                    passWrongAttempts = 0;
+                    Delay_ms(LOCK_TIME);
+                }
 
-			else
-			{
-				/* Send INCORRECT Macro to HMI-ECU Indicating Incorrect Passcode for 1 time */
-				Uart_SendByte(HMI_BLOCK_UART,INCORRECT);
-			}
-		}
-	}
+                else
+                {
+                    /* Send INCORRECT Macro to HMI-ECU Indicating Incorrect Passcode for 1 time */
+                    Uart_SendByte(HMI_BLOCK_UART, INCORRECT);
+                }
+            }
+            break;
+        case 'C':
+            /* Case The Check Condition is True */
+            if (Passcode_Check()) {
+                /* Send CORRECT Macro to HMI-ECU Indicating Correct Passcode */
+                Uart_SendByte(HMI_BLOCK_UART, CORRECT);
 
-	/* Case The Received Character is C */
-	else if(receive_new == 'C')
-	{
-		/* Case The Check Condition is True */
-		if(Passcode_Check())
-		{
-			/* Send CORRECT Macro to HMI-ECU Indicating Correct Passcode */
-			Uart_SendByte(HMI_BLOCK_UART,CORRECT);
+                /* Save The New Changed Passcode in The EEPROM */
+                Save_Passcode(pass2);
+            }
 
-			/* Save The New Changed Passcode in The EEPROM */
-			Save_Passcode(pass2);
-		}
+            /* Case The Check Condition is False */
+            else
+            {
+                /* Increment passWrongAttempts by 1 each time The Passcode is not correct */
+                passWrongAttempts++;
 
-		/* Case The Check Condition is False */
-		else
-		{
-			/* Increment times by 1 each time The Passcode is not correct */
-			times++;
-
-			/* Case times reached it's Maximum Value 3 Times */
-			if(times >= 3)
-			{
-				/* Send LOCK Macro to HMI-ECU Indicating Incorrect Passcode for 3 times */
-				Uart_SendByte(HMI_BLOCK_UART,LOCK);
-                Delay_Ms(LOCK_TIME);
-				/* Send Notification via The Mobile Application */
+                /* Case passWrongAttempts reached it's Maximum Value 3 Times */
+                if (passWrongAttempts >= 3) {
+                    /* Send LOCK Macro to HMI-ECU Indicating Incorrect Passcode for 3 passWrongAttempts */
+                    Uart_SendByte(HMI_BLOCK_UART, LOCK);
+                    Delay_ms(LOCK_TIME);
+                    /* Send Notification via The Mobile Application */
 
 
-				/* Rest times back to 0 */
-				times = 0;
-			}
+                    /* Rest passWrongAttempts back to 0 */
+                    passWrongAttempts = 0;
+                }
 
-			else
-			{
-				/* Send INCORRECT Macro to HMI-ECU Indicating Incorrect Passcode for 1 time */
-				Uart_SendByte(HMI_BLOCK_UART,INCORRECT);
-			}
-		}
+                else {
+                    /* Send INCORRECT Macro to HMI-ECU Indicating Incorrect Passcode for 1 time */
+                    Uart_SendByte(HMI_BLOCK_UART, INCORRECT);
+                }
+            }
+            break;
+        case 'F':
+            Send_First_Time_Check();
+            break;
+        case 'S':
+            rfidSave(rfidTag1, 1);
+            Uart_SendByte(HMI_BLOCK_UART, 'Z');
+            rfidSave(rfidTag2, 2);
+            break;
+        case 'R':
+            /* get the uid from the HMI */
+            for (uniqueIdCounter = 0; uniqueIdCounter < RFID_UNIQUE_ID_LENGTH; uniqueIdCounter++) {
+                rfidTag1[uniqueIdCounter] = Uart_ReceiveByte(HMI_BLOCK_UART);
+            }
+
+            /* get the uid from the HMI */
+            for (uniqueIdCounter = 0; uniqueIdCounter < RFID_UNIQUE_ID_LENGTH; uniqueIdCounter++) {
+                EEPROM_readByte(0x0316 + uniqueIdCounter, &rfidTag2[uniqueIdCounter]);
+                EEPROM_readByte(0x0316 + uniqueIdCounter + RFID_UNIQUE_ID_LENGTH, &rfidTag3[uniqueIdCounter]);
+                if(( rfidTag1[uniqueIdCounter] != rfidTag2[uniqueIdCounter] ) && ( rfidTag1[uniqueIdCounter] != rfidTag3[uniqueIdCounter] )){
+                    rfidWrongAttempts++;
+
+                    if(rfidWrongAttempts >= 3){
+                        /* Send LOCK Macro to HMI-ECU Indicating Incorrect Passcode for 3 passWrongAttempts */
+                        Uart_SendByte(HMI_BLOCK_UART, LOCK);
+                        /* Rest passWrongAttempts back to 0 */
+                        rfidWrongAttempts = 0;
+                        Delay_ms(LOCK_TIME);
+                        return;
+                    } else {
+                        /* Send INCORRECT Macro to HMI-ECU Indicating Incorrect Passcode for 1 time */
+                        Uart_SendByte(HMI_BLOCK_UART, INCORRECT);
+                    }
+                }
+            }
+            Uart_SendByte(HMI_BLOCK_UART, CORRECT);
+            break;
+        default:
+            break;
         }
- else if(receive_new == 'F'){
-        Send_First_Time_Check();
-    }
 }
 
 
@@ -226,20 +258,32 @@ void Save_Passcode(uint8 *pass)
 
 	/* Write The Passcode values in the external EEPROM in Locations from (0x311) to (0x315) */
 
-    /* Change me to a FOR LOOP */
-	EEPROM_writeByte(0x0311 , pass[0]);
-	Delay_Ms(10);
-	EEPROM_writeByte(0x0312 , pass[1]);
-	Delay_Ms(10);
-	EEPROM_writeByte(0x0313 , pass[2]);
-	Delay_Ms(10);
-	EEPROM_writeByte(0x0314 , pass[3]);
-	Delay_Ms(10);
-	EEPROM_writeByte(0x0315 , pass[4]);
-	Delay_Ms(10);
+    for(i = 0; i < 5; i++){
+        EEPROM_writeByte(0x0311 + i, pass[i]);
+        Delay_ms(10);
+    }
+    
 }
 
 
+void rfidSave(uint8 * rfidTag, uint8 tagNumber){
+    uint8 uniqueIdCounter = 0;
+
+    /* get the uid from the HMI */
+    for(uniqueIdCounter = 0; uniqueIdCounter < RFID_UNIQUE_ID_LENGTH; uniqueIdCounter++){
+        rfidTag[uniqueIdCounter] = Uart_ReceiveByte(HMI_BLOCK_UART);
+    }
+
+    /* store the uid into the EEPROM */
+    for(uniqueIdCounter = 0; uniqueIdCounter < RFID_UNIQUE_ID_LENGTH; uniqueIdCounter++){
+        if(tagNumber == 1){
+            EEPROM_writeByte(0x0316 + uniqueIdCounter, rfidTag[uniqueIdCounter]);
+        } else {
+            EEPROM_writeByte(0x0316 + uniqueIdCounter + RFID_UNIQUE_ID_LENGTH, rfidTag[uniqueIdCounter]);
+        }
+        Delay_ms(10);
+    }
+}
 /*******************************************************************************************************
  * [Name]: Passcode_Check
  * [Parameters]: void (none)

@@ -25,6 +25,6 @@
  * [Description]: The Function responsible for The Delay in the internal Operations of the peripherals
  * and Hardware Components that don't need accurate timing using Timers like (Systic or GPT).
  ********************************************************************************************************/
-void Delay_Ms(unsigned long long timeInMs);
+void Delay_ms(unsigned long long timeInMs);
 
 #endif /* SW_DELAY_H*/

@@ -35,6 +35,7 @@
 #define CORRECT 1
 #define LOCK 2
 
+#define RFID_UNIQUE_ID_LENGTH (8u)
 
 
 /*******************************************************************************
@@ -133,6 +134,8 @@ void Block_System(void);
  ********************************************************************************************************/
 void Free_System(void);
 
+
+void rfidSave(uint8 * rfidTag, uint8);
 
 #endif /* CONTROL_ECU_H_ */
 

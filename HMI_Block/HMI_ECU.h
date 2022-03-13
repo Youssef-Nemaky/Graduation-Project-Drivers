@@ -20,16 +20,27 @@
 /*******************************************************************************
  *                                  Includes                                   *
  *******************************************************************************/
+/* MCAL Drivers */
+#include "Port.h"
+#include "Dio.h"
+#include "Uart.h"
+#include "Spi.h"
 
-#include "Std_types.h"
+/* HAL Drivers */
+#include "lcd.h"
+#include "keypad.h"
+#include "RFID.h"
+
+/* Utility Functions */
+#include "Sw_Delay.h"
 
 /*******************************************************************************
  *                                Definitions                                  *
  *******************************************************************************/
 #define KEYPAD_DELAY 250
-#define LCD_MESSAGE_DELAY 500
+#define LCD_MESSAGE_DELAY 2000
 
-
+#define numOfAvAuthMethods 3
 #define NUMBER_OF_CHARACTERS_IN_PASSCODE 5
 
 #define INCORRECT 0
@@ -133,6 +144,20 @@ void Block_System(void);
  * [Description]: The Function responsible for getting The System back from Blocked state to Free State.
  ********************************************************************************************************/
 void Free_System(void);
+
+void passwordSetup(void);
+
+uint8 passwordAuth(void);
+
+void rfidSetup(void);
+
+uint8 rfidAuth(void);
+
+uint8 raspAuth(void);
+
+void systemAuth(void);
+
+
 
 
 #endif /* HMI_ECU_H_ */

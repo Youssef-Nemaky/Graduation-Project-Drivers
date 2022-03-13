@@ -46,6 +46,7 @@ const Dio_ConfigType Dio_Configuration = {
 				            DioConf_LCD_RS_PORT_NUM,DioConf_LCD_RS_CHANNEL_NUM,
                             DioConf_LCD_RW_PORT_NUM,DioConf_LCD_RW_CHANNEL_NUM,
                             DioConf_LCD_EN_PORT_NUM,DioConf_LCD_EN_CHANNEL_NUM,
+                            DioConf_SPI_SS_PORT_NUM,DioConf_SPI_SS_CHANNEL_NUM,
                             DioConf_KEPAD_ROW0_PORT_NUM,DioConf_KEYPAD_ROW0_CHANNEL_NUM,
                             DioConf_KEPAD_ROW1_PORT_NUM,DioConf_KEYPAD_ROW1_CHANNEL_NUM,
                             DioConf_KEPAD_ROW2_PORT_NUM,DioConf_KEYPAD_ROW2_CHANNEL_NUM,
