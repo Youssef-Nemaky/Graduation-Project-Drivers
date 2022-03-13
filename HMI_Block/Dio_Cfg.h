@@ -106,7 +106,7 @@
 
 
 /* keypad */
-
+#define DioConf_KEYPAD_BASE_CHANNEL_ID_INDEX 4
 #define DioConf_KEPAD_ROW0_PORT_NUM ((Dio_PortType)GPIO_PORTB_ID)
 #define DioConf_KEPAD_ROW1_PORT_NUM ((Dio_PortType)GPIO_PORTB_ID)
 #define DioConf_KEPAD_ROW2_PORT_NUM ((Dio_PortType)GPIO_PORTB_ID)

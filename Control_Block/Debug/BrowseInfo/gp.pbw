@@ -1348,7 +1348,7 @@
     "display": "void Save_Passcode(uint8 *)",
     "location": {
       "column": "6",
-      "line": "248",
+      "line": "250",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Control_ECU.c"
     },
     "name": "Save_Passcode",
@@ -1356,13 +1356,13 @@
     "scope": null
   },
   {
-    "ID": "c:Control_ECU.c@9853@F@Save_Passcode@i",
+    "ID": "c:Control_ECU.c@9922@F@Save_Passcode@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "8",
-      "line": "251",
+      "line": "253",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Control_ECU.c"
     },
     "name": "i",
@@ -1376,7 +1376,7 @@
     "display": "void rfidSave(uint8 *, uint8)",
     "location": {
       "column": "6",
-      "line": "269",
+      "line": "271",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Control_ECU.c"
     },
     "name": "rfidSave",
@@ -1384,13 +1384,13 @@
     "scope": null
   },
   {
-    "ID": "c:Control_ECU.c@10278@F@rfidSave@uniqueIdCounter",
+    "ID": "c:Control_ECU.c@10347@F@rfidSave@uniqueIdCounter",
     "What": "Variable",
     "defdec": "Def",
     "display": "uniqueIdCounter",
     "location": {
       "column": "11",
-      "line": "270",
+      "line": "272",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Control_ECU.c"
     },
     "name": "uniqueIdCounter",
@@ -1404,7 +1404,7 @@
     "display": "uint8 Passcode_Check(void)",
     "location": {
       "column": "7",
-      "line": "297",
+      "line": "299",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Control_ECU.c"
     },
     "name": "Passcode_Check",
@@ -1412,13 +1412,13 @@
     "scope": null
   },
   {
-    "ID": "c:Control_ECU.c@11734@F@Passcode_Check@pass1",
+    "ID": "c:Control_ECU.c@11803@F@Passcode_Check@pass1",
     "What": "Variable",
     "defdec": "Def",
     "display": "pass1",
     "location": {
       "column": "8",
-      "line": "300",
+      "line": "302",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Control_ECU.c"
     },
     "name": "pass1",
@@ -1426,13 +1426,13 @@
     "scope": null
   },
   {
-    "ID": "c:Control_ECU.c@11752@F@Passcode_Check@pass2",
+    "ID": "c:Control_ECU.c@11821@F@Passcode_Check@pass2",
     "What": "Variable",
     "defdec": "Def",
     "display": "pass2",
     "location": {
       "column": "8",
-      "line": "301",
+      "line": "303",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Control_ECU.c"
     },
     "name": "pass2",
@@ -1440,13 +1440,13 @@
     "scope": null
   },
   {
-    "ID": "c:Control_ECU.c@11793@F@Passcode_Check@i",
+    "ID": "c:Control_ECU.c@11862@F@Passcode_Check@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "8",
-      "line": "304",
+      "line": "306",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Control_ECU.c"
     },
     "name": "i",
@@ -1460,7 +1460,7 @@
     "display": "void Block_System(void)",
     "location": {
       "column": "6",
-      "line": "338",
+      "line": "340",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Control_ECU.c"
     },
     "name": "Block_System",
@@ -1474,7 +1474,7 @@
     "display": "void Free_System(void)",
     "location": {
       "column": "6",
-      "line": "357",
+      "line": "359",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Control_ECU.c"
     },
     "name": "Free_System",
@@ -1488,7 +1488,7 @@
     "display": "int main(void)",
     "location": {
       "column": "5",
-      "line": "369",
+      "line": "371",
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Control_ECU.c"
     },
     "name": "main",
@@ -3274,440 +3274,6 @@
       "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Control_ECU.h"
     },
     "name": "rfidSave",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@406@macro@PLATFORM_TYPES_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PLATFORM_TYPES_H",
-    "location": {
-      "column": "9",
-      "line": "14",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "PLATFORM_TYPES_H",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@475@macro@PLATFORM_VENDOR_ID",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PLATFORM_VENDOR_ID",
-    "location": {
-      "column": "9",
-      "line": "17",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "PLATFORM_VENDOR_ID",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@574@macro@PLATFORM_SW_MAJOR_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PLATFORM_SW_MAJOR_VERSION",
-    "location": {
-      "column": "9",
-      "line": "23",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "PLATFORM_SW_MAJOR_VERSION",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@632@macro@PLATFORM_SW_MINOR_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PLATFORM_SW_MINOR_VERSION",
-    "location": {
-      "column": "9",
-      "line": "24",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "PLATFORM_SW_MINOR_VERSION",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@690@macro@PLATFORM_SW_PATCH_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PLATFORM_SW_PATCH_VERSION",
-    "location": {
-      "column": "9",
-      "line": "25",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "PLATFORM_SW_PATCH_VERSION",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@785@macro@PLATFORM_AR_RELEASE_MAJOR_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PLATFORM_AR_RELEASE_MAJOR_VERSION",
-    "location": {
-      "column": "9",
-      "line": "30",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "PLATFORM_AR_RELEASE_MAJOR_VERSION",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@843@macro@PLATFORM_AR_RELEASE_MINOR_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PLATFORM_AR_RELEASE_MINOR_VERSION",
-    "location": {
-      "column": "9",
-      "line": "31",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "PLATFORM_AR_RELEASE_MINOR_VERSION",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@901@macro@PLATFORM_AR_RELEASE_PATCH_VERSION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PLATFORM_AR_RELEASE_PATCH_VERSION",
-    "location": {
-      "column": "9",
-      "line": "32",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "PLATFORM_AR_RELEASE_PATCH_VERSION",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@992@macro@CPU_TYPE_8",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_TYPE_8",
-    "location": {
-      "column": "9",
-      "line": "35",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "CPU_TYPE_8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@1050@macro@CPU_TYPE_16",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_TYPE_16",
-    "location": {
-      "column": "9",
-      "line": "36",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "CPU_TYPE_16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@1109@macro@CPU_TYPE_32",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_TYPE_32",
-    "location": {
-      "column": "9",
-      "line": "37",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "CPU_TYPE_32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@1192@macro@HIGH_BYTE_FIRST",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "HIGH_BYTE_FIRST",
-    "location": {
-      "column": "9",
-      "line": "40",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "HIGH_BYTE_FIRST",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@1271@macro@LOW_BYTE_FIRST",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LOW_BYTE_FIRST",
-    "location": {
-      "column": "9",
-      "line": "41",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "LOW_BYTE_FIRST",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@1375@macro@MSB_FIRST",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "MSB_FIRST",
-    "location": {
-      "column": "9",
-      "line": "44",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "MSB_FIRST",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@1453@macro@LSB_FIRST",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LSB_FIRST",
-    "location": {
-      "column": "9",
-      "line": "45",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "LSB_FIRST",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@1586@macro@CPU_TYPE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_TYPE",
-    "location": {
-      "column": "9",
-      "line": "50",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "CPU_TYPE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@1640@macro@CPU_BYTE_ORDER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_BYTE_ORDER",
-    "location": {
-      "column": "9",
-      "line": "53",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "CPU_BYTE_ORDER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@1702@macro@CPU_BIT_ORDER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_BIT_ORDER",
-    "location": {
-      "column": "9",
-      "line": "56",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "CPU_BIT_ORDER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@1778@macro@FALSE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "FALSE",
-    "location": {
-      "column": "9",
-      "line": "62",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "FALSE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@1822@macro@TRUE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TRUE",
-    "location": {
-      "column": "9",
-      "line": "66",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "TRUE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@T@boolean",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned char",
-    "location": {
-      "column": "31",
-      "line": "69",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "boolean",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@T@uint8",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned char",
-    "location": {
-      "column": "31",
-      "line": "71",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "uint8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@T@sint8",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "signed char",
-    "location": {
-      "column": "31",
-      "line": "72",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "sint8",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@T@uint16",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned short",
-    "location": {
-      "column": "31",
-      "line": "73",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "uint16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@T@sint16",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "short",
-    "location": {
-      "column": "31",
-      "line": "74",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "sint16",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@T@uint32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned long",
-    "location": {
-      "column": "31",
-      "line": "75",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "uint32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@T@sint32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "long",
-    "location": {
-      "column": "31",
-      "line": "76",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "sint32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@T@uint64",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned long long",
-    "location": {
-      "column": "31",
-      "line": "77",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "uint64",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@T@sint64",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "long long",
-    "location": {
-      "column": "31",
-      "line": "78",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "sint64",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@T@float32",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "float",
-    "location": {
-      "column": "31",
-      "line": "79",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "float32",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:Platform_Types.h@T@float64",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "double",
-    "location": {
-      "column": "31",
-      "line": "80",
-      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
-    },
-    "name": "float64",
     "origin": "user_include",
     "scope": null
   },
@@ -6296,6 +5862,440 @@
     "scope": null
   },
   {
+    "ID": "c:Platform_Types.h@406@macro@PLATFORM_TYPES_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLATFORM_TYPES_H",
+    "location": {
+      "column": "9",
+      "line": "14",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "PLATFORM_TYPES_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@475@macro@PLATFORM_VENDOR_ID",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLATFORM_VENDOR_ID",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "PLATFORM_VENDOR_ID",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@574@macro@PLATFORM_SW_MAJOR_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLATFORM_SW_MAJOR_VERSION",
+    "location": {
+      "column": "9",
+      "line": "23",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "PLATFORM_SW_MAJOR_VERSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@632@macro@PLATFORM_SW_MINOR_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLATFORM_SW_MINOR_VERSION",
+    "location": {
+      "column": "9",
+      "line": "24",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "PLATFORM_SW_MINOR_VERSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@690@macro@PLATFORM_SW_PATCH_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLATFORM_SW_PATCH_VERSION",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "PLATFORM_SW_PATCH_VERSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@785@macro@PLATFORM_AR_RELEASE_MAJOR_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLATFORM_AR_RELEASE_MAJOR_VERSION",
+    "location": {
+      "column": "9",
+      "line": "30",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "PLATFORM_AR_RELEASE_MAJOR_VERSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@843@macro@PLATFORM_AR_RELEASE_MINOR_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLATFORM_AR_RELEASE_MINOR_VERSION",
+    "location": {
+      "column": "9",
+      "line": "31",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "PLATFORM_AR_RELEASE_MINOR_VERSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@901@macro@PLATFORM_AR_RELEASE_PATCH_VERSION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PLATFORM_AR_RELEASE_PATCH_VERSION",
+    "location": {
+      "column": "9",
+      "line": "32",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "PLATFORM_AR_RELEASE_PATCH_VERSION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@992@macro@CPU_TYPE_8",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_TYPE_8",
+    "location": {
+      "column": "9",
+      "line": "35",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "CPU_TYPE_8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@1050@macro@CPU_TYPE_16",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_TYPE_16",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "CPU_TYPE_16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@1109@macro@CPU_TYPE_32",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_TYPE_32",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "CPU_TYPE_32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@1192@macro@HIGH_BYTE_FIRST",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HIGH_BYTE_FIRST",
+    "location": {
+      "column": "9",
+      "line": "40",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "HIGH_BYTE_FIRST",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@1271@macro@LOW_BYTE_FIRST",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LOW_BYTE_FIRST",
+    "location": {
+      "column": "9",
+      "line": "41",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "LOW_BYTE_FIRST",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@1375@macro@MSB_FIRST",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MSB_FIRST",
+    "location": {
+      "column": "9",
+      "line": "44",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "MSB_FIRST",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@1453@macro@LSB_FIRST",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LSB_FIRST",
+    "location": {
+      "column": "9",
+      "line": "45",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "LSB_FIRST",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@1586@macro@CPU_TYPE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_TYPE",
+    "location": {
+      "column": "9",
+      "line": "50",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "CPU_TYPE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@1640@macro@CPU_BYTE_ORDER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_BYTE_ORDER",
+    "location": {
+      "column": "9",
+      "line": "53",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "CPU_BYTE_ORDER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@1702@macro@CPU_BIT_ORDER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CPU_BIT_ORDER",
+    "location": {
+      "column": "9",
+      "line": "56",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "CPU_BIT_ORDER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@1778@macro@FALSE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "FALSE",
+    "location": {
+      "column": "9",
+      "line": "62",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "FALSE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@1822@macro@TRUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TRUE",
+    "location": {
+      "column": "9",
+      "line": "66",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "TRUE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@T@boolean",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned char",
+    "location": {
+      "column": "31",
+      "line": "69",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "boolean",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@T@uint8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned char",
+    "location": {
+      "column": "31",
+      "line": "71",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "uint8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@T@sint8",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "signed char",
+    "location": {
+      "column": "31",
+      "line": "72",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "sint8",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@T@uint16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned short",
+    "location": {
+      "column": "31",
+      "line": "73",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "uint16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@T@sint16",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "short",
+    "location": {
+      "column": "31",
+      "line": "74",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "sint16",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@T@uint32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned long",
+    "location": {
+      "column": "31",
+      "line": "75",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "uint32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@T@sint32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "long",
+    "location": {
+      "column": "31",
+      "line": "76",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "sint32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@T@uint64",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned long long",
+    "location": {
+      "column": "31",
+      "line": "77",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "uint64",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@T@sint64",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "long long",
+    "location": {
+      "column": "31",
+      "line": "78",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "sint64",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@T@float32",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "float",
+    "location": {
+      "column": "31",
+      "line": "79",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "float32",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:Platform_Types.h@T@float64",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "double",
+    "location": {
+      "column": "31",
+      "line": "80",
+      "path": "D:\\Embedded_non-stop\\Graduation Project\\Control_Block\\Platform_Types.h"
+    },
+    "name": "float64",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:I2c.h@345@macro@I2C_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -7780,7 +7780,7 @@
     "scope": null
   },
   {
-    "ID": "c:Sw_Delay.h@329@macro@SW_DLEAY_H",
+    "ID": "c:sw_delay.h@329@macro@SW_DLEAY_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SW_DLEAY_H",
@@ -7794,7 +7794,7 @@
     "scope": null
   },
   {
-    "ID": "c:sw_delay.h@329@macro@SW_DLEAY_H",
+    "ID": "c:Sw_Delay.h@329@macro@SW_DLEAY_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "SW_DLEAY_H",

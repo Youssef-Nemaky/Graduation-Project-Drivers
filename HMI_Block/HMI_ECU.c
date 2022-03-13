@@ -29,7 +29,7 @@ uint8 first_time;
 /* Global Variable of type System_State used to block The System at a certain point for an amount of time */
 System_State state = BLOCKED;
 
-int numOfUsedAuthMethods = 3;
+uint8 numOfUsedAuthMethods = 3;
 
 uint8 (*authArray[numOfAvAuthMethods])(void) = {passwordAuth, rfidAuth, raspAuth};
 
@@ -117,8 +117,14 @@ void systemAuth(void){
             LCD_displayString("Smile To Camera :)");
 
             Delay_ms(LOCK_TIME);
+            return;
         }
     }
+    LCD_clearScreen();
+    
+    LCD_displayStringRowColumn(0, 2, "Access Granted!");
+
+    Delay_ms(LCD_MESSAGE_DELAY);
 }
 
 
@@ -186,9 +192,8 @@ void rfidReadTag(uint8 * a_rfid_tag){
                  /* Delete me later */
             if (byte == CARD_FOUND)
             {
+                LCD_clearScreen();
                 for (byte = 0;byte < 4;byte++) {
-                   
-                    LCD_moveCursor(2, byte * 2);
                     LCD_displayHex(a_rfid_tag[byte]);
                 }
                 Delay_ms(2500);

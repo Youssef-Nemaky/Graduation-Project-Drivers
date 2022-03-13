@@ -228,9 +228,11 @@ void Passcode_Receive_and_Check(void)
                     } else {
                         /* Send INCORRECT Macro to HMI-ECU Indicating Incorrect Passcode for 1 time */
                         Uart_SendByte(HMI_BLOCK_UART, INCORRECT);
+                        return;
                     }
                 }
             }
+            rfidWrongAttempts = 0;
             Uart_SendByte(HMI_BLOCK_UART, CORRECT);
             break;
         default:
