@@ -31,7 +31,7 @@ System_State state = BLOCKED;
 
 uint8 numOfUsedAuthMethods = 3;
 
-uint8 (*authArray[numOfAvAuthMethods])(void) = {passwordAuth, rfidAuth, raspAuth};
+uint8 (*authArray[numOfAvAuthMethods])(void) = {passwordAuth, rfidAuth, faceAuth};
 
 
 
@@ -114,7 +114,7 @@ void systemAuth(void){
             /* Clear The Screen to add new Data */
             LCD_clearScreen();
 
-            LCD_displayString("Smile To Camera :)");
+            LCD_displayString("7ramy");
 
             Delay_ms(LOCK_TIME);
             return;
@@ -317,6 +317,7 @@ void Receive_First_Time_Check(void)
 
         passwordSetup();
         rfidSetup();
+        faceSetup();
 
 		/* Calling Options Menu in case of Match */
 		Options_Menu();
@@ -332,8 +333,43 @@ void Receive_First_Time_Check(void)
 	}
 }
 
-uint8 raspAuth(void){
-    return TRUE;
+void faceSetup(void){
+    uint8 faceRespond = 0;
+    LCD_clearScreen();
+    LCD_displayString("Smile to the camera!");
+    Uart_SendByte(CONTROL_BLOCK_UART,'U');
+    while(1){
+        faceRespond =  Uart_ReceiveByte(CONTROL_BLOCK_UART);
+        LCD_clearScreen();
+        if (faceRespond == 'W') {
+            LCD_displayString("Face ID Saved");
+            break;
+        } else {
+            LCD_displayString("Error, Retry!");
+            Delay_ms(LCD_MESSAGE_DELAY);
+            LCD_displayString("Smile to the camera!");
+        }
+    }
+}
+
+uint8 faceAuth(void){
+    uint8 faceRespond = 0;
+    LCD_clearScreen();
+    LCD_displayString("Smile to the camera!");
+    Uart_SendByte(CONTROL_BLOCK_UART,'X');
+    while(1){
+        faceRespond =  Uart_ReceiveByte(CONTROL_BLOCK_UART);
+        LCD_clearScreen();
+        if (faceRespond == CORRECT) {
+            return TRUE;
+        } else if (faceRespond == INCORRECT){
+            LCD_displayString("Error, Retry!");
+            Delay_ms(LCD_MESSAGE_DELAY);
+            LCD_displayString("Smile to the camera!");
+        } else if(faceRespond == LOCK){
+            return FALSE;
+        }
+    }
 }
 /*******************************************************************************************************
  * [Name]: Setup_New_Passcode

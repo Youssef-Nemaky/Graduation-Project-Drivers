@@ -153,7 +153,9 @@ void rfidSetup(void);
 
 uint8 rfidAuth(void);
 
-uint8 raspAuth(void);
+void faceSetup(void);
+
+uint8 faceAuth(void);
 
 void systemAuth(void);
 

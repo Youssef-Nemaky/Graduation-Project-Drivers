@@ -38,6 +38,7 @@ uint8 passWrongAttempts = 0;
 
 uint8 rfidWrongAttempts = 0;
 
+uint8 faceWrongAttempts = 0;
 
 /*******************************************************************************
  *                       	  Functions Definitions                            *
@@ -97,6 +98,7 @@ void Send_First_Time_Check(void)
  ********************************************************************************************************/
 void Passcode_Receive_and_Check(void)
 {
+    uint8 faceRespond = 0;
 	/* Arrays to hold The whole Passcode */
 	uint8 pass1[5];
 	uint8 pass2[5];
@@ -133,7 +135,7 @@ void Passcode_Receive_and_Check(void)
             if (Passcode_Check()) {
                 /* Send CORRECT Macro to HMI-ECU Indicating Correct Passcode */
                 Uart_SendByte(HMI_BLOCK_UART, CORRECT);
-
+                passWrongAttempts = 0;
                 /* Unlock The Engine Door */
 
             }
@@ -168,7 +170,7 @@ void Passcode_Receive_and_Check(void)
             if (Passcode_Check()) {
                 /* Send CORRECT Macro to HMI-ECU Indicating Correct Passcode */
                 Uart_SendByte(HMI_BLOCK_UART, CORRECT);
-
+                
                 /* Save The New Changed Passcode in The EEPROM */
                 Save_Passcode(pass2);
             }
@@ -234,6 +236,39 @@ void Passcode_Receive_and_Check(void)
             }
             rfidWrongAttempts = 0;
             Uart_SendByte(HMI_BLOCK_UART, CORRECT);
+            break;
+        case 'U':
+            while (1) {
+                Uart_SendByte(RASPBERRY_PI_UART, 'y');
+                faceRespond = Uart_ReceiveByte(RASPBERRY_PI_UART);
+                if(faceRespond == 'R'){
+                    Uart_SendByte(HMI_BLOCK_UART, 'R');
+                } else if (faceRespond == 'W'){
+                    Uart_SendByte(HMI_BLOCK_UART,'W');
+                    break;
+                }
+            }
+            break;
+        case 'X':
+            while(1){
+                Uart_SendByte(RASPBERRY_PI_UART, 'n');
+                faceRespond = Uart_ReceiveByte(RASPBERRY_PI_UART);
+                if(faceRespond == 't'){
+                    Uart_SendByte(HMI_BLOCK_UART, CORRECT);
+                    break;
+                    /* reset number of wrong attempts */
+                } else {
+                    faceWrongAttempts++;
+                    if(faceWrongAttempts >= 3){
+                        faceWrongAttempts = 0;
+                        Uart_SendByte(HMI_BLOCK_UART, LOCK);
+                        Delay_ms(LOCK_TIME);
+                        break;
+                    } else {
+                        Uart_SendByte(HMI_BLOCK_UART, INCORRECT);
+                    }
+                }
+            }
             break;
         default:
             break;

@@ -48,3 +48,7 @@
 361	1046	6689081600676420	D:/Embedded_non-stop/Graduation Project/HMI_Block/Debug/Exe/gp.out	52b6baa432b09a16
 1	198	6689105672869263	D:/Embedded_non-stop/Graduation Project/HMI_Block/Debug/Obj/HMI_ECU.o	e94e08f802d29c28
 205	265	6689105673601586	D:/Embedded_non-stop/Graduation Project/HMI_Block/Debug/Exe/gp.out	52b6baa432b09a16
+6	73	6689685192225620	D:/Embedded_non-stop/Graduation Project/HMI_Block/Debug/Obj/Uart_PBcfg.o	21206259709e30fd
+9	100	6689685192485675	D:/Embedded_non-stop/Graduation Project/HMI_Block/Debug/Obj/Uart.o	5cf7b126b3fce18b
+1	144	6689685192905594	D:/Embedded_non-stop/Graduation Project/HMI_Block/Debug/Obj/HMI_ECU.o	e94e08f802d29c28
+149	236	6689685193845653	D:/Embedded_non-stop/Graduation Project/HMI_Block/Debug/Exe/gp.out	52b6baa432b09a16
