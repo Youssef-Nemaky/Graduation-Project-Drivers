@@ -4,6 +4,7 @@
 #include "Uart.h"
 #include <string.h>
 #include "gps_gsm_buffer.h"
+#include "Sw_Delay.h"
 
 /* Definitions */
 #define GPS_DELAY 100

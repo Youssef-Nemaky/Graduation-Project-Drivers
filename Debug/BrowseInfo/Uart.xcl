@@ -1,13 +1,13 @@
-"D:\Embedded_non-stop\Graduation Project Drivers\Dio.c"
+"D:\Embedded_non-stop\Graduation Project Drivers\Uart.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-D:\Embedded_non-stop\Graduation Project Drivers\Debug\BrowseInfo\Dio.pbi.dep
+D:\Embedded_non-stop\Graduation Project Drivers\Debug\BrowseInfo\Uart.pbi.dep
 -o
-D:\Embedded_non-stop\Graduation Project Drivers\Debug\BrowseInfo\Dio.pbi
+D:\Embedded_non-stop\Graduation Project Drivers\Debug\BrowseInfo\Uart.pbi
 -I
 D:\Embedded_non-stop\Graduation Project Drivers
 -I

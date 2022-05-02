@@ -1,54 +1,41 @@
 #include "Dio.h"
 #include "Port.h"
-#include "lcd.h"
-#include "keypad.h"
-#include "sw_delay.h"
+#include "Sw_Delay.h"
+#include "gsm.h"
+#include "gps.h"
+
+uint8 httpMessageBody[100];
+uint8 latitude[10]  = "";
+uint8 longtide[10] = "";
+
+#define URL "api.thingspeak.com/update"
+#define API_KEY "C5ZRHJHSN2BZPF48"
+
+void updateLocation(void){
+    if( ( strcmp(latitude, "0") == 0 ) && ( strcmp(longtide, "0") == 0 ) ){
+        return;
+    }
+    GSM_connectGPRS();
+    strcat(httpMessageBody, API_KEY);
+    strcat(httpMessageBody, "&field1=");
+    strcat(httpMessageBody, latitude);
+    strcat(httpMessageBody, "&field2=");
+    strcat(httpMessageBody, longtide);
+    GSM_sendHTTPRequest(URL, strlen(httpMessageBody), httpMessageBody, GSM_URL_ENCODED_CONTENT);
+}
+
 
 int main()
 {
-    uint8 pressedKey = 0;
     Dio_Init(&Dio_Configuration);
     Port_Init(&Port_Configuration);
-    LCD_init();
-    LCD_displayCharacter('S');
-    Delay_Ms(5000);
+    GPS_init();
+    GSM_init();
+
     while(1){
-
-        /*
-        Dio_WriteChannelGroup(DioConf_LEDS_GRP_PTR, (1<<counter));
-        counter++;
-        if(counter >= 4){
-            counter = 0;
-        }
-        Delay_MS(1000);
-        */
-        /*
-
-       if(Dio_ReadChannel(DioConf_SW1_CHANNEL_ID_INDEX) == STD_LOW){
-           Dio_WriteChannel(DioConf_LED1_CHANNEL_ID_INDEX, STD_HIGH);
-       } else {
-           Dio_WriteChannel(DioConf_LED1_CHANNEL_ID_INDEX, STD_LOW);
-       }
-*/
-    //LCD_displayCharacter('A');
-    /*
-    LCD_moveCursor(0,0);
-    LCD_displayCharacter('A' + counter++);
-    if(counter >= 27){
-        counter = 0;
+        GPS_getLocation(latitude, longtide);
+        updateLocation();
+        Delay_Ms(10000);
     }
-    Delay_Ms(1000);
-*/
-    LCD_moveCursor(0,0);
-    pressedKey = KEYPAD_getPressedKey();
-    if((pressedKey >= 0) && (pressedKey <= 9)){
-        LCD_displayCharacter(('0' + pressedKey));
-    } else {
-        LCD_displayCharacter(pressedKey);
-    }
-    
-    
-    }
-
     return 0;
 }

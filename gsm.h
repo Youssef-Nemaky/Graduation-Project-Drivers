@@ -37,17 +37,22 @@
 #define GSM_BEARER_PROFILE_IDENTIFIER "AT+HTTPPARA=\"CID\",1"
 #define GSM_HTTP_CLIENT_URL "AT+HTTPPARA=\"URL\","
 #define GSM_HTTP_JSON_CONTENT "AT+HTTPPARA=\"CONTENT\",\"application/json\""
+#define GSM_HTTP_URL_ENCODED_CONTENT "AT+HTTPPARA=\"CONTENT\",\"application/x-www-form-urlencoded\""
 #define GSM_HTTP_DATA_LENGTH "AT+HTTPDATA="
 #define GSM_HTTP_POST_ACTION "AT+HTTPACTION=1"
 #define GSM_HTTP_TERMINATE "AT+HTTPTERM"
 
+
+typedef enum{
+    GSM_JSON_CONTENT,GSM_URL_ENCODED_CONTENT
+} GSM_contentType;
 /* Function Prototypes */
 void GSM_sendCommand(uint8 * command);
 void GSM_clearBuffer(void);
 void GSM_setBuffer(void);
 void GSM_init();
 void GSM_connectGPRS(void);
-void GSM_sendHTTPRequest(uint8 * url, uint8 dataLength, uint8 * data);
+void GSM_sendHTTPRequest(uint8 * url, uint8 dataLength, uint8 * data, GSM_contentType content);
 
 
 #endif

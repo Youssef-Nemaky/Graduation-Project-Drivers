@@ -2137,6 +2137,27 @@
         <name>$PROJ_DIR$\Dio_Regs.h</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\gps.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\gps.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\gps_gsm_buffer.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\gps_gsm_buffer.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\gsm.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\gsm.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\gsm_cfg.h</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\keypad.c</name>
     </file>
     <file>
@@ -2153,6 +2174,9 @@
     </file>
     <file>
         <name>$PROJ_DIR$\main.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\MCU_Config.h</name>
     </file>
     <file>
         <name>$PROJ_DIR$\Platform_Types.h</name>
@@ -2180,5 +2204,20 @@
     </file>
     <file>
         <name>$PROJ_DIR$\Sw_Delay.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\Uart.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\Uart.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\Uart_Cfg.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\Uart_PBcfg.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\Uart_Regs.h</name>
     </file>
 </project>

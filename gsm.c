@@ -1,5 +1,5 @@
 #include "gsm.h"
-
+#include "Sw_Delay.h"
 /* Static functions prototypes */
 static void integerToString(sint8 * dest, uint8 number);
 
@@ -7,7 +7,7 @@ void GSM_init(){
     uint8 counter = 0;
     /* Send multiple AT command to let the module configure its baud rate automatically */
     for(counter = 0; counter < 5; counter++){
-        Gps_sendCommand(GSM_AT_COMMAND);
+        GSM_sendCommand(GSM_AT_COMMAND);
     }
 
     /* Enable Full functionality for GSM (both transmit and receive) */
@@ -16,39 +16,30 @@ void GSM_init(){
     /* Set SMS mode to text mode */
     GSM_sendCommand(GSM_SMS_TXT_MODE_CMD);
     
+    /* Connect GPRS */
+    GSM_connectGPRS();
+}
+
+void GSM_connectGPRS(void){
     /* Close the bearer */
     GSM_sendCommand(GSM_CLOSE_BEARER_CMD);
-    
     /* Set bearer parameters */
     /* 3 for setting bearer paramaters
      * Contype: Type of Internet connection
      * GPRS: GPRS connection
      */
     GSM_sendCommand(GSM_SET_BEARER_PARAMS_CMD);
-
     /* Set bearer APN settings */
     GSM_sendCommand(GSM_SET_APN_SETTINGS_CMD);
-
     /* Set bearer APN username */
     GSM_sendCommand(GSM_SET_APN_USER_CMD);
-
     /* Set bearer APN password */
     GSM_sendCommand(GSM_SET_APN_PWD_CMD);
-    
     /* Open bearer */
-    GSM_sendCommand(GSM_OPEN_BEARER_CMD);  
-}
-
-void GSM_connectGPRS(void){
-    GSM_sendCommand(GSM_CLOSE_BEARER_CMD);
-    GSM_sendCommand(GSM_SET_BEARER_PARAMS_CMD);
-    GSM_sendCommand(GSM_SET_APN_SETTINGS_CMD);
-    GSM_sendCommand(GSM_SET_APN_USER_CMD);
-    GSM_sendCommand(GSM_SET_APN_PWD_CMD);
     GSM_sendCommand(GSM_OPEN_BEARER_CMD);
 }
 
-void GSM_sendHTTPRequest(uint8 * url, uint8 dataLength, uint8 * data){
+void GSM_sendHTTPRequest(uint8 * url, uint8 dataLength, uint8 * data, GSM_contentType content){
     sint8 urlCommand[200] = "";
     sint8 dataLengthCommand[60] = "";
     sint8 dataLengthStr[10] = "";
@@ -61,8 +52,15 @@ void GSM_sendHTTPRequest(uint8 * url, uint8 dataLength, uint8 * data){
     strcat(urlCommand, url);
     GSM_sendCommand(urlCommand);
 
-    
-    GSM_sendCommand(GSM_HTTP_JSON_CONTENT);
+    switch (content)
+    {
+    case GSM_JSON_CONTENT:
+        GSM_sendCommand(GSM_HTTP_JSON_CONTENT);
+        break;
+    case GSM_URL_ENCODED_CONTENT:
+        GSM_sendCommand(GSM_HTTP_URL_ENCODED_CONTENT);
+        break;
+    }
     
     strcat(dataLengthCommand, GSM_HTTP_DATA_LENGTH);
     integerToString(dataLengthStr, dataLength);
@@ -86,7 +84,7 @@ void GSM_sendCommand(uint8 * command){
     while(command[commandCounter] != '\0'){
         Uart_SendByte(GSM_MODULE_UART, command[commandCounter]);
     }
-    Uart_SendByte('\r');
+    Uart_SendByte(GSM_MODULE_UART,'\r');
     Delay_Ms(GSM_DELAY); // maybe replace me with while(!g_gps_gsm_rx_complete_flag) 
 }
 

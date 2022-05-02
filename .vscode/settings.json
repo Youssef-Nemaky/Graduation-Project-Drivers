@@ -7,7 +7,8 @@
         "uart.h": "c",
         "sw_delay.h": "c",
         "gps.h": "c",
-        "gps_gsm_buffer.h": "c"
+        "gps_gsm_buffer.h": "c",
+        "std_types.h": "c"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }

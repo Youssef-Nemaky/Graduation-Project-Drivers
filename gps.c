@@ -2,7 +2,7 @@
 
 
 
-void Gps_sendCommand(uint8 * command){
+void GPS_sendCommand(uint8 * command){
     uint8 commandCounter = 0; 
 
     /* Reset the buffer before sending any commands to get a proper response from the module */
@@ -11,41 +11,41 @@ void Gps_sendCommand(uint8 * command){
     while(command[commandCounter] != '\0'){
         Uart_SendByte(GPS_MODULE_UART, command[commandCounter]);
     }
-    Uart_SendByte('\r');
+    Uart_SendByte(GPS_MODULE_UART,'\r');
     Delay_Ms(GPS_DELAY);
 }
 
-void Gps_init(){
+void GPS_init(){
     uint8 counter = 0;
     /* Send multiple AT command to let the module configure its baud rate automatically */
     for(counter = 0; counter < 5; counter++){
-        Gps_sendCommand(GPS_AT_COMMAND);
+        GPS_sendCommand(GPS_AT_COMMAND);
     }
 
     /* Turn off command echos */
-    Gps_sendCommand(GPS_ECHO_OFF_CMD);
+    GPS_sendCommand(GPS_ECHO_OFF_CMD);
     
-    /* Turn on Gps & GNS */
-    Gps_sendCommand(GNS_PWR_ON_CMD);
+    /* Turn on GPS & GNS */
+    GPS_sendCommand(GNS_PWR_ON_CMD);
 
     /* Set RMC NMEA */
-    Gps_sendCommand(GNS_RMC_NMEA_CMD);
+    GPS_sendCommand(GNS_RMC_NMEA_CMD);
 
     Uart_setRXCallBack(gps_gsm_populate_buffer);
 }
 
-void Gps_handler(uint8 uartData){
+void GPS_handler(uint8 uartData){
     g_gps_gsm_buffer[g_gps_gsm_buffer_index] = uartData;
 }
 
 
-void Gps_getLocation(uint8 * latitude ,uint8 * longitude){
+void GPS_getLocation(uint8 * latitude ,uint8 * longitude){
     uint8 buffer_counter = 0;
     uint8 latitudeCounter = 0, longitudeCounter = 0;
     uint8 numberOfCommas = 0;
 
     /* send get location command to the gps module */
-    Gps_sendCommand(GNS_GET_LOCATION_CMD);
+    GPS_sendCommand(GNS_GET_LOCATION_CMD);
 
     /* Wait to receive the reponse and populate the buffer */
     while(!g_gps_gsm_rx_complete_flag);
