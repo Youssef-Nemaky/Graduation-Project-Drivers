@@ -83,6 +83,7 @@ void GSM_sendCommand(uint8 * command){
     
     while(command[commandCounter] != '\0'){
         Uart_SendByte(GSM_MODULE_UART, command[commandCounter]);
+        commandCounter++;
     }
     Uart_SendByte(GSM_MODULE_UART,'\r');
     Delay_Ms(GSM_DELAY); // maybe replace me with while(!g_gps_gsm_rx_complete_flag) 

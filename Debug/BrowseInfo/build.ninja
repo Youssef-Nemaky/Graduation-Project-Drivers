@@ -24,6 +24,11 @@ rule PDBLINK
 
 
 #Build steps
+build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\cstartup_M.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\cstartup_M.c" -xcl_file "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\cstartup_M.xcl" -macro_file "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\cstartup_M.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\cstartup_M.c" -o "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\cstartup_M.tmp"
+  rspfile_name = D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\cstartup_M.xcl.rsp
+
 build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Det.xcl : COMPILER_XCL 
   xclcommand = -source_file "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Det.c" -xcl_file "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Det.xcl" -macro_file "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Det.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
   flags = "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Det.c" -o "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Det.tmp"
@@ -94,6 +99,10 @@ build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Uart_P
   flags = "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Uart_PBcfg.c" -o "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Uart_PBcfg.tmp"
   rspfile_name = D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Uart_PBcfg.xcl.rsp
 
+build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\cstartup_M.pbi : INDEXER D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\cstartup_M.xcl |  $
+D$:\Embedded_non-stop\Graduation$ Project$ Drivers\cstartup_M.c
+  flags = "-out=D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\cstartup_M.pbi" -f "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\cstartup_M.xcl"
+
 build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Det.pbi : INDEXER D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Det.xcl |  $
 D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Det.c
   flags = "-out=D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Det.pbi" -f "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Det.xcl"
@@ -153,27 +162,28 @@ D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Uart_PBcfg.c
 build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp.pbw : MAKEBROWSE D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp.pbd
   flags = "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp.pbd" -output "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp.pbw"
 
-build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part0.pbi : PDBLINK D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Det.pbi |  $
+build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part0.pbi : PDBLINK D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\cstartup_M.pbi |  $
+D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Det.pbi $
 D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Dio.pbi $
-D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Dio_PBcfg.pbi $
-D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gps.pbi
-  flags = -M "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part0.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Det.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Dio.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Dio_PBcfg.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gps.pbi"
+D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Dio_PBcfg.pbi
+  flags = -M "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part0.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\cstartup_M.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Det.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Dio.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Dio_PBcfg.pbi"
 
-build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part1.pbi : PDBLINK D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gps_gsm_buffer.pbi |  $
+build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part1.pbi : PDBLINK D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gps.pbi |  $
+D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gps_gsm_buffer.pbi $
 D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gsm.pbi $
-D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\keypad.pbi $
-D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\lcd.pbi
-  flags = -M "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part1.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gps_gsm_buffer.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gsm.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\keypad.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\lcd.pbi"
+D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\keypad.pbi
+  flags = -M "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part1.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gps.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gps_gsm_buffer.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gsm.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\keypad.pbi"
 
-build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part2.pbi : PDBLINK D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\main.pbi |  $
+build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part2.pbi : PDBLINK D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\lcd.pbi |  $
+D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\main.pbi $
 D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Port.pbi $
-D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Port_PBcfg.pbi $
-D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Sw_Delay.pbi
-  flags = -M "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part2.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\main.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Port.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Port_PBcfg.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Sw_Delay.pbi"
+D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Port_PBcfg.pbi
+  flags = -M "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part2.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\lcd.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\main.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Port.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Port_PBcfg.pbi"
 
-build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part3.pbi : PDBLINK D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Uart.pbi |  $
+build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part3.pbi : PDBLINK D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Sw_Delay.pbi |  $
+D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Uart.pbi $
 D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Uart_PBcfg.pbi
-  flags = -M "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part3.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Uart.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Uart_PBcfg.pbi"
+  flags = -M "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part3.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Sw_Delay.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Uart.pbi" "D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\Uart_PBcfg.pbi"
 
 build D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp.pbd : PDBLINK D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part0.pbi |  $
 D$:\Embedded_non-stop\Graduation$ Project$ Drivers\Debug\BrowseInfo\gp_part1.pbi $

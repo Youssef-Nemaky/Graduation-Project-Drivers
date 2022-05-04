@@ -2116,6 +2116,9 @@
         <name>$PROJ_DIR$\Compiler.h</name>
     </file>
     <file>
+        <name>$PROJ_DIR$\cstartup_M.c</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\Det.c</name>
     </file>
     <file>

@@ -1,94 +1,85 @@
 # ninja log v5
-437	541	6662807879818049	D:/Embedded_non-stop/Graduation Project/Debug/Obj/main.o	10994a60dfeb1ef8
-523	601	6662807880568021	D:/Embedded_non-stop/Graduation Project/Debug/Obj/lcd.o	44ea7d1f72e13ac0
-494	672	6662807881298006	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Port.o	3d09be61b7406d94
-680	1078	6662807885365667	D:/Embedded_non-stop/Graduation Project/Debug/Exe/gp.out	f98fc50ce8bfd893
-128	517	6662807879688061	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Dio.o	1a38f2f4e5ff55a0
-1	463	6662807879198047	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Det.o	4ab0cc3b4cb8d6b3
-155	431	6662807878878019	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Dio_PBcfg.o	681fc5fb4694de7a
-470	547	6662807880008060	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Port_PBcfg.o	68b07e0de105ebfb
-131	487	6662807879338044	D:/Embedded_non-stop/Graduation Project/Debug/Obj/keypad.o	50f916dc73ac7b60
-125	441	6665332895374806	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Port_PBcfg.o	68b07e0de105ebfb
-130	481	6665332895779076	D:/Embedded_non-stop/Graduation Project/Debug/Obj/main.o	10994a60dfeb1ef8
-12	488	6665332895790041	D:/Embedded_non-stop/Graduation Project/Debug/Obj/keypad.o	50f916dc73ac7b60
-127	548	6665332896466984	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Port.o	3d09be61b7406d94
-553	995	6665332900960794	D:/Embedded_non-stop/Graduation Project/Debug/Exe/gp.out	f98fc50ce8bfd893
-1	50	6665333296157249	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Port_PBcfg.o	68b07e0de105ebfb
-56	120	6665333296864428	D:/Embedded_non-stop/Graduation Project/Debug/Exe/gp.out	f98fc50ce8bfd893
-1	48	6665333571717760	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Port_PBcfg.o	68b07e0de105ebfb
-53	93	6665333572162687	D:/Embedded_non-stop/Graduation Project/Debug/Exe/gp.out	f98fc50ce8bfd893
-5	189	6665432547293535	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Dio_PBcfg.o	681fc5fb4694de7a
-0	261	6665432547934840	D:/Embedded_non-stop/Graduation Project/Debug/Obj/keypad.o	50f916dc73ac7b60
-11	290	6665432548154861	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Det.o	4ab0cc3b4cb8d6b3
-196	301	6665432548194839	D:/Embedded_non-stop/Graduation Project/Debug/Obj/main.o	10994a60dfeb1ef8
-297	348	6665432548906192	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Port_PBcfg.o	68b07e0de105ebfb
-269	364	6665432548956204	D:/Embedded_non-stop/Graduation Project/Debug/Obj/lcd.o	44ea7d1f72e13ac0
-8	384	6665432549186167	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Dio.o	1a38f2f4e5ff55a0
-308	471	6665432550096208	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Port.o	3d09be61b7406d94
-1	50	6665432798541109	D:/Embedded_non-stop/Graduation Project/Debug/Obj/Sw_Delay.o	db88fd2ce4a16d08
-55	98	6665432799031108	D:/Embedded_non-stop/Graduation Project/Debug/Exe/gp.out	754c44e903bbe8e1
-9	268	6732101460311158	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Dio_PBcfg.o	35d89868f1a7af7f
-0	304	6732101460671120	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Det.o	e10f991b12ce2410
-16	331	6732101460891125	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/keypad.o	7834c598fb24d549
-12	379	6732101461391129	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Dio.o	bc0c3298621c48d5
-274	391	6732101461471128	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/lcd.o	d24dea86bcc25b2e
-386	449	6732101462141147	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port_PBcfg.o	541a64d81be1335a
-397	456	6732101462151138	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Sw_Delay.o	7ea5d9a50e9ba992
-312	504	6732101462701126	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port.o	7704dd54d7dc8e55
-0	79	6732102175413023	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
-16	109	6732102902991004	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps_gsm_buffer.o	a24a06e21513d366
-95	149	6732102903530994	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart_PBcfg.o	1d60ffcf0e31b761
-23	165	6732102903600998	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart.o	97a7d04caa27a902
-11	116	6732103124643254	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
-1	76	6732103397633198	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps.o	e41096d9998f0d86
-2	89	6732103844526485	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gsm.o	a53c51cad6386d72
-1	89	6732104358478365	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps.o	e41096d9998f0d86
-6	105	6732104358598344	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gsm.o	a53c51cad6386d72
-1	152	6732104922514163	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps.o	e41096d9998f0d86
-1	81	6732105310792110	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps.o	e41096d9998f0d86
-6	87	6732105310792110	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
-0	74	6732105477015031	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Det.o	e10f991b12ce2410
-6	98	6732105477235042	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps_gsm_buffer.o	a24a06e21513d366
-10	117	6732105477315046	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/keypad.o	7834c598fb24d549
-80	190	6732105478165054	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/lcd.o	d24dea86bcc25b2e
-105	214	6732105478355040	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gsm.o	a53c51cad6386d72
-124	225	6732105478395043	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
-13	265	6732105478945051	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port.o	7704dd54d7dc8e55
-221	286	6732105479055047	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Dio_PBcfg.o	35d89868f1a7af7f
-198	296	6732105479175053	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps.o	e41096d9998f0d86
-292	344	6732105479755045	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Sw_Delay.o	7ea5d9a50e9ba992
-303	366	6732105479895065	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port_PBcfg.o	541a64d81be1335a
-271	382	6732105480025036	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart.o	97a7d04caa27a902
-234	388	6732105480115043	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Dio.o	bc0c3298621c48d5
-351	410	6732105480405021	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart_PBcfg.o	1d60ffcf0e31b761
-1	78	6732105740470343	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gsm.o	a53c51cad6386d72
-0	499	6732115701915873	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gsm.o	a53c51cad6386d72
-0	70	6732115927874064	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Det.o	e10f991b12ce2410
-5	249	6732115928404086	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
-7	260	6732115928944074	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps_gsm_buffer.o	a24a06e21513d366
-11	275	6732115928944074	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gsm.o	a53c51cad6386d72
-76	343	6732115930614080	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/lcd.o	d24dea86bcc25b2e
-269	395	6732115931154059	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/keypad.o	7834c598fb24d549
-280	444	6732115931684073	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps.o	e41096d9998f0d86
-350	455	6732115931714071	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Dio.o	bc0c3298621c48d5
-401	486	6732115932064085	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Dio_PBcfg.o	35d89868f1a7af7f
-255	498	6732115932094102	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port.o	7704dd54d7dc8e55
-462	533	6732115932534079	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart_PBcfg.o	1d60ffcf0e31b761
-450	541	6732115932594101	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Sw_Delay.o	7ea5d9a50e9ba992
-493	566	6732115932924075	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port_PBcfg.o	541a64d81be1335a
-504	600	6732115933234147	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart.o	97a7d04caa27a902
-0	68	6732116289373420	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
-1	82	6732116340999481	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Det.o	e10f991b12ce2410
-14	115	6732116341299455	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps_gsm_buffer.o	a24a06e21513d366
-7	140	6732116341519456	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
-87	202	6732116342179441	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/lcd.o	d24dea86bcc25b2e
-148	228	6732116342399443	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/keypad.o	7834c598fb24d549
-123	240	6732116342419440	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gsm.o	a53c51cad6386d72
-10	315	6732116343259448	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port.o	7704dd54d7dc8e55
-247	329	6732116343339467	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Dio_PBcfg.o	35d89868f1a7af7f
-236	359	6732116343609446	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps.o	e41096d9998f0d86
-210	386	6732116343869468	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Dio.o	bc0c3298621c48d5
-323	409	6732116344199453	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Sw_Delay.o	7ea5d9a50e9ba992
-367	436	6732116344569442	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart_PBcfg.o	1d60ffcf0e31b761
-393	456	6732116344789448	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port_PBcfg.o	541a64d81be1335a
-338	464	6732116344819443	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart.o	97a7d04caa27a902
+271	333	6733634528755336	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port_PBcfg.o	541a64d81be1335a
+8	99	6733617950328972	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Det.o	e10f991b12ce2410
+9	275	6733634528045336	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps_gsm_buffer.o	a24a06e21513d366
+94	210	6733617951588968	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/lcd.o	d24dea86bcc25b2e
+12	75	6733617950328972	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Dio_PBcfg.o	35d89868f1a7af7f
+5	149	6733617951048986	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Dio.o	bc0c3298621c48d5
+82	173	6733617951208995	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/keypad.o	7834c598fb24d549
+276	349	6733617953058998	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Sw_Delay.o	7ea5d9a50e9ba992
+188	298	6733634528235326	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps.o	e41096d9998f0d86
+306	493	6733617954488981	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port.o	7704dd54d7dc8e55
+14	351	6733634528875338	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
+304	361	6733634529015326	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart_PBcfg.o	1d60ffcf0e31b761
+1	98	6733637308427788	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart.o	97a7d04caa27a902
+5	265	6733634527995338	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gsm.o	a53c51cad6386d72
+103	155	6733637309017773	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+1	181	6733634527215351	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/cstartup_M.o	ec521da76f804478
+6	159	6733644265525945	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart_PBcfg.o	1d60ffcf0e31b761
+1	184	6733644265795901	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port_PBcfg.o	541a64d81be1335a
+190	241	6733644266365904	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+1	154	6733650299308943	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps.o	e41096d9998f0d86
+160	211	6733650299908936	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+1	144	6733650667561459	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart_PBcfg.o	1d60ffcf0e31b761
+151	201	6733650668141476	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+0	157	6733659087163429	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/cstartup_M.o	ec521da76f804478
+4	184	6733659087463383	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Dio_PBcfg.o	35d89868f1a7af7f
+7	219	6733659087763367	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Det.o	e10f991b12ce2410
+163	256	6733659088173359	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
+191	274	6733659088333352	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps.o	e41096d9998f0d86
+11	308	6733659088703362	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Dio.o	bc0c3298621c48d5
+224	329	6733659088833367	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps_gsm_buffer.o	a24a06e21513d366
+261	354	6733659089173405	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/lcd.o	d24dea86bcc25b2e
+281	381	6733659089413375	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/keypad.o	7834c598fb24d549
+360	415	6733659089783387	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port_PBcfg.o	541a64d81be1335a
+314	434	6733659089873375	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gsm.o	a53c51cad6386d72
+386	456	6733659090133371	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Sw_Delay.o	7ea5d9a50e9ba992
+440	490	6733659090553360	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart_PBcfg.o	1d60ffcf0e31b761
+420	521	6733659090823378	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart.o	97a7d04caa27a902
+335	535	6733659090903372	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port.o	7704dd54d7dc8e55
+542	586	6733659091513473	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+2	155	6733663607138782	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
+162	213	6733663607738868	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+2	69	6733664771969744	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
+75	120	6733664772509748	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+1	78	6733670877430228	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/cstartup_M.o	ec521da76f804478
+12	100	6733670877560225	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps_gsm_buffer.o	a24a06e21513d366
+6	110	6733670877620219	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
+8	132	6733670877730227	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gsm.o	a53c51cad6386d72
+106	166	6733670878330235	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart_PBcfg.o	1d60ffcf0e31b761
+84	183	6733670878510217	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps.o	e41096d9998f0d86
+139	194	6733670878610219	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port_PBcfg.o	541a64d81be1335a
+117	224	6733670878900208	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart.o	97a7d04caa27a902
+229	285	6733670879540338	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+1	175	6733680787198498	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
+182	260	6733680788068515	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+5	219	6733691744339044	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
+225	674	6733691748935680	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+1	174	6733694752237451	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
+180	226	6733694752797503	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+19	251	6733708569209116	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/cstartup_M.o	ec521da76f804478
+258	483	6733708571550645	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+1	165	6733714061887648	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
+169	218	6733714062437633	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+1	166	6733720249016423	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps.o	e41096d9998f0d86
+172	218	6733720249566454	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+1	164	6733721219518572	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps.o	e41096d9998f0d86
+170	217	6733721220068581	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+1	323	6733748142701094	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/cstartup_M.o	ec521da76f804478
+329	396	6733748143441091	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps.o	e41096d9998f0d86
+403	485	6733748144330943	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gsm.o	a53c51cad6386d72
+11	514	6733748144610963	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Dio_PBcfg.o	35d89868f1a7af7f
+19	528	6733748144630968	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Det.o	e10f991b12ce2410
+15	571	6733748145160960	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Dio.o	bc0c3298621c48d5
+492	592	6733748145280959	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/gps_gsm_buffer.o	a24a06e21513d366
+523	639	6733748145870949	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/keypad.o	7834c598fb24d549
+535	649	6733748145890968	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
+599	677	6733748146260986	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart_PBcfg.o	1d60ffcf0e31b761
+577	702	6733748146510962	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/lcd.o	d24dea86bcc25b2e
+645	722	6733748146580973	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Sw_Delay.o	7ea5d9a50e9ba992
+658	760	6733748147100959	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port_PBcfg.o	541a64d81be1335a
+684	798	6733748147480954	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Uart.o	97a7d04caa27a902
+708	899	6733748148450973	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/Port.o	7704dd54d7dc8e55
+906	1194	6733748151451284	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1
+1	171	6733759008635890	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Obj/main.o	614d81df5a8e0210
+177	452	6733759011477268	D:/Embedded_non-stop/Graduation Project Drivers/Debug/Exe/gp.out	5488aa2d6ce427b1

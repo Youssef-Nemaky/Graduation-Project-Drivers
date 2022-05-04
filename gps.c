@@ -10,6 +10,7 @@ void GPS_sendCommand(uint8 * command){
 
     while(command[commandCounter] != '\0'){
         Uart_SendByte(GPS_MODULE_UART, command[commandCounter]);
+        commandCounter++;
     }
     Uart_SendByte(GPS_MODULE_UART,'\r');
     Delay_Ms(GPS_DELAY);
@@ -31,7 +32,7 @@ void GPS_init(){
     /* Set RMC NMEA */
     GPS_sendCommand(GNS_RMC_NMEA_CMD);
 
-    Uart_setRXCallBack(gps_gsm_populate_buffer);
+    Uart_RxSetCallBack(GPS_MODULE_UART, gps_gsm_populate_buffer);
 }
 
 void GPS_handler(uint8 uartData){
@@ -58,13 +59,20 @@ void GPS_getLocation(uint8 * latitude ,uint8 * longitude){
             numberOfCommas++;
         }
         if (numberOfCommas == 3) {
-            latitude[latitudeCounter++] = g_gps_gsm_buffer[buffer_counter];
+            if(g_gps_gsm_buffer[buffer_counter] != ','){
+                latitude[latitudeCounter++] = g_gps_gsm_buffer[buffer_counter];
+            }
         } else if (numberOfCommas == 4) {
-            longitude[longitudeCounter++] = g_gps_gsm_buffer[buffer_counter];
+            if(g_gps_gsm_buffer[buffer_counter] != ','){
+                longitude[longitudeCounter++] = g_gps_gsm_buffer[buffer_counter];
+            }
         } else if (numberOfCommas == 5) {
             /* No need to continue as we've already read the latitude and longtide */
             break;
         }
     }
+    /* Add Null-Terminator at the end of the string */
+    latitude[latitudeCounter] = '\0'; 
+    longitude[longitudeCounter] = '\0';
 }
 
